@@ -79,7 +79,7 @@ export function BaseSettingsBlockComponent({ form }: IProps) {
                                         <ActionIcon
                                             color="gray"
                                             component="a"
-                                            href="https://docs.CHANGE-ME.example/docs/install/subscription-page/display-raw-keys"
+                                            href="https://docs.xraypanel.dev/docs/install/subscription-page/display-raw-keys"
                                             onClick={(e) => e.stopPropagation()}
                                             rel="noopener noreferrer"
                                             size="xs"

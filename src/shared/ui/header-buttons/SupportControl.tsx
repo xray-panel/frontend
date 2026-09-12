@@ -8,7 +8,7 @@ export function SupportControl() {
         <HeaderControl
             className={classes.support}
             component="a"
-            href="https://docs.CHANGE-ME.example/docs/donate"
+            href="https://docs.xraypanel.dev/docs/donate"
             rel="noopener noreferrer"
             target="_blank"
         >

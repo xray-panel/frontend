@@ -86,7 +86,7 @@ export const CreateNodeStep1Connection = ({ form, onNext, secretKey, port }: IPr
                     {t('create-node-step-1-connection.content-for-the-remnawave-node-below')}{' '}
                     <Anchor
                         fw="700"
-                        href="https://docs.CHANGE-ME.example/docs/install/remnawave-node"
+                        href="https://docs.xraypanel.dev/docs/install/remnawave-node"
                         inherit
                         rel="noopener noreferrer"
                         target="_blank"

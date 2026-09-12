@@ -124,7 +124,7 @@ export const SubscriptionHwidSettingsWidget = (props: IProps) => {
                             rel="noopener noreferrer"
                             size="md"
                             target="_blank"
-                            to="https://docs.CHANGE-ME.example/docs/features/hwid-device-limit"
+                            to="https://docs.xraypanel.dev/docs/features/hwid-device-limit"
                             variant="light"
                             w="fit-content"
                         >

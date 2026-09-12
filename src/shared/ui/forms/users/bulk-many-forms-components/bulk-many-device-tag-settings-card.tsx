@@ -51,7 +51,7 @@ export function BulkDeviceTagSettingsCard(props: IProps) {
                                                 highlight: <Code />,
                                                 anchor: (
                                                     <Anchor
-                                                        href="https://docs.CHANGE-ME.example/docs/features/hwid-device-limit"
+                                                        href="https://docs.xraypanel.dev/docs/features/hwid-device-limit"
                                                         rel="noopener noreferrer"
                                                         target="_blank"
                                                     />
