@@ -27,21 +27,6 @@ export const theme = createTheme({
     white: '#ffffff',
     black: '#24292f',
     colors: {
-        // Основной акцент XPANEL. Спокойный синий вместо яркого cyan:
-        // на светлом фоне он читается как рабочий инструмент, а не как
-        // рекламный баннер, и не утомляет при долгой работе.
-        brand: [
-            '#eef1ff',
-            '#dbe0ff',
-            '#b9c2ff',
-            '#94a1ff',
-            '#7485fb',
-            '#6072f8',
-            '#4154f1',
-            '#3243d6',
-            '#2434b0',
-            '#15228a'
-        ],
         dark: [
             '#c9d1d9',
             '#b1bac4',
@@ -67,22 +52,12 @@ export const theme = createTheme({
             '#383838'
         ]
     },
-    // Разные оттенки для схем: на светлом фоне акцент должен быть темнее,
-    // иначе текст на нём не даёт нужного контраста.
-    primaryShade: { light: 6, dark: 5 },
-    primaryColor: 'brand',
+    primaryShade: 8,
+    primaryColor: 'cyan',
     autoContrast: true,
     luminanceThreshold: 0.3,
     headings: {
         fontWeight: '600'
     },
-    defaultRadius: 'md',
-    // Тени мягче и незаметнее: на светлом фоне резкие тени выглядят грязно.
-    shadows: {
-        xs: '0 1px 2px rgba(16, 24, 40, 0.04)',
-        sm: '0 1px 3px rgba(16, 24, 40, 0.06), 0 1px 2px rgba(16, 24, 40, 0.04)',
-        md: '0 4px 8px -2px rgba(16, 24, 40, 0.08), 0 2px 4px -2px rgba(16, 24, 40, 0.04)',
-        lg: '0 12px 16px -4px rgba(16, 24, 40, 0.08), 0 4px 6px -2px rgba(16, 24, 40, 0.03)',
-        xl: '0 20px 24px -4px rgba(16, 24, 40, 0.08), 0 8px 8px -4px rgba(16, 24, 40, 0.03)'
-    }
+    defaultRadius: 'md'
 })

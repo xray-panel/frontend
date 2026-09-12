@@ -10,7 +10,7 @@ import '@mantine/spotlight/styles.css'
 import '@kastov/mantine-react-table-open/styles.css'
 import '@kastov/mantine-datatable/styles.css'
 import './global.css'
-import { Center, DirectionProvider, MantineProvider } from '@mantine/core'
+import { Center, DirectionProvider, MantineProvider, v8CssVariablesResolver } from '@mantine/core'
 import { ModalsProvider } from '@mantine/modals'
 import { Notifications } from '@mantine/notifications'
 import { NavigationProgress } from '@mantine/nprogress'
@@ -33,7 +33,6 @@ import { ConnectionStatusOverlay } from '@shared/ui/connection-status-overlay'
 import i18n from './app/i18n/i18n'
 import { Router } from './app/router/router'
 import { initConnectionWatchdog, queryClient } from './shared/api'
-import { cssVariablesResolver } from '@shared/constants/theme/light-scheme-bridge'
 
 dayjs.extend(customParseFormat)
 
@@ -66,8 +65,8 @@ export function App() {
                     <IsMobileProvider>
                         <DirectionProvider>
                             <MantineProvider
-                                cssVariablesResolver={cssVariablesResolver}
-                                defaultColorScheme="light"
+                                cssVariablesResolver={v8CssVariablesResolver}
+                                defaultColorScheme="dark"
                                 theme={theme}
                                 deduplicateInlineStyles
                             >
