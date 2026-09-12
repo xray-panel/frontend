@@ -20,6 +20,7 @@ import { ResponseRulesPageConnector } from '@pages/dashboard/response-rules/conn
 import { SessionsExplorerPageConnector } from '@pages/dashboard/sessions-explorer/ui/connectors/sessions-explorer.page.connector'
 import { SrhInspectorPageConnector } from '@pages/dashboard/srh-inspector/ui/connectors'
 import { StatisticNodesConnector } from '@pages/dashboard/statistic-nodes/connectors'
+import { AdminsPageConnector } from '@pages/dashboard/admins/ui/connectors/admins.page.connector'
 import { AuditLogPageConnector } from '@pages/dashboard/audit-log/ui/connectors/audit-log.page.connector'
 import { LogsPageConnector } from '@pages/dashboard/logs/ui/connectors/logs.page.connector'
 import { SubpageConfigBasePageConnector } from '@pages/dashboard/subpage-config/ui/connectors/subpage-config-base-page.connector'
@@ -173,6 +174,11 @@ const router = createBrowserRouter(
                     <Route
                         element={<AuditLogPageConnector />}
                         path={ROUTES.DASHBOARD.MANAGEMENT.AUDIT_LOG}
+                    />
+
+                    <Route
+                        element={<AdminsPageConnector />}
+                        path={ROUTES.DASHBOARD.MANAGEMENT.ADMINS}
                     />
 
                     <Route

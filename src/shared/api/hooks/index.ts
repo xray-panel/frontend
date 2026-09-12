@@ -1,3 +1,6 @@
+export * from './admins/admins.mutation.hooks'
+export * from './admins/admins.query.hooks'
+
 export * from './api-tokens/api-tokens.mutation.hooks'
 export * from './api-tokens/api-tokens.query.hooks'
 

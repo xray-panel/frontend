@@ -24,7 +24,8 @@ import {
     TbRoute,
     TbDatabase,
     TbWebhook,
-    TbHistory
+    TbHistory,
+    TbUserShield
 } from 'react-icons/tb'
 
 import { ROUTES } from '@shared/constants'
@@ -128,6 +129,12 @@ export const useMobileMenuSections = (): MenuItem[] => {
                     href: ROUTES.DASHBOARD.MANAGEMENT.REMNAWAVE_SETTINGS,
                     icon: Logo,
                     id: 'remnawave-settings'
+                },
+                {
+                    name: 'Administrators',
+                    href: ROUTES.DASHBOARD.MANAGEMENT.ADMINS,
+                    icon: TbUserShield,
+                    id: 'admins'
                 }
             ]
         },
