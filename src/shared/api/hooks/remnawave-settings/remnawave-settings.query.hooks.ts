@@ -19,5 +19,5 @@ export const useGetRemnawaveSettings = createGetQueryHook({
         refetchOnMount: false,
         staleTime: sToMs(30)
     },
-    errorHandler: (error) => errorHandler(error, 'Get Remnawave Settings')
+    errorHandler: (error) => errorHandler(error, 'Get XPANEL Settings')
 })

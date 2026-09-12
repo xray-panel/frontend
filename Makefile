@@ -5,7 +5,7 @@ MONACO_FILES = \
 	public/xray.schema.json \
 	public/main.wasm
 
-MONACO_BASE_URL = https://remnawave.github.io/xray-monaco-editor
+MONACO_BASE_URL = https://docs.CHANGE-ME.example/xray-monaco-editor
 
 download-monaco-deps: $(MONACO_FILES)
 

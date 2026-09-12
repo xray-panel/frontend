@@ -44,7 +44,7 @@ const configureYaml = (monaco: Monaco, schemas?: SchemasSettings[]) => {
     monacoYaml = configureMonacoYaml(monaco, options)
 }
 
-const DOCS_URL = 'https://docs.rw/docs/learn/xray-json-advanced'
+const DOCS_URL = 'https://docs.CHANGE-ME.example/docs/learn/xray-json-advanced'
 const DOCS_LINK = `\n\n[📖 Documentation](${DOCS_URL})`
 
 function getHostStatus(host: Host): { icon: string; label: string } {

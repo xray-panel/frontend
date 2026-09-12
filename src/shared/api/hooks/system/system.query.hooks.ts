@@ -102,7 +102,7 @@ export const useGetRemnawaveHealth = createGetQueryHook({
         staleTime: sToMs(10),
         refetchInterval: sToMs(10)
     },
-    errorHandler: (error) => errorHandler(error, 'Get Remnawave Health')
+    errorHandler: (error) => errorHandler(error, 'Get XPANEL Health')
 })
 
 export const useGetNodesMetrics = createGetQueryHook({
@@ -126,7 +126,7 @@ export const useGetRemnawaveMetadata = createGetQueryHook({
         refetchOnMount: false,
         staleTime: sToMs(3_600)
     },
-    errorHandler: (error) => errorHandler(error, 'Get Remnawave Metadata')
+    errorHandler: (error) => errorHandler(error, 'Get XPANEL Metadata')
 })
 
 export const useGetRecap = createGetQueryHook({

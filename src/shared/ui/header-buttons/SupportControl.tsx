@@ -8,7 +8,7 @@ export function SupportControl() {
         <HeaderControl
             className={classes.support}
             component="a"
-            href="https://docs.rw/docs/donate"
+            href="https://docs.CHANGE-ME.example/docs/donate"
             rel="noopener noreferrer"
             target="_blank"
         >

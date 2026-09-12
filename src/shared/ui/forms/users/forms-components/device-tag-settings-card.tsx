@@ -57,7 +57,7 @@ export function DeviceTagSettingsCard<
                                                 highlight: <Code />,
                                                 anchor: (
                                                     <Anchor
-                                                        href="https://docs.rw/docs/features/hwid-device-limit"
+                                                        href="https://docs.CHANGE-ME.example/docs/features/hwid-device-limit"
                                                         rel="noopener noreferrer"
                                                         target="_blank"
                                                     />

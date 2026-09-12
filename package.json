@@ -1,16 +1,16 @@
 {
-  "name": "@remnawave/frontend",
+  "name": "@xpanel/frontend",
   "version": "3.4.3",
   "private": false,
-  "homepage": "https://github.com/remnawave",
+  "homepage": "https://github.com/CHANGE-ME/xpanel",
   "bugs": {
-    "url": "https://github.com/remnawave/frontend/issues"
+    "url": "https://github.com/CHANGE-ME/xpanel/frontend/issues"
   },
   "license": "AGPL-3.0-only",
   "author": "REMNAWAVE <github.com/remnawave>",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/remnawave/frontend.git"
+    "url": "git+https://github.com/CHANGE-ME/xpanel/frontend.git"
   },
   "type": "module",
   "scripts": {

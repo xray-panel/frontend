@@ -38,7 +38,7 @@ import {
 
 import classes from './GeocheckResult.module.css'
 
-const GEOCHECK_REPO_URL = 'https://github.com/remnawave/geocheck'
+const GEOCHECK_REPO_URL = 'https://github.com/CHANGE-ME/xpanel/geocheck'
 
 interface IProps {
     onRestart: () => void

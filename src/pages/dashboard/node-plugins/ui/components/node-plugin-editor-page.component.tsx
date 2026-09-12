@@ -40,7 +40,7 @@ export const NodePluginEditorPageComponent = (props: Props) => {
                         <ActionIcon
                             color="lime"
                             component="a"
-                            href="https://docs.rw/docs/learn/node-plugins"
+                            href="https://docs.CHANGE-ME.example/docs/learn/node-plugins"
                             size="input-md"
                             target="_blank"
                             variant="soft"

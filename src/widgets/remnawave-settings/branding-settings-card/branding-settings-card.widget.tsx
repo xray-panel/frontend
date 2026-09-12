@@ -206,7 +206,7 @@ export const BrandingSettingsCardWidget = (props: IProps) => {
                                 key={form.key('brandingSettings.title')}
                                 label={t('branding-settings-card.widget.brand-name')}
                                 leftSection={<TbStar size={16} />}
-                                placeholder="Remnawave"
+                                placeholder="XPANEL"
                                 rightSection={brandingTitleHoverCard()}
                                 {...form.getInputProps('brandingSettings.title')}
                             />
