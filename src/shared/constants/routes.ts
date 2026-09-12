@@ -25,6 +25,7 @@ export const ROUTES = {
             EXTERNAL_SQUADS: '/dashboard/management/external-squads',
             REMNAWAVE_SETTINGS: '/dashboard/management/settings',
             LOGS: '/dashboard/management/logs',
+            AUDIT_LOG: '/dashboard/management/audit-log',
             NODE_PLUGINS: {
                 ROOT: '/dashboard/management/plugins',
                 NODE_PLUGIN_BY_UUID: '/dashboard/management/plugins/:uuid'

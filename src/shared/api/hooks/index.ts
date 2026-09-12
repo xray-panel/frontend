@@ -1,6 +1,8 @@
 export * from './api-tokens/api-tokens.mutation.hooks'
 export * from './api-tokens/api-tokens.query.hooks'
 
+export * from './audit-log/audit-log.query.hooks'
+
 export * from './auth/auth.hooks'
 export * from './auth/auth.query.hooks'
 

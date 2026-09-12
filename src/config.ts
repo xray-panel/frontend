@@ -1,10 +1,10 @@
 export const app = {
     name: 'XPANEL',
-    githubRepo: 'https://github.com/kitten443/xpanel/backend',
-    githubStars: 'https://github.com/kitten443/xpanel/backend/stargazers',
-    githubIssues: 'https://github.com/kitten443/xpanel/backend/issues',
-    githubOrg: 'https://github.com/kitten443/xpanel',
-    githubDonation: 'https://github.com/kitten443/xpanel/backend#donation',
+    githubRepo: 'https://github.com/xray-panel/backend',
+    githubStars: 'https://github.com/xray-panel/backend/stargazers',
+    githubIssues: 'https://github.com/xray-panel/backend/issues',
+    githubOrg: 'https://github.com/xray-panel',
+    githubDonation: 'https://github.com/xray-panel/backend#donation',
     configEditor: {
         wasmUrl: '/assets/main.wasm',
         wasmJsUrl: '/assets/wasm_exec.js',

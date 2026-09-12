@@ -1,6 +1,7 @@
 import { inferQueryKeyStore, mergeQueryKeys } from '@lukemorales/query-key-factory'
 
 import { apiTokensQueryKeys } from './api-tokens/api-tokens.query.hooks'
+import { auditLogQueryKeys } from './audit-log/audit-log.query.hooks'
 import { authQueryKeys } from './auth/auth.query.hooks'
 import { bandwidthStatsQueryKeys } from './bandwidth-stats/bandwidth-stats.query.hooks'
 import { configProfilesQueryKeys } from './config-profiles/config-profiles.query.hooks'
@@ -47,7 +48,8 @@ export const QueryKeys = mergeQueryKeys(
     connectionsQueryKeys,
     nodePluginsQueryKeys,
     nodeIntegrationsQueryKeys,
-    logsQueryKeys
+    logsQueryKeys,
+    auditLogQueryKeys
 )
 
 export type TQueryKeys = inferQueryKeyStore<typeof QueryKeys>

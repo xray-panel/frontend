@@ -105,7 +105,7 @@ export function DisclaimerOverlay() {
                                 anchor: (
                                     <Anchor
                                         fw={600}
-                                        href="https://github.com/kitten443/xpanel/backend/blob/main/LICENCE"
+                                        href="https://github.com/xray-panel/backend/blob/main/LICENCE"
                                         rel="noopener noreferrer"
                                         size="xs"
                                         target="_blank"
