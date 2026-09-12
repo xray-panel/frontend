@@ -18,6 +18,7 @@ import {
     TbRoute,
     TbStar,
     TbTools,
+    TbDatabase,
     TbWebhook
 } from 'react-icons/tb'
 
@@ -214,6 +215,12 @@ export const useDesktopMenuSections = (): MenuItem[] => {
                         href: ROUTES.DASHBOARD.TOOLS.HWID_INSPECTOR,
                         icon: TbDeviceAnalytics,
                         id: 'hwid-inspector'
+                    },
+                    {
+                        name: 'Logs',
+                        href: ROUTES.DASHBOARD.MANAGEMENT.LOGS,
+                        icon: TbDatabase,
+                        id: 'logs'
                     },
                     {
                         name: t('constants.srh-inspector'),

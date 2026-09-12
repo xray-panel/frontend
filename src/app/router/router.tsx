@@ -20,6 +20,7 @@ import { ResponseRulesPageConnector } from '@pages/dashboard/response-rules/conn
 import { SessionsExplorerPageConnector } from '@pages/dashboard/sessions-explorer/ui/connectors/sessions-explorer.page.connector'
 import { SrhInspectorPageConnector } from '@pages/dashboard/srh-inspector/ui/connectors'
 import { StatisticNodesConnector } from '@pages/dashboard/statistic-nodes/connectors'
+import { LogsPageConnector } from '@pages/dashboard/logs/ui/connectors/logs.page.connector'
 import { SubpageConfigBasePageConnector } from '@pages/dashboard/subpage-config/ui/connectors/subpage-config-base-page.connector'
 import { SubpageConfigEditorPageConnector } from '@pages/dashboard/subpage-config/ui/connectors/subpage-config-editor-page.connector'
 import { SubscriptionSettingsConnector } from '@pages/dashboard/subscription-settings/connectors'
@@ -167,6 +168,11 @@ const router = createBrowserRouter(
                             path={ROUTES.DASHBOARD.TEMPLATES.TEMPLATE_EDITOR}
                         />
                     </Route>
+
+                    <Route
+                        element={<LogsPageConnector />}
+                        path={ROUTES.DASHBOARD.MANAGEMENT.LOGS}
+                    />
 
                     <Route path={ROUTES.DASHBOARD.SUBPAGE_CONFIGS.ROOT}>
                         <Route element={<SubpageConfigBasePageConnector />} index />
