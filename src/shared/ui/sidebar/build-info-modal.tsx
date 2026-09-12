@@ -126,7 +126,7 @@ export function BuildInfoModal({ remnawaveMetadata, isNewVersionAvailable }: Bui
                                     Build Time
                                 </Text>
                             </Group>
-                            <Text c="gray.3" ff="monospace" size="xs">
+                            <Text c="dimmed" ff="monospace" size="xs">
                                 {formatTimeUtil({
                                     time: remnawaveMetadata.build.time,
                                     template: 'NUMERIC_DATETIME'
@@ -141,7 +141,7 @@ export function BuildInfoModal({ remnawaveMetadata, isNewVersionAvailable }: Bui
                                     Build
                                 </Text>
                             </Group>
-                            <Text c="gray.3" ff="monospace" size="xs">
+                            <Text c="dimmed" ff="monospace" size="xs">
                                 {remnawaveMetadata.build.number}
                             </Text>
                         </Paper>

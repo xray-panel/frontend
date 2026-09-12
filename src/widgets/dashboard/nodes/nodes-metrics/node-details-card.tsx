@@ -217,7 +217,7 @@ export const NodeDetailsCard = memo(
                                                         >
                                                             Up
                                                         </Text>
-                                                        <Text c="gray.3" ff="monospace" size="xs">
+                                                        <Text c="dimmed" ff="monospace" size="xs">
                                                             {stat.upload === '0'
                                                                 ? '0 B'
                                                                 : stat.upload}
@@ -240,7 +240,7 @@ export const NodeDetailsCard = memo(
                                                         >
                                                             Down
                                                         </Text>
-                                                        <Text c="gray.3" ff="monospace" size="xs">
+                                                        <Text c="dimmed" ff="monospace" size="xs">
                                                             {stat.download === '0'
                                                                 ? '0 B'
                                                                 : stat.download}
@@ -321,7 +321,7 @@ export const NodeDetailsCard = memo(
                                                         >
                                                             Up
                                                         </Text>
-                                                        <Text c="gray.3" ff="monospace" size="xs">
+                                                        <Text c="dimmed" ff="monospace" size="xs">
                                                             {stat.upload === '0'
                                                                 ? '0 B'
                                                                 : stat.upload}
@@ -344,7 +344,7 @@ export const NodeDetailsCard = memo(
                                                         >
                                                             Down
                                                         </Text>
-                                                        <Text c="gray.3" ff="monospace" size="xs">
+                                                        <Text c="dimmed" ff="monospace" size="xs">
                                                             {stat.download === '0'
                                                                 ? '0 B'
                                                                 : stat.download}

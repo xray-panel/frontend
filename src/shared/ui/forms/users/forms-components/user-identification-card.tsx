@@ -358,7 +358,7 @@ export const UserIdentificationCard = memo((props: IProps) => {
                 <SectionCard.Section>
                     <Group gap="xs" justify="space-between" mb={6}>
                         <Group gap={6}>
-                            <Text c="gray.3" ff="monospace" fw={600} size="sm">
+                            <Text c="dimmed" ff="monospace" fw={600} size="sm">
                                 {prettyUsedData}
                             </Text>
                         </Group>

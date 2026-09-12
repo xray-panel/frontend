@@ -322,7 +322,7 @@ export const NodeDetailsCardWidget = memo((props: IProps) => {
                 <Box>
                     <Group gap="xs" justify="space-between" mb={6}>
                         <Group gap={6}>
-                            <Text c="gray.3" ff="monospace" fw={600} size="sm">
+                            <Text c="dimmed" ff="monospace" fw={600} size="sm">
                                 {trafficData.prettyUsedData}
                             </Text>
                         </Group>

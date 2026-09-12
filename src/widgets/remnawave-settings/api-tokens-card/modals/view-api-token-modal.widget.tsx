@@ -67,7 +67,7 @@ export const ViewApiTokenContentWidget = ({ isMobile, token }: IProps) => {
                         <Text className={classes.tokenColLabel}>
                             {t('api-tokens-card.widget.col-created')}
                         </Text>
-                        <Text c="gray.2" className={classes.metaValue}>
+                        <Text c="dimmed" className={classes.metaValue}>
                             {formatTimeUtil({
                                 time: token.createdAt,
                                 template: 'TIME_FIRST_DATETIME',
