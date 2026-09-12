@@ -217,7 +217,7 @@ export const useDesktopMenuSections = (): MenuItem[] => {
                         id: 'hwid-inspector'
                     },
                     {
-                        name: 'Logs',
+                        name: t('constants.logs'),
                         href: ROUTES.DASHBOARD.MANAGEMENT.LOGS,
                         icon: TbDatabase,
                         id: 'logs'

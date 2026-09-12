@@ -26,7 +26,8 @@
     "tb-reports": "Torrent Blocker Reports",
     "sessions-explorer": "Sessions Explorer",
     "http-stats": "HTTP Stats",
-    "quick-launcher": "Launcher"
+    "quick-launcher": "Launcher",
+    "logs": "Logs"
   },
   "common": {
     "action": {
@@ -1902,5 +1903,42 @@
     "connections-title": "Saved connections",
     "connections-empty": "No saved connections yet",
     "connections-current": "Current"
+  },
+  "logs-page": {
+    "title": "Logs",
+    "refresh": "Refresh",
+    "delete-selected": "Delete selected",
+    "retention-title": "Automatic retention",
+    "retention-traffic-enabled": "Traffic history cleanup: enabled, keeps {{days}} days",
+    "retention-traffic-disabled": "Traffic history cleanup: disabled",
+    "retention-personal-enabled": "Personal data cleanup: enabled",
+    "retention-personal-disabled": "Personal data cleanup: disabled",
+    "retention-personal-details": "node usage {{nodesDays}} days, HWID devices {{hwidDays}} days, subscription requests {{srhDays}} days",
+    "retention-hint": "Retention is configured with SERVICE_CLEAN_USAGE_HISTORY, SERVICE_CLEAN_OLD_LOGS and the *_RETENTION_DAYS variables.",
+    "table-source": "Source",
+    "table-records": "Records",
+    "table-oldest": "Oldest record",
+    "source-usage-history": "Traffic history (per user)",
+    "source-nodes-usage-history": "Node usage history",
+    "source-hwid-devices": "HWID devices",
+    "source-subscription-request-history": "Subscription requests",
+    "source-torrent-blocker-reports": "Torrent blocker reports",
+    "hint-usage-history": "Daily traffic per user and node. No IP addresses.",
+    "hint-nodes-usage-history": "Hourly traffic per node. No IP addresses.",
+    "hint-hwid-devices": "Device fingerprint, OS, user-agent and request IP — the most sensitive table.",
+    "hint-subscription-request-history": "Request IP and user-agent for every subscription fetch.",
+    "hint-torrent-blocker-reports": "Blocked torrent reports, contain IP addresses.",
+    "confirm-title": "Delete log records",
+    "confirm-body": "This permanently deletes every record in the selected tables. The action cannot be undone.",
+    "confirm-count": "Records to delete: {{count}}",
+    "confirm-delete": "Delete",
+    "confirm-cancel": "Cancel",
+    "nodes-title": "Node system logs",
+    "nodes-description": "Xray logs live on the nodes, not in the panel database. Clearing rotates the log file in place, so Xray is not restarted.",
+    "nodes-column": "Node",
+    "nodes-clear": "Clear logs",
+    "nodes-confirm-title": "Clear Xray logs on node",
+    "nodes-confirm-body": "The node rotates the Xray log file and removes collected archives. Xray keeps running; no traffic is interrupted.",
+    "nodes-confirm-clear": "Clear"
   }
 }

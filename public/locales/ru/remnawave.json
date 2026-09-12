@@ -26,7 +26,8 @@
     "tb-reports": "Отчёты Torrent Blocker",
     "sessions-explorer": "Обозреватель сессий",
     "http-stats": "Статистика HTTP",
-    "quick-launcher": "Лаунчер"
+    "quick-launcher": "Лаунчер",
+    "logs": "Логи"
   },
   "common": {
     "action": {
@@ -1902,5 +1903,42 @@
     "connections-title": "Сохранённые подключения",
     "connections-empty": "Сохранённых подключений пока нет",
     "connections-current": "Текущее"
+  },
+  "logs-page": {
+    "title": "Логи",
+    "refresh": "Обновить",
+    "delete-selected": "Удалить выбранное",
+    "retention-title": "Автоматическая очистка",
+    "retention-traffic-enabled": "Очистка истории трафика: включена, хранится {{days}} дней",
+    "retention-traffic-disabled": "Очистка истории трафика: выключена",
+    "retention-personal-enabled": "Очистка персональных данных: включена",
+    "retention-personal-disabled": "Очистка персональных данных: выключена",
+    "retention-personal-details": "статистика нод {{nodesDays}} дней, HWID-устройства {{hwidDays}} дней, запросы подписки {{srhDays}} дней",
+    "retention-hint": "Сроки задаются переменными SERVICE_CLEAN_USAGE_HISTORY, SERVICE_CLEAN_OLD_LOGS и *_RETENTION_DAYS.",
+    "table-source": "Источник",
+    "table-records": "Записей",
+    "table-oldest": "Самая старая запись",
+    "source-usage-history": "История трафика (по пользователям)",
+    "source-nodes-usage-history": "Статистика использования нод",
+    "source-hwid-devices": "HWID-устройства",
+    "source-subscription-request-history": "Запросы подписки",
+    "source-torrent-blocker-reports": "Отчёты torrent-blocker",
+    "hint-usage-history": "Суточный трафик по пользователям и нодам. IP-адресов не содержит.",
+    "hint-nodes-usage-history": "Почасовой трафик по нодам. IP-адресов не содержит.",
+    "hint-hwid-devices": "Отпечаток устройства, ОС, user-agent и IP запроса — самая чувствительная таблица.",
+    "hint-subscription-request-history": "IP и user-agent на каждую выдачу подписки.",
+    "hint-torrent-blocker-reports": "Отчёты о заблокированных торрентах, содержат IP-адреса.",
+    "confirm-title": "Удаление записей логов",
+    "confirm-body": "Все записи в выбранных таблицах будут удалены безвозвратно. Действие нельзя отменить.",
+    "confirm-count": "Будет удалено записей: {{count}}",
+    "confirm-delete": "Удалить",
+    "confirm-cancel": "Отмена",
+    "nodes-title": "Системные логи нод",
+    "nodes-description": "Логи Xray хранятся на нодах, а не в базе панели. Очистка выполняет ротацию файла на месте, Xray при этом не перезапускается.",
+    "nodes-column": "Нода",
+    "nodes-clear": "Очистить логи",
+    "nodes-confirm-title": "Очистка логов Xray на ноде",
+    "nodes-confirm-body": "Нода выполнит ротацию файла логов и удалит собранные архивы. Xray продолжит работу, трафик не прерывается.",
+    "nodes-confirm-clear": "Очистить"
   }
 }
