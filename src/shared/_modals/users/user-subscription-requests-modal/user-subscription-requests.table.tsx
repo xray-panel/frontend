@@ -14,6 +14,7 @@ import {
     TextSearchFilter
 } from '@shared/ui'
 import { formatTimeUtil } from '@shared/utils/time-utils'
+import { buildIpLookupUrl } from '@shared/utils/misc'
 
 type TRecord = GetUserSubscriptionRequestHistoryCommand.Response['response']['records'][number]
 
@@ -79,7 +80,7 @@ export const UserSubscriptionRequestsTable = (props: IProps) => {
                     <Anchor
                         c="cyan"
                         ff="monospace"
-                        href={`https://ipinfo.io/${record.requestIp}`}
+                        href={buildIpLookupUrl(record.requestIp) ?? undefined}
                         rel="noopener noreferrer"
                         size="sm"
                         target="_blank"

@@ -16,6 +16,7 @@ import { EmptyPageLayout } from '@shared/ui/layouts/empty-page'
 import { BaseOverlayHeader } from '@shared/ui/overlays/base-overlay-header'
 import { SectionCard } from '@shared/ui/section-card'
 import { formatRelativeDateUtil, formatTimeUtil } from '@shared/utils/time-utils'
+import { buildIpLookupUrl, isIpLookupEnabled } from '@shared/utils/misc'
 
 interface IProps {
     user: NonNullable<
@@ -82,7 +83,8 @@ export const NodeActiveSessionItem = (props: IProps) => {
                         <ActionIcon
                             color="cyan"
                             component="a"
-                            href={`https://ipinfo.io/${item.ip}`}
+                            href={buildIpLookupUrl(item.ip) ?? undefined}
+                        disabled={!isIpLookupEnabled}
                             rel="noopener noreferrer"
                             size="input-sm"
                             target="_blank"

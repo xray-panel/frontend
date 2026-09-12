@@ -22,6 +22,7 @@ import {
     resolveNodeIpStatusMeta
 } from './node-ip-status.constants'
 import { isValidNodeIp } from './validate-node-ips'
+import { buildIpLookupUrl, isIpLookupEnabled } from '@shared/utils/misc'
 
 interface IProps {
     autoFocus?: boolean
@@ -126,7 +127,7 @@ export const NodeIpRow = (props: IProps) => {
                     <ActionIcon
                         c={isIpResolvable ? 'cyan' : 'dimmed'}
                         component="a"
-                        href={isIpResolvable ? `https://ipinfo.io/${ip.trim()}` : undefined}
+                        href={isIpResolvable ? (buildIpLookupUrl(ip.trim()) ?? undefined) : undefined}
                         onClick={(event) => {
                             if (!isIpResolvable) event.preventDefault()
                         }}

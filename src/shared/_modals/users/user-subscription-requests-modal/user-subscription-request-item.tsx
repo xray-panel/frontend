@@ -6,6 +6,7 @@ import { TbExternalLink, TbViewfinder } from 'react-icons/tb'
 import { CopyableFieldShared } from '@shared/ui/copyable-field/copyable-field'
 import { SettingsCardShared } from '@shared/ui/settings-card'
 import { formatTimeUtil } from '@shared/utils/time-utils'
+import { buildIpLookupUrl, isIpLookupEnabled } from '@shared/utils/misc'
 
 interface IProps {
     request: GetUserSubscriptionRequestHistoryCommand.Response['response']['records'][number]
@@ -44,7 +45,8 @@ export const UserSubscriptionRequestItem = (props: IProps) => {
                             <ActionIcon
                                 color="cyan"
                                 component="a"
-                                href={`https://ipinfo.io/${request.requestIp}`}
+                                href={buildIpLookupUrl(request.requestIp) ?? undefined}
+                        disabled={!isIpLookupEnabled}
                                 rel="noopener noreferrer"
                                 size="input-sm"
                                 target="_blank"

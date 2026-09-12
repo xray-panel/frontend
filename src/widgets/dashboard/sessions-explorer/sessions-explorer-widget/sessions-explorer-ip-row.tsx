@@ -10,6 +10,7 @@ import { CopyableFieldShared } from '@shared/ui/copyable-field/copyable-field'
 import { formatRelativeDateUtil, formatTimeUtil } from '@shared/utils/time-utils'
 
 import styles from './sessions-explorer.module.css'
+import { buildIpLookupUrl, isIpLookupEnabled } from '@shared/utils/misc'
 
 interface IProps {
     ip: AggregatedUserNode['ips'][number]
@@ -35,7 +36,8 @@ export const SessionsExplorerIpRow = memo(({ ip, isMatch }: IProps) => {
                     <ActionIcon
                         color="cyan"
                         component="a"
-                        href={`https://ipinfo.io/${ip.ip}`}
+                        href={buildIpLookupUrl(ip.ip) ?? undefined}
+                        disabled={!isIpLookupEnabled}
                         rel="noopener noreferrer"
                         size="input-sm"
                         target="_blank"

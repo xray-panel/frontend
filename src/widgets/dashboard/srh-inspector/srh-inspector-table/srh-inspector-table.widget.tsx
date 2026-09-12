@@ -29,6 +29,7 @@ import {
     useSrhInspectorTableStore,
     useSrhInspectorTableStoreActions
 } from '@entities/dashboard/srh-inspector/srh-inspector-table-store'
+import { buildIpLookupUrl, isIpLookupEnabled } from '@shared/utils/misc'
 
 export function SrhInspectorTableWidget() {
     const { t } = useTranslation()
@@ -137,8 +138,10 @@ export function SrhInspectorTableWidget() {
                 <ResolveUserActionShared userId={row.original.userId} />
                 <ActionIcon
                     color="grape"
-                    onClick={async () => {
-                        window.open(`https://ipinfo.io/${row.original.requestIp}`, '_blank')
+                    disabled={!buildIpLookupUrl(row.original.requestIp)}
+                    onClick={() => {
+                        const url = buildIpLookupUrl(row.original.requestIp)
+                        if (url) window.open(url, '_blank')
                     }}
                     size="input-sm"
                     variant="soft"

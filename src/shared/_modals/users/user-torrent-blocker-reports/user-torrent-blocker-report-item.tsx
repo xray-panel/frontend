@@ -9,6 +9,7 @@ import { CopyableFieldShared } from '@shared/ui/copyable-field/copyable-field'
 import { BaseOverlayHeader } from '@shared/ui/overlays/base-overlay-header'
 import { SettingsCardShared } from '@shared/ui/settings-card'
 import { formatTimeUtil } from '@shared/utils/time-utils/format-time.util'
+import { buildIpLookupUrl, isIpLookupEnabled } from '@shared/utils/misc'
 
 interface IProps {
     report: GetTorrentBlockerReportsCommand.Response['response']['records'][number]
@@ -86,7 +87,8 @@ export const UserTorrentBlockerReportItem = (props: IProps) => {
                         <ActionIcon
                             color="cyan"
                             component="a"
-                            href={`https://ipinfo.io/${report.report.actionReport.ip}`}
+                            href={buildIpLookupUrl(report.report.actionReport.ip) ?? undefined}
+                        disabled={!isIpLookupEnabled}
                             rel="noopener noreferrer"
                             size="input-sm"
                             target="_blank"

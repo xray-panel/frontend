@@ -22,6 +22,7 @@ import {
     TextSearchFilter
 } from '@shared/ui'
 import { formatTimeUtil } from '@shared/utils/time-utils'
+import { buildIpLookupUrl } from '@shared/utils/misc'
 
 type TDevice = GetUserHwidDevicesCommand.Response['response']['devices'][number]
 
@@ -118,7 +119,7 @@ export const UserHwidDevicesTable = (props: IProps) => {
                     <Anchor
                         c="cyan"
                         ff="monospace"
-                        href={`https://ipinfo.io/${device.requestIp}`}
+                        href={buildIpLookupUrl(device.requestIp) ?? undefined}
                         rel="noopener noreferrer"
                         size="sm"
                         target="_blank"

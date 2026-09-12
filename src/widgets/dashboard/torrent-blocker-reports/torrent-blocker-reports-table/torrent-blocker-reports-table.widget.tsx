@@ -41,6 +41,7 @@ import {
 } from '@entities/dashboard/torrent-blocker-reports/tb-reports-table-store'
 
 import { useTbReportsTableColumns } from './use-tb-reports-table-columns'
+import { buildIpLookupUrl } from '@shared/utils/misc'
 
 export function TorrentBlockerReportsTableWidget() {
     const { t } = useTranslation()
@@ -168,11 +169,10 @@ export function TorrentBlockerReportsTableWidget() {
                 </ActionIcon>
                 <ActionIcon
                     color="grape"
-                    onClick={async () => {
-                        window.open(
-                            `https://ipinfo.io/${row.original.report.actionReport.ip}`,
-                            '_blank'
-                        )
+                    disabled={!buildIpLookupUrl(row.original.report.actionReport.ip)}
+                    onClick={() => {
+                        const url = buildIpLookupUrl(row.original.report.actionReport.ip)
+                        if (url) window.open(url, '_blank')
                     }}
                     size="input-sm"
                     variant="soft"

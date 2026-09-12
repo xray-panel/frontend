@@ -14,6 +14,7 @@ import { TbExternalLink } from 'react-icons/tb'
 import { CopyableFieldShared } from '@shared/ui/copyable-field/copyable-field'
 import { SettingsCardShared } from '@shared/ui/settings-card'
 import { formatTimeUtil } from '@shared/utils/time-utils'
+import { buildIpLookupUrl, isIpLookupEnabled } from '@shared/utils/misc'
 
 interface IProps {
     device: GetUserHwidDevicesCommand.Response['response']['devices'][number]
@@ -85,7 +86,8 @@ export const UserHwidDeviceItem = (props: IProps) => {
                             <ActionIcon
                                 color="cyan"
                                 component="a"
-                                href={`https://ipinfo.io/${device.requestIp}`}
+                                href={buildIpLookupUrl(device.requestIp) ?? undefined}
+                        disabled={!isIpLookupEnabled}
                                 rel="noopener noreferrer"
                                 size="input-sm"
                                 target="_blank"

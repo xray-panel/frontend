@@ -12,6 +12,7 @@ import { CopyableFieldShared } from '@shared/ui/copyable-field/copyable-field'
 import { formatRelativeDateUtil, formatTimeUtil } from '@shared/utils/time-utils'
 
 import { ActiveSessionNode } from './use-user-active-sessions'
+import { buildIpLookupUrl, isIpLookupEnabled } from '@shared/utils/misc'
 
 const getLastSeenIndicator = (lastSeen: Date | string) => {
     const diffMs = Date.now() - new Date(lastSeen).getTime()
@@ -36,7 +37,8 @@ export const SessionIpRowWidget = ({ ip, onDrop }: IProps) => {
             <ActionIcon
                 color="cyan"
                 component="a"
-                href={`https://ipinfo.io/${ip.ip}`}
+                href={buildIpLookupUrl(ip.ip) ?? undefined}
+                        disabled={!isIpLookupEnabled}
                 rel="noopener noreferrer"
                 size="input-sm"
                 target="_blank"

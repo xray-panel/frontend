@@ -30,6 +30,7 @@ import {
     useHwidInspectorTableStore,
     useHwidInspectorTableStoreActions
 } from '@entities/dashboard/hwid-inspector/hwid-inspector-table-store'
+import { buildIpLookupUrl } from '@shared/utils/misc'
 
 export function HwidInspectorTableWidget() {
     const { t } = useTranslation()
@@ -141,8 +142,10 @@ export function HwidInspectorTableWidget() {
                 <ResolveUserActionShared userId={row.original.userId} />
                 <ActionIcon
                     color="grape"
+                    disabled={!buildIpLookupUrl(row.original.requestIp)}
                     onClick={() => {
-                        window.open(`https://ipinfo.io/${row.original.requestIp}`, '_blank')
+                        const url = buildIpLookupUrl(row.original.requestIp)
+                        if (url) window.open(url, '_blank')
                     }}
                     size="input-sm"
                     variant="soft"
