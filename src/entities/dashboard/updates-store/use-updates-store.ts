@@ -1,10 +1,5 @@
-import axios from 'axios'
 import { create } from 'zustand'
 import { createJSONStorage, devtools, persist } from 'zustand/middleware'
-
-import { sToMs } from '@shared/utils/time-utils'
-
-const CACHE_TIME = sToMs(24 * 60 * 60)
 
 export interface IRemnawaveInfo {
     latestVersion: string
@@ -29,11 +24,25 @@ const initialState: IState = {
     isLoading: false,
     lastUpdateTimestamp: 0,
     remnawaveInfo: {
-        latestVersion: '2.2.3',
-        starsCount: 1869
+        // Пустая версия трактуется потребителями как «обновлений нет»
+        // (VersionControl подставляет '0.0.0'), а starsCount = 0 превращается
+        // в undefined и не отображается.
+        latestVersion: '',
+        starsCount: 0
     }
 }
 
+/**
+ * XPANEL: внешняя проверка обновлений удалена.
+ *
+ * Раньше это хранилище при каждом входе администратора обращалось к
+ * https://ungh.cc за числом звёзд и последним релизом Remnawave. Это
+ * отправляло данные о вашей панели третьей стороне, не связанной с XPANEL.
+ *
+ * Экшен сохранён, чтобы не менять точки вызова, но теперь ничего не делает.
+ * Если понадобится проверка обновлений, её следует направлять на собственный
+ * репозиторий XPANEL, а не на инфраструктуру вендора.
+ */
 export const useUpdatesStore = create<IActions & IState>()(
     persist(
         devtools(
@@ -41,43 +50,9 @@ export const useUpdatesStore = create<IActions & IState>()(
                 ...initialState,
                 actions: {
                     getRemnawaveInfo: async () => {
-                        const { lastUpdateTimestamp, remnawaveInfo } = get()
-                        const now = Date.now()
-
-                        if (
-                            lastUpdateTimestamp &&
-                            now - lastUpdateTimestamp < CACHE_TIME &&
-                            remnawaveInfo.latestVersion &&
-                            remnawaveInfo.starsCount > 0
-                        ) {
-                            return
-                        }
-
-                        try {
-                            set({ isLoading: true })
-
-                            const starsResponse = await axios.get<{
-                                totalStars: number
-                            }>('https://ungh.cc/stars/remnawave/*')
-
-                            const versionResponse = await axios.get<{
-                                release: {
-                                    tag: string
-                                }
-                            }>('https://ungh.cc/repos/remnawave/panel/releases/latest')
-
-                            set({
-                                remnawaveInfo: {
-                                    latestVersion: versionResponse.data.release.tag,
-                                    starsCount: starsResponse.data.totalStars
-                                },
-                                lastUpdateTimestamp: now
-                            })
-                        } catch {
-                            // silent error
-                        } finally {
-                            set({ isLoading: false })
-                        }
+                        // Намеренно пусто: внешних запросов нет.
+                        void get()
+                        return
                     },
 
                     setRemnawaveInfo: (info: IRemnawaveInfo) => {
@@ -93,7 +68,7 @@ export const useUpdatesStore = create<IActions & IState>()(
         {
             name: 'updatesStore',
             storage: createJSONStorage(() => localStorage),
-            version: 1,
+            version: 2,
             partialize: (state) => ({
                 lastUpdateTimestamp: state.lastUpdateTimestamp,
                 remnawaveInfo: state.remnawaveInfo

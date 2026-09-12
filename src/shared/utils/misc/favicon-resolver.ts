@@ -1,11 +1,18 @@
-import { parseURL } from 'ufo'
-
-export const faviconResolver = (faviconLink: null | string) => {
-    if (!faviconLink) return null
-    const { host, protocol } = parseURL(faviconLink, 'https://')
-    if (host) {
-        // return `https://icons.duckduckgo.com/ip2/${host}.ico`
-        return `https://www.google.com/s2/favicons?sz=64&domain_url=${protocol}//${host}`
-    }
+/**
+ * XPANEL: внешний сервис иконок отключён.
+ *
+ * Раньше здесь возвращался адрес https://www.google.com/s2/favicons с хостом
+ * инфраструктурного провайдера в параметре. Это отправляло в Google перечень
+ * ваших провайдеров при каждой отрисовке списка — то есть утечку метаданных
+ * наружу, к стороне, не связанной с XPANEL.
+ *
+ * Теперь иконка не запрашивается. Все места использования передают результат
+ * в src у Mantine, который корректно отображает заглушку при null, а в
+ * select-infra-provider дополнительно есть onError, очищающий источник.
+ *
+ * Если понадобится вернуть иконки, использовать нужно собственный хост
+ * (например, /favicon.ico самого провайдера), а не сторонний сервис.
+ */
+export const faviconResolver = (_faviconLink: null | string): null => {
     return null
 }
