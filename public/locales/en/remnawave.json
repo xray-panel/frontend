@@ -1939,6 +1939,9 @@
     "nodes-clear": "Clear logs",
     "nodes-confirm-title": "Clear Xray logs on node",
     "nodes-confirm-body": "The node rotates the Xray log file and removes collected archives. Xray keeps running; no traffic is interrupted.",
-    "nodes-confirm-clear": "Clear"
+    "nodes-confirm-clear": "Clear",
+    "source-admin-audit-log": "Admin action log",
+    "hint-admin-audit-log": "Who changed what, when and with what result. Request bodies are never stored.",
+    "retention-audit-days": "Admin action log is kept {{days}} days"
   }
 }
