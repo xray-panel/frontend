@@ -30,5 +30,6 @@ jobs:
       - name: Проверка типов
         run: npx tsc --noEmit
 
+      # У интерфейса нет скрипта build: сборка называется cb (vite build).
       - name: Сборка
-        run: npm run build
+        run: npm run cb
