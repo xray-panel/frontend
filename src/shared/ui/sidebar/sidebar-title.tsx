@@ -5,6 +5,7 @@ import { useGetAuthStatus } from '@shared/api/hooks/auth/auth.query.hooks'
 import { parseColoredTextUtil } from '@shared/utils/misc'
 
 import classes from './sidebar.module.css'
+import { app } from 'src/config'
 
 export const SidebarTitleShared = () => {
     const { data: authStatus } = useGetAuthStatus()
@@ -14,10 +15,10 @@ export const SidebarTitleShared = () => {
             return parseColoredTextUtil(authStatus.branding.title)
         }
 
-        return [
-            { text: 'Remna', color: 'cyan' },
-            { text: 'wave', color: 'white' }
-        ]
+        // Название панели из конфига, а не зашитое имя апстрима.
+        // Если администратор задал свой заголовок в настройках брендинга,
+        // он имеет приоритет — эта ветка только запасной вариант.
+        return [{ text: app.name, color: 'cyan' }]
     }, [authStatus])
 
     return (

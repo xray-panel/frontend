@@ -146,7 +146,7 @@ export const BrandingSettingsCardWidget = (props: IProps) => {
                                         {t('branding-settings-card.widget.example-hex-colors')}:
                                     </Text>
                                     <Code block c="blue" fz="xs">
-                                        {'{#B8F2E6}Re{#FFA69E}mna{#AEC6CF}wave'}
+                                        {'{#B8F2E6}X{#FFA69E}P{#AEC6CF}ANEL'}
                                     </Code>
                                 </Box>
 
@@ -155,7 +155,7 @@ export const BrandingSettingsCardWidget = (props: IProps) => {
                                         {t('branding-settings-card.widget.example-mantine-colors')}:
                                     </Text>
                                     <Code block c="blue" fz="xs">
-                                        {'{cyan}Remna{white}wave'}
+                                        {'{cyan}XPANEL{white}'}
                                     </Code>
                                 </Box>
 

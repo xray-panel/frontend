@@ -9,6 +9,7 @@ import { useMemo } from 'react'
 import { useGetAuthStatus } from '@shared/api/hooks/auth/auth.query.hooks'
 import { Logo, Page } from '@shared/ui'
 import { parseColoredTextUtil } from '@shared/utils/misc'
+import { app } from 'src/config'
 
 const getAuthMethods = (authStatus: GetStatusCommand.Response['response'] | undefined) => {
     const isPasswordEnabled = authStatus?.authentication?.password?.enabled ?? false
@@ -96,10 +97,10 @@ export const LoginPage = () => {
             return parseColoredTextUtil(authStatus.branding.title)
         }
 
-        return [
-            { text: 'Remna', color: 'cyan' },
-            { text: 'wave', color: 'white' }
-        ]
+        // Название панели из конфига, а не зашитое имя апстрима.
+        // Если администратор задал свой заголовок в настройках брендинга,
+        // он имеет приоритет — эта ветка только запасной вариант.
+        return [{ text: app.name, color: 'cyan' }]
     }, [authStatus])
 
     const isRegister = !authStatus?.isLoginAllowed && authStatus?.isRegisterAllowed
