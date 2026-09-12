@@ -1,7 +1,7 @@
 import { Button, Group, Select, Stack } from '@mantine/core'
 import { modals } from '@mantine/modals'
 import { notifications } from '@mantine/notifications'
-import { BulkDeleteUsersByStatusCommand, TUsersStatus } from '@remnawave/backend-contract'
+import { BulkDeleteUsersByStatusCommand, TUsersStatus } from '@xpanel/backend-contract'
 import { useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import { PiClockDuotone } from 'react-icons/pi'

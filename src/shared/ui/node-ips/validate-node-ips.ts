@@ -1,5 +1,5 @@
 import { FormErrors } from '@mantine/form'
-import { NodeIpSchema, TNodeIps } from '@remnawave/backend-contract'
+import { NodeIpSchema, TNodeIps } from '@xpanel/backend-contract'
 import { t } from 'i18next'
 
 export const MAX_NODE_IPS = 64

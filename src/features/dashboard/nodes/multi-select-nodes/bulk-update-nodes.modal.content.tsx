@@ -17,7 +17,7 @@ import {
 } from '@mantine/core'
 import { useForm, schemaResolver } from '@mantine/form'
 import { modals } from '@mantine/modals'
-import { BulkNodesUpdateCommand, GetNodesCommand } from '@remnawave/backend-contract'
+import { BulkNodesUpdateCommand, GetNodesCommand } from '@xpanel/backend-contract'
 import { motion } from 'motion/react'
 import { useRef } from 'react'
 import { useTranslation } from 'react-i18next'

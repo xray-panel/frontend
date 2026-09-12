@@ -6,7 +6,7 @@ import type {
 } from '../ssh-terminal.types'
 
 import { Box, Button, Center, Loader } from '@mantine/core'
-import { GetNodeCommand } from '@remnawave/backend-contract'
+import { GetNodeCommand } from '@xpanel/backend-contract'
 import { Terminal } from '@xterm/xterm'
 import { AnimatePresence, motion } from 'motion/react'
 import { useCallback, useEffect, useEffectEvent, useRef, useState } from 'react'

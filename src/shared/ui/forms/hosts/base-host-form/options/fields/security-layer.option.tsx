@@ -1,5 +1,5 @@
 import { Select } from '@mantine/core'
-import { SECURITY_LAYERS } from '@remnawave/backend-contract'
+import { SECURITY_LAYERS } from '@xpanel/backend-contract'
 
 import { useSettingsRowControl } from '@shared/ui/settings-row'
 

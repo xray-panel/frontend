@@ -1,5 +1,5 @@
 import { ActionIcon, Badge, Text, Tooltip } from '@mantine/core'
-import { GetSharedListsCommand } from '@remnawave/backend-contract'
+import { GetSharedListsCommand } from '@xpanel/backend-contract'
 import { t } from 'i18next'
 import { TbTrash } from 'react-icons/tb'
 

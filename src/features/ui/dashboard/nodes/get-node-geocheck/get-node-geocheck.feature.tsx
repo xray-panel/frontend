@@ -1,5 +1,5 @@
 import { ActionIcon, Tooltip } from '@mantine/core'
-import { GetNodeCommand } from '@remnawave/backend-contract'
+import { GetNodeCommand } from '@xpanel/backend-contract'
 import { memo, useMemo } from 'react'
 import { useTranslation } from 'react-i18next'
 import { TbMapSearch } from 'react-icons/tb'

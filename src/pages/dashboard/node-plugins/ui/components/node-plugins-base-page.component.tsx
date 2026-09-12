@@ -1,5 +1,5 @@
 import { NodePluginsHeaderActionButtonsFeature } from '@features/ui/dashboard/node-plugins/header-action-buttons'
-import { GetNodesCommand, GetNodePluginsCommand } from '@remnawave/backend-contract'
+import { GetNodesCommand, GetNodePluginsCommand } from '@xpanel/backend-contract'
 import { NodePluginsGridWidget } from '@widgets/dashboard/node-plugins/node-plugins-grid/node-plugins-grid.widget'
 import { NodePluginsSpotlightWidget } from '@widgets/dashboard/node-plugins/node-plugins-spotlight'
 import { motion } from 'motion/react'

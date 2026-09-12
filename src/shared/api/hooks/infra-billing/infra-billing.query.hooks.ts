@@ -4,7 +4,7 @@ import {
     GetInfraBillingNodesCommand,
     GetInfraProviderCommand,
     GetInfraProvidersCommand
-} from '@remnawave/backend-contract'
+} from '@xpanel/backend-contract'
 import { keepPreviousData, useInfiniteQuery } from '@tanstack/react-query'
 
 import { sToMs } from '@shared/utils/time-utils'

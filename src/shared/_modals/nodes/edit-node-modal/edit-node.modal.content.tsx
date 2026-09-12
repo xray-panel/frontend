@@ -1,5 +1,5 @@
 import { useForm, schemaResolver } from '@mantine/form'
-import { UpdateNodeCommand } from '@remnawave/backend-contract'
+import { UpdateNodeCommand } from '@xpanel/backend-contract'
 import { NodeDetailsCardWidget } from '@widgets/dashboard/nodes/node-details-card'
 import { NodeSystemCardWidget } from '@widgets/dashboard/nodes/node-system-card'
 import { motion } from 'motion/react'

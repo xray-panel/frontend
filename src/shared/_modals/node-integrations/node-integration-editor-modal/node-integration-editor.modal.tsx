@@ -5,7 +5,7 @@ import { notifications } from '@mantine/notifications'
 import {
     CreateNodeIntegrationCommand,
     UpdateNodeIntegrationCommand
-} from '@remnawave/backend-contract'
+} from '@xpanel/backend-contract'
 import clsx from 'clsx'
 import { useEffect, useRef, useState } from 'react'
 import { useTranslation } from 'react-i18next'

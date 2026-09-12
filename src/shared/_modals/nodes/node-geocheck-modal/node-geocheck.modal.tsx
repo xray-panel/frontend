@@ -1,6 +1,6 @@
 import NiceModal, { useModal } from '@ebay/nice-modal-react'
 import { Modal } from '@mantine/core'
-import { GetNodeCommand } from '@remnawave/backend-contract'
+import { GetNodeCommand } from '@xpanel/backend-contract'
 import { useTranslation } from 'react-i18next'
 import { TbMapSearch } from 'react-icons/tb'
 

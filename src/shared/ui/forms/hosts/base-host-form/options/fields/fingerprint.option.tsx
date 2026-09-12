@@ -1,5 +1,5 @@
 import { Autocomplete } from '@mantine/core'
-import { FINGERPRINTS } from '@remnawave/backend-contract'
+import { FINGERPRINTS } from '@xpanel/backend-contract'
 import { PiCaretDown } from 'react-icons/pi'
 
 import { useSettingsRowControl } from '@shared/ui/settings-row'

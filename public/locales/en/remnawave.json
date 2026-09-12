@@ -957,7 +957,7 @@
       "disable-node": "Disable node",
       "config-profile-or-inbounds-is-missing": "Config profile or inbounds is missing",
       "xray-core-version": "Xray Core version",
-      "remnawave-node-version": "Node version, @remnawave/node"
+      "remnawave-node-version": "Node version"
     }
   },
   "config-profiles": {
@@ -1200,7 +1200,7 @@
       },
       "keycloakDomain": {
         "label": "Keycloak domain",
-        "description": "Keycloak server domain without protocol (e.g., keycloak.docs.rw)"
+        "description": "Keycloak server domain without protocol (e.g., keycloak.example.com)"
       }
     }
   },

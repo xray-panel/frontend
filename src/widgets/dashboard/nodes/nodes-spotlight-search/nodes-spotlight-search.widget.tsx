@@ -1,6 +1,6 @@
 import { Badge, Group } from '@mantine/core'
 import { Spotlight } from '@mantine/spotlight'
-import { GetNodesCommand } from '@remnawave/backend-contract'
+import { GetNodesCommand } from '@xpanel/backend-contract'
 import ReactCountryFlag from 'react-country-flag'
 import { useTranslation } from 'react-i18next'
 import { PiUsersDuotone } from 'react-icons/pi'

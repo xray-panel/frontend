@@ -2,7 +2,7 @@ import type { editor } from 'monaco-editor'
 
 import { modals } from '@mantine/modals'
 import { notifications } from '@mantine/notifications'
-import { TSubscriptionTemplateType } from '@remnawave/backend-contract'
+import { TSubscriptionTemplateType } from '@xpanel/backend-contract'
 import { RefObject } from 'react'
 import { useTranslation } from 'react-i18next'
 import { TbDownload } from 'react-icons/tb'

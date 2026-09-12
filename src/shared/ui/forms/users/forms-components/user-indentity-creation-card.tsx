@@ -1,6 +1,6 @@
 import { TextInput } from '@mantine/core'
 import { UseFormReturnType } from '@mantine/form'
-import { CreateUserCommand } from '@remnawave/backend-contract'
+import { CreateUserCommand } from '@xpanel/backend-contract'
 import { ForwardRefComponent, HTMLMotionProps, Variants } from 'motion/react'
 import { useTranslation } from 'react-i18next'
 import { HiIdentification } from 'react-icons/hi'

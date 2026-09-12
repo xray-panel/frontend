@@ -1,5 +1,5 @@
 import { UseListStateHandlers } from '@mantine/hooks'
-import { GetHostsCommand, GetConfigProfilesCommand } from '@remnawave/backend-contract'
+import { GetHostsCommand, GetConfigProfilesCommand } from '@xpanel/backend-contract'
 import { RefObject } from 'react'
 
 export interface IProps {

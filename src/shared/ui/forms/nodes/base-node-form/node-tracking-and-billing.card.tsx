@@ -11,7 +11,7 @@ import {
     Textarea
 } from '@mantine/core'
 import { UseFormReturnType } from '@mantine/form'
-import { CreateNodeCommand, UpdateNodeCommand } from '@remnawave/backend-contract'
+import { CreateNodeCommand, UpdateNodeCommand } from '@xpanel/backend-contract'
 import { ForwardRefComponent, HTMLMotionProps, Variants } from 'motion/react'
 import { useState } from 'react'
 import { useTranslation } from 'react-i18next'

@@ -11,7 +11,7 @@ import {
 import { useForm, schemaResolver } from '@mantine/form'
 import { useClipboard } from '@mantine/hooks'
 import { notifications } from '@mantine/notifications'
-import { RegisterCommand } from '@remnawave/backend-contract'
+import { RegisterCommand } from '@xpanel/backend-contract'
 import { useEffect } from 'react'
 import { useTranslation } from 'react-i18next'
 import { PiShuffleDuotone, PiSignpostDuotone } from 'react-icons/pi'

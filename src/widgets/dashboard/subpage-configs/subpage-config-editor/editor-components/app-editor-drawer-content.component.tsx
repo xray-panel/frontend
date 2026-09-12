@@ -5,7 +5,7 @@ import {
     TSubscriptionPageBlockConfig,
     TSubscriptionPageLanguageCode,
     TSubscriptionPageSvgLibrary
-} from '@remnawave/subscription-page-types'
+} from '@xpanel/subscription-page-types'
 import { IconChevronRight, IconPlus, IconStar } from '@tabler/icons-react'
 import { useState } from 'react'
 import { useTranslation } from 'react-i18next'

@@ -2,7 +2,7 @@ import {
     GetBandwidthStatsCommand,
     GetRemnawaveHealthCommand,
     GetStatsCommand
-} from '@remnawave/backend-contract'
+} from '@xpanel/backend-contract'
 
 export interface IProps {
     bandwidthStats: GetBandwidthStatsCommand.Response['response']

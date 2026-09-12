@@ -1,4 +1,4 @@
-import type { GetNodeCommand } from '@remnawave/backend-contract'
+import type { GetNodeCommand } from '@xpanel/backend-contract'
 
 export type TStage = 'connecting' | 'failed' | 'session' | 'setup'
 

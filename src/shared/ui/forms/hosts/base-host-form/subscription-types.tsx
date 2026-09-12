@@ -1,4 +1,4 @@
-import { SUBSCRIPTION_TEMPLATE_TYPE } from '@remnawave/backend-contract'
+import { SUBSCRIPTION_TEMPLATE_TYPE } from '@xpanel/backend-contract'
 
 import { MihomoLogo, SingboxLogo, StashLogo } from '@shared/ui/logos'
 import { XrayLogo } from '@shared/ui/logos/xray-logo'

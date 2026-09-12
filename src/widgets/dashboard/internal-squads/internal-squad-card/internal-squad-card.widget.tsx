@@ -1,5 +1,5 @@
 import { Badge, CopyButton, Group, Menu, Tooltip } from '@mantine/core'
-import { GetInternalSquadsCommand } from '@remnawave/backend-contract'
+import { GetInternalSquadsCommand } from '@xpanel/backend-contract'
 import { useTranslation } from 'react-i18next'
 import { PiCheck, PiCopy, PiPencil, PiTag, PiTrashDuotone, PiUsers } from 'react-icons/pi'
 import {

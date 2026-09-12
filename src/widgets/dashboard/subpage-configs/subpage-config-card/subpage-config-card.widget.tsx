@@ -1,6 +1,6 @@
 import { CopyButton, Menu } from '@mantine/core'
-import { GetSubpageConfigsCommand } from '@remnawave/backend-contract'
-import { SUBPAGE_DEFAULT_CONFIG_UUID } from '@remnawave/subscription-page-types'
+import { GetSubpageConfigsCommand } from '@xpanel/backend-contract'
+import { SUBPAGE_DEFAULT_CONFIG_UUID } from '@xpanel/subscription-page-types'
 import { useTranslation } from 'react-i18next'
 import { PiCheck, PiCopy, PiPencil, PiTrashDuotone } from 'react-icons/pi'
 import { TbCopyCheck, TbFile, TbTags } from 'react-icons/tb'

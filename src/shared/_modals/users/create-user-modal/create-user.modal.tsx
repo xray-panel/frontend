@@ -1,7 +1,7 @@
 import NiceModal, { useModal } from '@ebay/nice-modal-react'
 import { Button, Group, Modal, Stack } from '@mantine/core'
 import { useForm, schemaResolver } from '@mantine/form'
-import { CreateUserCommand, USERS_STATUS } from '@remnawave/backend-contract'
+import { CreateUserCommand, USERS_STATUS } from '@xpanel/backend-contract'
 import dayjs from 'dayjs'
 import { motion } from 'motion/react'
 import { useTranslation } from 'react-i18next'

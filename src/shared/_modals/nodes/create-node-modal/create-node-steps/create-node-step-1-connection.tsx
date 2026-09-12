@@ -14,7 +14,7 @@ import {
     UnstyledButton
 } from '@mantine/core'
 import { UseFormReturnType } from '@mantine/form'
-import { CreateNodeCommand } from '@remnawave/backend-contract'
+import { CreateNodeCommand } from '@xpanel/backend-contract'
 import { useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import { PiArrowRight, PiTagDuotone } from 'react-icons/pi'

@@ -1,5 +1,5 @@
 import { Select } from '@mantine/core'
-import { MIHOMO_IP_VERSION } from '@remnawave/backend-contract'
+import { MIHOMO_IP_VERSION } from '@xpanel/backend-contract'
 
 import { useSettingsRowControl } from '@shared/ui/settings-row'
 

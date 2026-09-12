@@ -14,7 +14,7 @@ import { modals } from '@mantine/modals'
 import {
     GetInboundsByProfileUuidCommand,
     GetInternalSquadsCommand
-} from '@remnawave/backend-contract'
+} from '@xpanel/backend-contract'
 import ColorHash from 'color-hash'
 import { githubDarkTheme, JsonEditor } from 'json-edit-react'
 import { useMemo } from 'react'

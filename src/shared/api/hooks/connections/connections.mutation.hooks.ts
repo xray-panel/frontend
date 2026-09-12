@@ -4,7 +4,7 @@ import {
     ConnectionsByNodeCommand,
     ConnectionsByNodeResultCommand,
     GeocheckByNodeCommand
-} from '@remnawave/backend-contract'
+} from '@xpanel/backend-contract'
 
 import { createMutationHook } from '../../tsq-helpers'
 

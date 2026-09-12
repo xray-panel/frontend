@@ -1,5 +1,5 @@
 import { notifications } from '@mantine/notifications'
-import { UpdateRemnawaveSettingsCommand } from '@remnawave/backend-contract'
+import { UpdateRemnawaveSettingsCommand } from '@xpanel/backend-contract'
 
 import { createMutationHook } from '../../tsq-helpers'
 

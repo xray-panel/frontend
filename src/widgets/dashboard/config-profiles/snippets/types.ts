@@ -1,3 +1,3 @@
-import { GetSnippetsCommand } from '@remnawave/backend-contract'
+import { GetSnippetsCommand } from '@xpanel/backend-contract'
 
 export type TSnippet = GetSnippetsCommand.Response['response']['snippets'][number]

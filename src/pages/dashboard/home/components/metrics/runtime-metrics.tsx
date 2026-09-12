@@ -1,4 +1,4 @@
-import { GetRemnawaveHealthCommand } from '@remnawave/backend-contract'
+import { GetRemnawaveHealthCommand } from '@xpanel/backend-contract'
 import { TFunction } from 'i18next'
 import {
     PiClockDuotone,

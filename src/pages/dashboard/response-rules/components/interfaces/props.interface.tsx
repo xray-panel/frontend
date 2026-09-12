@@ -1,4 +1,4 @@
-import { GetConfigProfilesCommand } from '@remnawave/backend-contract'
+import { GetConfigProfilesCommand } from '@xpanel/backend-contract'
 
 export interface Props {
     configProfiles: GetConfigProfilesCommand.Response['response']['configProfiles']

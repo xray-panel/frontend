@@ -2,7 +2,7 @@ import { ActionIcon, Badge, Box, Card, Group, Text } from '@mantine/core'
 import {
     TSubscriptionPageAppConfig,
     TSubscriptionPageSvgLibrary
-} from '@remnawave/subscription-page-types'
+} from '@xpanel/subscription-page-types'
 import {
     IconArrowDown,
     IconArrowUp,

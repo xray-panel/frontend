@@ -1,5 +1,5 @@
 import { ActionIcon, HoverCard, px, Stack, Text } from '@mantine/core'
-import { ExternalSquadHostOverridesSchema } from '@remnawave/backend-contract'
+import { ExternalSquadHostOverridesSchema } from '@xpanel/backend-contract'
 import { TFunction } from 'i18next'
 import { HiQuestionMarkCircle } from 'react-icons/hi'
 import { PiIdentificationBadge } from 'react-icons/pi'

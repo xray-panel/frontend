@@ -1,6 +1,6 @@
 import { Badge, RenderTreeNodePayload, Tree, TreeNodeData } from '@mantine/core'
 import { Group, Text } from '@mantine/core'
-import { GetInternalSquadAccessibleNodesCommand } from '@remnawave/backend-contract'
+import { GetInternalSquadAccessibleNodesCommand } from '@xpanel/backend-contract'
 import { useMemo } from 'react'
 import { PiTag } from 'react-icons/pi'
 import { TbChevronRight } from 'react-icons/tb'

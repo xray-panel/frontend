@@ -1,5 +1,5 @@
 import { Checkbox, Stack, Text, TextInput } from '@mantine/core'
-import { GetInternalSquadsCommand } from '@remnawave/backend-contract'
+import { GetInternalSquadsCommand } from '@xpanel/backend-contract'
 import { useVirtualizer } from '@tanstack/react-virtual'
 import { Key, memo, useRef } from 'react'
 import { useTranslation } from 'react-i18next'

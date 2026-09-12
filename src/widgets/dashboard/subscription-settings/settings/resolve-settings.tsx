@@ -1,5 +1,5 @@
 import { ActionIcon, HoverCard, Stack, Text } from '@mantine/core'
-import { ExternalSquadSubscriptionSettingsSchema } from '@remnawave/backend-contract'
+import { ExternalSquadSubscriptionSettingsSchema } from '@xpanel/backend-contract'
 import { TFunction } from 'i18next'
 import { HiQuestionMarkCircle } from 'react-icons/hi'
 

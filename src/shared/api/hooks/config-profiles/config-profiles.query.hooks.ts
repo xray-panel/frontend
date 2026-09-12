@@ -5,7 +5,7 @@ import {
     GetConfigProfilesCommand,
     GetConfigProfilesTagsCommand,
     GetInboundsByProfileUuidCommand
-} from '@remnawave/backend-contract'
+} from '@xpanel/backend-contract'
 
 import { sToMs } from '@shared/utils/time-utils'
 

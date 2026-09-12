@@ -1,7 +1,7 @@
 import {
     GetSubscriptionSettingsCommand,
     TSubscriptionTemplateType
-} from '@remnawave/backend-contract'
+} from '@xpanel/backend-contract'
 
 export interface IProps {
     groupedTemplates: Record<TSubscriptionTemplateType, string[]>

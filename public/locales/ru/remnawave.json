@@ -957,7 +957,7 @@
       "disable-node": "Выключить ноду",
       "config-profile-or-inbounds-is-missing": "Не задан профиль или инбаунды",
       "xray-core-version": "Версия Xray Core",
-      "remnawave-node-version": "Версия ноды, @remnawave/node"
+      "remnawave-node-version": "Версия ноды"
     }
   },
   "config-profiles": {
@@ -1200,7 +1200,7 @@
       },
       "keycloakDomain": {
         "label": "Домен Keycloak",
-        "description": "Домен сервера Keycloak без протокола (напр. keycloak.docs.rw)"
+        "description": "Домен сервера Keycloak без протокола (напр. keycloak.example.com)"
       }
     }
   },

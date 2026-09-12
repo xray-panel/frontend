@@ -1,5 +1,5 @@
 import { ActionIcon, ActionIconGroup, Box, Flex, Group, Tooltip } from '@mantine/core'
-import { GetNodePluginCommand } from '@remnawave/backend-contract'
+import { GetNodePluginCommand } from '@xpanel/backend-contract'
 import { NodePluginEditorWidget } from '@widgets/dashboard/node-plugins/node-plugin-editor'
 import { useTranslation } from 'react-i18next'
 import { TbArrowBackUp, TbBook, TbList, TbPackage } from 'react-icons/tb'

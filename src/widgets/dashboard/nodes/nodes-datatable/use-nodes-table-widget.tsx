@@ -5,7 +5,7 @@ import {
     GetConfigProfilesCommand,
     GetNodeIntegrationsCommand,
     GetNodePluginsCommand
-} from '@remnawave/backend-contract'
+} from '@xpanel/backend-contract'
 import { TFunction } from 'i18next'
 import sortBy from 'lodash/sortBy'
 import ReactCountryFlag from 'react-country-flag'

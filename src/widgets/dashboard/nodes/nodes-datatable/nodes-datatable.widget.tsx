@@ -1,7 +1,7 @@
 import { DataTable, type DataTableSortStatus, useDataTableColumns } from '@kastov/mantine-datatable'
 import { Box, Button, Stack, Text } from '@mantine/core'
 import { useDebouncedValue } from '@mantine/hooks'
-import { GetNodesCommand } from '@remnawave/backend-contract'
+import { GetNodesCommand } from '@xpanel/backend-contract'
 import { memo, useMemo, useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import { PiEmpty } from 'react-icons/pi'

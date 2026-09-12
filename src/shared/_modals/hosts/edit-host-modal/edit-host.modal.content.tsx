@@ -1,5 +1,5 @@
 import { useForm, schemaResolver } from '@mantine/form'
-import { UpdateHostCommand } from '@remnawave/backend-contract'
+import { UpdateHostCommand } from '@xpanel/backend-contract'
 import { useEffect } from 'react'
 
 import { queryClient } from '@shared/api'

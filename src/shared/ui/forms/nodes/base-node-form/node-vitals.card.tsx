@@ -16,7 +16,7 @@ import {
     GetNodePluginsCommand,
     GetNodeSecretKeyCommand,
     UpdateNodeCommand
-} from '@remnawave/backend-contract'
+} from '@xpanel/backend-contract'
 import { ForwardRefComponent, HTMLMotionProps, Variants } from 'motion/react'
 import { useTranslation } from 'react-i18next'
 import { HiOutlineServer } from 'react-icons/hi'

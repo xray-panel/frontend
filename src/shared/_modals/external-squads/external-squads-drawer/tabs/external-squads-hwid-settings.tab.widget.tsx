@@ -15,7 +15,7 @@ import {
     GetExternalSquadByUuidCommand,
     HwidSettingsSchema,
     THwidSettings
-} from '@remnawave/backend-contract'
+} from '@xpanel/backend-contract'
 import { useEffect, useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import { TbDeviceFloppy, TbDevices2 } from 'react-icons/tb'

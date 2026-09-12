@@ -13,7 +13,7 @@ import {
     Text
 } from '@mantine/core'
 import { modals } from '@mantine/modals'
-import { GetStatsNodesUsageCommand } from '@remnawave/backend-contract'
+import { GetStatsNodesUsageCommand } from '@xpanel/backend-contract'
 import { useTranslation } from 'react-i18next'
 import { PiEmpty } from 'react-icons/pi'
 import { TbChartBar } from 'react-icons/tb'

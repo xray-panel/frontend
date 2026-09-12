@@ -4,7 +4,7 @@ import {
     TSubscriptionPagePlatformKey,
     TSubscriptionPagePlatformSchema,
     TSubscriptionPageRawConfig
-} from '@remnawave/subscription-page-types'
+} from '@xpanel/subscription-page-types'
 import { IconDeviceDesktop, IconPlus } from '@tabler/icons-react'
 import { useTranslation } from 'react-i18next'
 

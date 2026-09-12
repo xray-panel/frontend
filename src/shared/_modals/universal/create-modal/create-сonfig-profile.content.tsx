@@ -1,6 +1,6 @@
 import { Stack, TextInput, Group, Button, Text } from '@mantine/core'
 import { useField } from '@mantine/form'
-import { CreateConfigProfileCommand } from '@remnawave/backend-contract'
+import { CreateConfigProfileCommand } from '@xpanel/backend-contract'
 import { t } from 'i18next'
 import { generatePath, NavigateFunction } from 'react-router'
 

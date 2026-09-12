@@ -1,4 +1,4 @@
-import { SUBSCRIPTION_TEMPLATE_TYPE, TSubscriptionTemplateType } from '@remnawave/backend-contract'
+import { SUBSCRIPTION_TEMPLATE_TYPE, TSubscriptionTemplateType } from '@xpanel/backend-contract'
 import { useNavigate, useParams } from 'react-router'
 
 import { useGetSubscriptionTemplates } from '@shared/api/hooks'

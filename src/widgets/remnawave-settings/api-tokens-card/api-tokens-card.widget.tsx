@@ -10,7 +10,7 @@ import {
     Transition
 } from '@mantine/core'
 import { modals } from '@mantine/modals'
-import { GetApiTokensCommand } from '@remnawave/backend-contract'
+import { GetApiTokensCommand } from '@xpanel/backend-contract'
 import { useTranslation } from 'react-i18next'
 import { PiEmpty } from 'react-icons/pi'
 import { TbCookie, TbPlus, TbRefresh } from 'react-icons/tb'

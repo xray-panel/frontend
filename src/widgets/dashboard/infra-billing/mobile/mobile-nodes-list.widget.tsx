@@ -11,7 +11,7 @@ import {
     Text,
     ThemeIcon
 } from '@mantine/core'
-import { GetInfraBillingNodesCommand } from '@remnawave/backend-contract'
+import { GetInfraBillingNodesCommand } from '@xpanel/backend-contract'
 import dayjs from 'dayjs'
 import { useMemo, useState } from 'react'
 import { useTranslation } from 'react-i18next'

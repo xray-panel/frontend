@@ -1,6 +1,6 @@
 import { Button, Group, Stack, Switch } from '@mantine/core'
 import { useForm, schemaResolver } from '@mantine/form'
-import { UpdateSubscriptionSettingsCommand } from '@remnawave/backend-contract'
+import { UpdateSubscriptionSettingsCommand } from '@xpanel/backend-contract'
 import { useTranslation } from 'react-i18next'
 import { PiGear } from 'react-icons/pi'
 

@@ -8,7 +8,7 @@ import {
     Group
 } from '@mantine/core'
 import { modals } from '@mantine/modals'
-import { GetConfigProfilesCommand } from '@remnawave/backend-contract'
+import { GetConfigProfilesCommand } from '@xpanel/backend-contract'
 import { githubDarkTheme, JsonEditor } from 'json-edit-react'
 import { PiCheckBold, PiXBold } from 'react-icons/pi'
 

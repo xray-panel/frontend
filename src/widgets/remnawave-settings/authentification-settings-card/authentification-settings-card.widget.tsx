@@ -16,7 +16,7 @@ import { modals } from '@mantine/modals'
 import {
     GetRemnawaveSettingsCommand,
     UpdateRemnawaveSettingsCommand
-} from '@remnawave/backend-contract'
+} from '@xpanel/backend-contract'
 import { TFunction } from 'i18next'
 import { useTranslation } from 'react-i18next'
 import { BiLogoGithub, BiLogoTelegram } from 'react-icons/bi'
@@ -149,13 +149,13 @@ const getFieldConfig = (t: TFunction) =>
         frontendDomain: {
             label: t('auth-settings.passkey.rpId.label'),
             description: t('auth-settings.passkey.rpId.description'),
-            placeholder: 'docs.rw',
+            placeholder: 'example.com',
             type: 'text' as const
         },
         keycloakDomain: {
             label: t('auth-settings.fields.keycloakDomain.label'),
             description: t('auth-settings.fields.keycloakDomain.description'),
-            placeholder: 'keycloak.docs.rw',
+            placeholder: 'keycloak.example.com',
             type: 'text' as const
         },
         authorizationUrl: {

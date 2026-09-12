@@ -1,6 +1,6 @@
 import { Stack } from '@mantine/core'
 import { modals } from '@mantine/modals'
-import { GetNodesCommand, NODES_BULK_ACTIONS, TNodesBulkActions } from '@remnawave/backend-contract'
+import { GetNodesCommand, NODES_BULK_ACTIONS, TNodesBulkActions } from '@xpanel/backend-contract'
 import { useTranslation } from 'react-i18next'
 import { PiPulse } from 'react-icons/pi'
 import { TbCancel, TbRefresh, TbRocket } from 'react-icons/tb'

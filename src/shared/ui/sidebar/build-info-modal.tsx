@@ -12,7 +12,7 @@ import {
     Text,
     Tooltip
 } from '@mantine/core'
-import { GetMetadataCommand } from '@remnawave/backend-contract'
+import { GetMetadataCommand } from '@xpanel/backend-contract'
 import {
     TbBrandGithub,
     TbBrandTelegram,

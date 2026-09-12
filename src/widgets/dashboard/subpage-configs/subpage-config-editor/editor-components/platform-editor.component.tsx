@@ -6,7 +6,7 @@ import {
     TSubscriptionPagePlatformKey,
     TSubscriptionPagePlatformSchema,
     TSubscriptionPageSvgLibrary
-} from '@remnawave/subscription-page-types'
+} from '@xpanel/subscription-page-types'
 import { IconEdit, IconPlus, IconTrash } from '@tabler/icons-react'
 import { useState } from 'react'
 import { useTranslation } from 'react-i18next'

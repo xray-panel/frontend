@@ -3,7 +3,7 @@ import {
     GetHostsCommand,
     SUBSCRIPTION_TEMPLATE_TYPE,
     TSubscriptionTemplateType
-} from '@remnawave/backend-contract'
+} from '@xpanel/backend-contract'
 import axios from 'axios'
 import consola from 'consola'
 import { configureMonacoYaml, MonacoYaml, MonacoYamlOptions, SchemasSettings } from 'monaco-yaml'

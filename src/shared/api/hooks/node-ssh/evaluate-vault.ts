@@ -1,4 +1,4 @@
-import { EvaluateVaultCommand } from '@remnawave/backend-contract'
+import { EvaluateVaultCommand } from '@xpanel/backend-contract'
 
 import { instance } from '../../axios'
 

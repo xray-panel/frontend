@@ -1,7 +1,7 @@
 import NiceModal, { useModal } from '@ebay/nice-modal-react'
 import { Group, Modal, Progress, Stack, Transition } from '@mantine/core'
 import { useForm, schemaResolver } from '@mantine/form'
-import { CreateNodeCommand } from '@remnawave/backend-contract'
+import { CreateNodeCommand } from '@xpanel/backend-contract'
 import { useEffect, useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import { TbCpu } from 'react-icons/tb'

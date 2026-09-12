@@ -1,6 +1,6 @@
 import NiceModal, { useModal } from '@ebay/nice-modal-react'
 import { ActionIcon, ModalProps, TagsInput } from '@mantine/core'
-import { TagsSchema } from '@remnawave/backend-contract'
+import { TagsSchema } from '@xpanel/backend-contract'
 import { UseQueryResult } from '@tanstack/react-query'
 import { useId, useState } from 'react'
 import { useTranslation } from 'react-i18next'

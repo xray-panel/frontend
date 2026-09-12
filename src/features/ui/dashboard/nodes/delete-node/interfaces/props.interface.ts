@@ -1,4 +1,4 @@
-import { GetNodeCommand } from '@remnawave/backend-contract'
+import { GetNodeCommand } from '@xpanel/backend-contract'
 
 export interface IProps {
     handleClose: () => void

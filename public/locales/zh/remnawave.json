@@ -957,7 +957,7 @@
       "disable-node": "禁用节点",
       "config-profile-or-inbounds-is-missing": "缺少配置文件或者入站配置",
       "xray-core-version": "Xray 核心版本",
-      "remnawave-node-version": "节点版本，@remnawave/节点"
+      "remnawave-node-version": "节点版本"
     }
   },
   "config-profiles": {
@@ -1200,7 +1200,7 @@
       },
       "keycloakDomain": {
         "label": "Keycloak 域",
-        "description": "无协议头的 Keycloak 服务器域 (例如keycloak.docs.rw)"
+        "description": "无协议头的 Keycloak 服务器域 (例如keycloak.example.com)"
       }
     }
   },

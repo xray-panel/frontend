@@ -1,4 +1,4 @@
-import { GetNodesCommand } from '@remnawave/backend-contract'
+import { GetNodesCommand } from '@xpanel/backend-contract'
 
 export interface IProps {
     fetchedNode?: GetNodesCommand.Response['response'][number] | undefined

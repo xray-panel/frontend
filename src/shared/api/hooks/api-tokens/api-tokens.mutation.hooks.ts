@@ -3,7 +3,7 @@ import {
     CreateApiTokenCommand,
     DeleteApiTokenCommand,
     GetOttCommand
-} from '@remnawave/backend-contract'
+} from '@xpanel/backend-contract'
 
 import { createMutationHook } from '@shared/api/tsq-helpers/create-mutation-hook'
 

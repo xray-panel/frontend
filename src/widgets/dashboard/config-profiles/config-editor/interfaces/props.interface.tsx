@@ -1,4 +1,4 @@
-import { GetConfigProfileByUuidCommand, GetSnippetsCommand } from '@remnawave/backend-contract'
+import { GetConfigProfileByUuidCommand, GetSnippetsCommand } from '@xpanel/backend-contract'
 
 export interface IProps {
     configProfile: GetConfigProfileByUuidCommand.Response['response']

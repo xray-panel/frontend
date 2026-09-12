@@ -11,7 +11,7 @@ import {
     ThemeIcon
 } from '@mantine/core'
 import { UseFormReturnType } from '@mantine/form'
-import { TSubscriptionPageRawConfig } from '@remnawave/subscription-page-types'
+import { TSubscriptionPageRawConfig } from '@xpanel/subscription-page-types'
 import { useTranslation } from 'react-i18next'
 import { HiQuestionMarkCircle } from 'react-icons/hi'
 import { TbHealthRecognition, TbKey, TbLink } from 'react-icons/tb'

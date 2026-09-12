@@ -1,6 +1,6 @@
 import { MRT_ColumnDef } from '@kastov/mantine-react-table-open'
 /* eslint-disable camelcase */
-import { GetSubscriptionRequestHistoryCommand } from '@remnawave/backend-contract'
+import { GetSubscriptionRequestHistoryCommand } from '@xpanel/backend-contract'
 import { useMemo } from 'react'
 import { useTranslation } from 'react-i18next'
 

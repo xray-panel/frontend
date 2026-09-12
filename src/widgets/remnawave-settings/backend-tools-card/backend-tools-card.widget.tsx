@@ -1,6 +1,6 @@
 import { Button, Card, Code, Group, Stack, Text, ThemeIcon } from '@mantine/core'
 import { useOs } from '@mantine/hooks'
-import { BULLBOARD_ROOT, ROOT, SCALAR_ROOT, SWAGGER_ROOT } from '@remnawave/backend-contract'
+import { BULLBOARD_ROOT, ROOT, SCALAR_ROOT, SWAGGER_ROOT } from '@xpanel/backend-contract'
 import { TFunction } from 'i18next'
 import { ReactNode, useState } from 'react'
 import { useTranslation } from 'react-i18next'

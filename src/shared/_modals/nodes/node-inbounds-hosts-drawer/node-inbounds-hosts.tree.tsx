@@ -12,7 +12,7 @@ import {
     GetConfigProfilesCommand,
     GetHostsCommand,
     GetNodesCommand
-} from '@remnawave/backend-contract'
+} from '@xpanel/backend-contract'
 import { useMemo } from 'react'
 import { useTranslation } from 'react-i18next'
 import { PiListChecks, PiTag } from 'react-icons/pi'

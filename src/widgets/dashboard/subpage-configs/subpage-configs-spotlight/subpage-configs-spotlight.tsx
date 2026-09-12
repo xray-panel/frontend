@@ -1,4 +1,4 @@
-import { GetSubpageConfigsCommand } from '@remnawave/backend-contract'
+import { GetSubpageConfigsCommand } from '@xpanel/backend-contract'
 import { TbFile } from 'react-icons/tb'
 import { generatePath, useNavigate } from 'react-router'
 

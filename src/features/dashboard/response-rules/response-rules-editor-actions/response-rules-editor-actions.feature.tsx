@@ -17,7 +17,7 @@ import {
     REMNAWAVE_CLIENT_TYPE_HEADER,
     TestSrrMatcherCommand,
     UpdateSubscriptionSettingsCommand
-} from '@remnawave/backend-contract'
+} from '@xpanel/backend-contract'
 import consola from 'consola/browser'
 import { useTranslation } from 'react-i18next'
 import { PiCheck, PiCheckSquareOffset, PiCopy, PiFloppyDisk } from 'react-icons/pi'

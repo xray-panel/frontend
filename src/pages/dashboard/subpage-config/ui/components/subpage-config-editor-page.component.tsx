@@ -12,11 +12,11 @@ import {
 import { useForm, schemaResolver } from '@mantine/form'
 import { modals } from '@mantine/modals'
 import { notifications } from '@mantine/notifications'
-import { GetSubpageConfigCommand } from '@remnawave/backend-contract'
+import { GetSubpageConfigCommand } from '@xpanel/backend-contract'
 import {
     SubscriptionPageRawConfigSchema,
     TSubscriptionPageRawConfig
-} from '@remnawave/subscription-page-types'
+} from '@xpanel/subscription-page-types'
 import {
     BaseSettingsBlockComponent,
     BaseTranslationsBlockComponent,

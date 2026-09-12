@@ -15,7 +15,7 @@ import {
     ThemeIcon
 } from '@mantine/core'
 import { useDisclosure } from '@mantine/hooks'
-import { TSubscriptionPageSvgLibrary } from '@remnawave/subscription-page-types'
+import { TSubscriptionPageSvgLibrary } from '@xpanel/subscription-page-types'
 import { IconBulb, IconPhoto, IconPlus, IconTrash } from '@tabler/icons-react'
 import isSvg from 'is-svg'
 import { useEffect, useState } from 'react'

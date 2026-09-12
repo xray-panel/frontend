@@ -5,7 +5,7 @@ import {
     GetUsersCommand,
     GetExternalSquadsCommand,
     GetInternalSquadsCommand
-} from '@remnawave/backend-contract'
+} from '@xpanel/backend-contract'
 import { useMemo } from 'react'
 import { useTranslation } from 'react-i18next'
 

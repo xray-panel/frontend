@@ -1,5 +1,5 @@
 import { ActionIcon, CopyButton, Tooltip } from '@mantine/core'
-import { GetSnippetsCommand } from '@remnawave/backend-contract'
+import { GetSnippetsCommand } from '@xpanel/backend-contract'
 import cx from 'clsx'
 import { t } from 'i18next'
 import { useMemo } from 'react'

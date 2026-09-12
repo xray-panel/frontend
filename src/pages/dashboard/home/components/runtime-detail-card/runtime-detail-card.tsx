@@ -1,5 +1,5 @@
 import { Badge, Card, Grid, Group, Progress, Stack, Text, ThemeIcon } from '@mantine/core'
-import { GetRemnawaveHealthCommand } from '@remnawave/backend-contract'
+import { GetRemnawaveHealthCommand } from '@xpanel/backend-contract'
 import { PiClockDuotone, PiCloudDuotone, PiGearSixDuotone, PiQueueDuotone } from 'react-icons/pi'
 
 import { prettifyBytesUtil } from '@shared/utils/bytes'

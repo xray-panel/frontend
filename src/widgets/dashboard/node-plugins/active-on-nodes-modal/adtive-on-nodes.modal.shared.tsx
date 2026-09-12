@@ -1,5 +1,5 @@
 import { Center, Stack, Text, ThemeIcon } from '@mantine/core'
-import { GetNodesCommand } from '@remnawave/backend-contract'
+import { GetNodesCommand } from '@xpanel/backend-contract'
 import { useTranslation } from 'react-i18next'
 import { PiCpu } from 'react-icons/pi'
 import { TbServer } from 'react-icons/tb'

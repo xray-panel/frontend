@@ -1,6 +1,6 @@
 import { ActionIcon, Box, Divider, Group, Stack } from '@mantine/core'
 import { modals } from '@mantine/modals'
-import { GetTorrentBlockerReportsCommand } from '@remnawave/backend-contract'
+import { GetTorrentBlockerReportsCommand } from '@xpanel/backend-contract'
 import { githubDarkTheme, JsonEditor } from 'json-edit-react'
 import { useTranslation } from 'react-i18next'
 import { TbExternalLink, TbFlame, TbJson } from 'react-icons/tb'

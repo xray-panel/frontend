@@ -1,4 +1,4 @@
-import { UpdateSubscriptionSettingsCommand } from '@remnawave/backend-contract'
+import { UpdateSubscriptionSettingsCommand } from '@xpanel/backend-contract'
 
 export const processRemarks = (remarksData: string | string[] | undefined): string[] => {
     if (!remarksData) return ['']

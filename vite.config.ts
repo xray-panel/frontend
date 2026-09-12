@@ -73,8 +73,8 @@ export default defineConfig({
                             test: /node_modules[\\/]@mantine[\\/](core|hooks|dates|nprogress|notifications|modals)[\\/]/
                         },
                         {
-                            name: 'remnawave',
-                            test: /node_modules[\\/]@remnawave[\\/](backend-contract|subscription-page-types)[\\/]/
+                            name: 'contract',
+                            test: /node_modules[\\/]@xpanel[\\/](backend-contract|subscription-page-types)[\\/]/
                         },
                         {
                             name: 'i18n',

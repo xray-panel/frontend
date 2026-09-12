@@ -957,7 +957,7 @@
       "disable-node": "غیرفعالسازی نود",
       "config-profile-or-inbounds-is-missing": "پروفایل پیکربندی یا اینباند وجود ندارد",
       "xray-core-version": "نسخه هسته Xray",
-      "remnawave-node-version": "نسخه نود، @remnawave/node"
+      "remnawave-node-version": "نسخه نود"
     }
   },
   "config-profiles": {
@@ -1200,7 +1200,7 @@
       },
       "keycloakDomain": {
         "label": "دامنه Keycloak",
-        "description": "دامنه سرور Keycloak بدون پروتکل (مثلا keycloak.docs.rw)"
+        "description": "دامنه سرور Keycloak بدون پروتکل (مثلا keycloak.example.com)"
       }
     }
   },

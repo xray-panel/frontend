@@ -1,6 +1,6 @@
 import { Button, Group, NumberInput, px, Stack, Switch, Text, Textarea } from '@mantine/core'
 import { useForm, schemaResolver } from '@mantine/form'
-import { UpdateSubscriptionSettingsCommand } from '@remnawave/backend-contract'
+import { UpdateSubscriptionSettingsCommand } from '@xpanel/backend-contract'
 import { useTranslation } from 'react-i18next'
 import { PiGear, PiIdentificationBadge } from 'react-icons/pi'
 import { TbDevices2 } from 'react-icons/tb'

@@ -5,7 +5,7 @@ import { NodePluginsEditorActionsFeature } from '@features/dashboard/node-plugin
 import { Box, Paper } from '@mantine/core'
 import { modals } from '@mantine/modals'
 import { Monaco } from '@monaco-editor/react'
-import { GetNodePluginCommand } from '@remnawave/backend-contract'
+import { GetNodePluginCommand } from '@xpanel/backend-contract'
 import clsx from 'clsx'
 import { useEffect, useLayoutEffect, useMemo, useRef, useState } from 'react'
 import { useTranslation } from 'react-i18next'

@@ -13,7 +13,7 @@ import {
     ThemeIcon,
     Tooltip
 } from '@mantine/core'
-import { GetNodesMetricsCommand } from '@remnawave/backend-contract'
+import { GetNodesMetricsCommand } from '@xpanel/backend-contract'
 import { memo, useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import {

@@ -2,7 +2,7 @@ import { ActionIcon, Badge, Card, Group, Text } from '@mantine/core'
 import {
     TSubscriptionPageBlockConfig,
     TSubscriptionPageLanguageCode
-} from '@remnawave/subscription-page-types'
+} from '@xpanel/subscription-page-types'
 import { IconArrowDown, IconArrowUp, IconTrash } from '@tabler/icons-react'
 
 import styles from '../subpage-config-visual-editor.module.css'

@@ -15,7 +15,7 @@ import { modals } from '@mantine/modals'
 import {
     GetRemnawaveSettingsCommand,
     UpdateRemnawaveSettingsCommand
-} from '@remnawave/backend-contract'
+} from '@xpanel/backend-contract'
 import { useTranslation } from 'react-i18next'
 import { HiQuestionMarkCircle } from 'react-icons/hi'
 import { TbAlertCircle, TbLink, TbStar } from 'react-icons/tb'

@@ -1,7 +1,7 @@
 import {
     GetSubscriptionTemplatesCommand,
     TSubscriptionTemplateType
-} from '@remnawave/backend-contract'
+} from '@xpanel/backend-contract'
 import { generatePath, useNavigate } from 'react-router'
 
 import { ROUTES } from '@shared/constants'

@@ -1,7 +1,7 @@
 import NiceModal, { useModal } from '@ebay/nice-modal-react'
 import { Button, Modal, Stack, TextInput } from '@mantine/core'
 import { useForm, schemaResolver } from '@mantine/form'
-import { CreateInfraProviderCommand } from '@remnawave/backend-contract'
+import { CreateInfraProviderCommand } from '@xpanel/backend-contract'
 import { useTranslation } from 'react-i18next'
 import { TbServer } from 'react-icons/tb'
 

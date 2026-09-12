@@ -1,7 +1,7 @@
 import { ShowConfigProfilesWithInboundsFeature } from '@features/ui/dashboard/nodes/show-config-profiles-with-inbounds'
 import { Button, Group, Skeleton, Stack } from '@mantine/core'
 import { UseFormReturnType } from '@mantine/form'
-import { CreateNodeCommand } from '@remnawave/backend-contract'
+import { CreateNodeCommand } from '@xpanel/backend-contract'
 import { useTranslation } from 'react-i18next'
 import { PiArrowLeft } from 'react-icons/pi'
 import { SiSecurityscorecard } from 'react-icons/si'

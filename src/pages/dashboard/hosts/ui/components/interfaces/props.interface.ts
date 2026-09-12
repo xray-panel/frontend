@@ -2,7 +2,7 @@ import {
     GetHostsCommand,
     GetHostsTagsCommand,
     GetConfigProfilesCommand
-} from '@remnawave/backend-contract'
+} from '@xpanel/backend-contract'
 
 export interface IProps {
     configProfiles: GetConfigProfilesCommand.Response['response']['configProfiles'] | undefined

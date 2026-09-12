@@ -7,7 +7,7 @@ import {
     GetSharedListsCommand,
     GetTorrentBlockerReportsCommand,
     GetTorrentBlockerReportsStatsCommand
-} from '@remnawave/backend-contract'
+} from '@xpanel/backend-contract'
 import { keepPreviousData } from '@tanstack/react-query'
 
 import { sToMs } from '@shared/utils/time-utils'

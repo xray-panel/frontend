@@ -2,7 +2,7 @@ import {
     SSH_TERMINAL_WS_PROTOCOL,
     SshServerMessageSchema,
     TSshClientMessage
-} from '@remnawave/backend-contract'
+} from '@xpanel/backend-contract'
 
 import {
     fromBase64,

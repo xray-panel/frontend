@@ -3,7 +3,7 @@ import {
     GetExternalSquadByUuidCommand,
     SUBSCRIPTION_TEMPLATE_TYPE,
     TSubscriptionTemplateType
-} from '@remnawave/backend-contract'
+} from '@xpanel/backend-contract'
 import { useEffect, useMemo, useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import { TbDeviceFloppy } from 'react-icons/tb'

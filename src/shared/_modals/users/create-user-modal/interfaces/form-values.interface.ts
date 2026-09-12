@@ -1,3 +1,3 @@
-import { CreateUserCommand } from '@remnawave/backend-contract'
+import { CreateUserCommand } from '@xpanel/backend-contract'
 
 export interface IFormValues extends CreateUserCommand.RequestBody {}

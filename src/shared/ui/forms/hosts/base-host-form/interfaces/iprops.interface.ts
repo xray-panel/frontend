@@ -8,7 +8,7 @@ import {
     GetSubscriptionTemplatesCommand,
     UpdateHostCommand,
     UpdateManyHostsCommand
-} from '@remnawave/backend-contract'
+} from '@xpanel/backend-contract'
 
 export interface IProps<
     T extends

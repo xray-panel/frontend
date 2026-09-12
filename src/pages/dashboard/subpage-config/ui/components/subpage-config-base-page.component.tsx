@@ -1,5 +1,5 @@
 import { SubpageConfigsHeaderActionButtonsFeature } from '@features/ui/dashboard/subpage-configs/header-action-buttons'
-import { GetSubpageConfigsCommand } from '@remnawave/backend-contract'
+import { GetSubpageConfigsCommand } from '@xpanel/backend-contract'
 import { SubpageConfigsGridWidget } from '@widgets/dashboard/subpage-configs/subpage-configs-grid/subpage-configs-grid.widget'
 import { SubpageConfigsSpotlightWidget } from '@widgets/dashboard/subpage-configs/subpage-configs-spotlight'
 import { motion } from 'motion/react'

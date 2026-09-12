@@ -3,7 +3,7 @@ import { Code, Drawer, List, Stack, Text } from '@mantine/core'
 import { useForm, schemaResolver } from '@mantine/form'
 import { modals } from '@mantine/modals'
 import { notifications } from '@mantine/notifications'
-import { INTERNAL_SQUADS_MODE, UpdateManyHostsCommand } from '@remnawave/backend-contract'
+import { INTERNAL_SQUADS_MODE, UpdateManyHostsCommand } from '@xpanel/backend-contract'
 import { useTranslation } from 'react-i18next'
 import { PiListChecks } from 'react-icons/pi'
 

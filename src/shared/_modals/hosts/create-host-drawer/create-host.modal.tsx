@@ -6,7 +6,7 @@ import {
     CreateHostCommand,
     INTERNAL_SQUADS_MODE,
     SECURITY_LAYERS
-} from '@remnawave/backend-contract'
+} from '@xpanel/backend-contract'
 import { useTranslation } from 'react-i18next'
 import { PiListChecks } from 'react-icons/pi'
 

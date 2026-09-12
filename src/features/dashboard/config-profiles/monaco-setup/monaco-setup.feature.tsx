@@ -4,8 +4,8 @@ import {
     HostMapperSchema,
     ResponseRulesConfigSchema,
     TSubscriptionTemplateType
-} from '@remnawave/backend-contract'
-import { NodePluginEditorSchema, SharedListConfigSchema } from '@remnawave/node-plugins'
+} from '@xpanel/backend-contract'
+import { NodePluginEditorSchema, SharedListConfigSchema } from '@xpanel/node-plugins'
 import axios from 'axios'
 import consola from 'consola'
 import { app } from 'src/config'

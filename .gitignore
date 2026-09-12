@@ -146,3 +146,5 @@ scripts
 scripts/**
 
 public/assets/**
+# Сборка вендоренных контрактов (создаётся postinstall)
+vendor/*/build/

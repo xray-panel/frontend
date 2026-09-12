@@ -10,7 +10,7 @@ import {
     GetNodeSecretKeyCommand,
     GetNodeCommand,
     UpdateNodeCommand
-} from '@remnawave/backend-contract'
+} from '@xpanel/backend-contract'
 import { NodeErrorMessageWidget } from '@widgets/dashboard/nodes/node-error-message'
 import { motion } from 'framer-motion'
 import { t } from 'i18next'

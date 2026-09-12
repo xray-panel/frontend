@@ -2,7 +2,7 @@ import {
     GetNodeIntegrationsCommand,
     GetNodePluginsCommand,
     GetNodesCommand
-} from '@remnawave/backend-contract'
+} from '@xpanel/backend-contract'
 
 export interface IProps {
     isLoading: boolean

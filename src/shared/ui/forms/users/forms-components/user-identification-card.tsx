@@ -13,7 +13,7 @@ import {
     Tooltip
 } from '@mantine/core'
 import { modals } from '@mantine/modals'
-import { GetUserByIdCommand, USERS_STATUS } from '@remnawave/backend-contract'
+import { GetUserByIdCommand, USERS_STATUS } from '@xpanel/backend-contract'
 import { UserStatusBadge } from '@widgets/dashboard/users/user-status-badge'
 import dayjs from 'dayjs'
 import { githubDarkTheme, JsonEditor } from 'json-edit-react'

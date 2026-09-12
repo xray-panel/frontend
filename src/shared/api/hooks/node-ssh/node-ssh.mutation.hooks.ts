@@ -1,4 +1,4 @@
-import { CreateSshTicketCommand } from '@remnawave/backend-contract'
+import { CreateSshTicketCommand } from '@xpanel/backend-contract'
 
 import { createMutationHook } from '../../tsq-helpers'
 

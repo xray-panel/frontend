@@ -14,8 +14,8 @@ import {
     CreateHostCommand,
     UpdateHostCommand,
     UpdateManyHostsCommand
-} from '@remnawave/backend-contract'
-import { INTERNAL_SQUADS_MODE, SECURITY_LAYERS } from '@remnawave/backend-contract'
+} from '@xpanel/backend-contract'
+import { INTERNAL_SQUADS_MODE, SECURITY_LAYERS } from '@xpanel/backend-contract'
 import { useCallback, useMemo, useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import { HiQuestionMarkCircle } from 'react-icons/hi'

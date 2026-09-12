@@ -2,7 +2,7 @@ import { TemplatesHeaderActionButtonsFeature } from '@features/ui/dashboard/temp
 import {
     GetSubscriptionTemplatesCommand,
     TSubscriptionTemplateType
-} from '@remnawave/backend-contract'
+} from '@xpanel/backend-contract'
 import { TemplatesGridWidget } from '@widgets/dashboard/templates/templates-grid/templates-grid.widget'
 import { TemplatesSpotlightWidget } from '@widgets/dashboard/templates/templates-spotlight'
 import { motion } from 'motion/react'

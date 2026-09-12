@@ -1,5 +1,5 @@
 import { Badge, Group } from '@mantine/core'
-import { GetInternalSquadsCommand } from '@remnawave/backend-contract'
+import { GetInternalSquadsCommand } from '@xpanel/backend-contract'
 import { PiTag, PiUsers } from 'react-icons/pi'
 import { TbCirclesRelation } from 'react-icons/tb'
 

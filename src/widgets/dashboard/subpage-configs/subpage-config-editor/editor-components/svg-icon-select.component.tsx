@@ -9,7 +9,7 @@ import {
     Tooltip
 } from '@mantine/core'
 import { useDisclosure } from '@mantine/hooks'
-import { TSubscriptionPageSvgLibrary } from '@remnawave/subscription-page-types'
+import { TSubscriptionPageSvgLibrary } from '@xpanel/subscription-page-types'
 import { IconCheck, IconPhoto, IconX } from '@tabler/icons-react'
 import isSvg from 'is-svg'
 import { useMemo } from 'react'

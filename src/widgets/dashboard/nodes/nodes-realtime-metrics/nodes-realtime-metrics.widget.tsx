@@ -1,5 +1,5 @@
 import { SimpleGrid } from '@mantine/core'
-import { GetNodesCommand } from '@remnawave/backend-contract'
+import { GetNodesCommand } from '@xpanel/backend-contract'
 import { motion } from 'motion/react'
 import { useMemo } from 'react'
 import { useTranslation } from 'react-i18next'

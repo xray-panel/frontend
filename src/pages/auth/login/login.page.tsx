@@ -3,7 +3,7 @@ import { OAuth2LoginButtonsFeature } from '@features/auth/oauth2-login-button/oa
 import { PasskeyLoginButtonFeature } from '@features/auth/passkey-login-button'
 import { RegisterFormFeature } from '@features/auth/register-form'
 import { Badge, Box, Center, Divider, Group, Image, Stack, Text, Title } from '@mantine/core'
-import { GetStatusCommand } from '@remnawave/backend-contract'
+import { GetStatusCommand } from '@xpanel/backend-contract'
 import { useMemo } from 'react'
 
 import { useGetAuthStatus } from '@shared/api/hooks/auth/auth.query.hooks'

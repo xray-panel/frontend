@@ -1,6 +1,6 @@
 import { DataTableColumn } from '@kastov/mantine-datatable'
 import { ActionIcon, Group, MultiSelect, Text } from '@mantine/core'
-import { GetHostsCommand } from '@remnawave/backend-contract'
+import { GetHostsCommand } from '@xpanel/backend-contract'
 import { TFunction } from 'i18next'
 import { PiProhibit, PiPulse } from 'react-icons/pi'
 import { TbEdit, TbEyeOff, TbSearch } from 'react-icons/tb'

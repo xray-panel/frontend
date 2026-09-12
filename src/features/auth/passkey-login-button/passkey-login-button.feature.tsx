@@ -1,6 +1,6 @@
 import { Button } from '@mantine/core'
 import { notifications } from '@mantine/notifications'
-import { GetStatusCommand } from '@remnawave/backend-contract'
+import { GetStatusCommand } from '@xpanel/backend-contract'
 import {
     type PublicKeyCredentialRequestOptionsJSON,
     startAuthentication

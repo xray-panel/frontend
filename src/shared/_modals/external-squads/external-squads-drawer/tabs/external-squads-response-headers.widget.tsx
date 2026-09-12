@@ -11,7 +11,7 @@ import {
     Textarea,
     TextInput
 } from '@mantine/core'
-import { GetExternalSquadByUuidCommand } from '@remnawave/backend-contract'
+import { GetExternalSquadByUuidCommand } from '@xpanel/backend-contract'
 import { useCallback, useEffect, useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import { PiInfo, PiPlus, PiTrash } from 'react-icons/pi'

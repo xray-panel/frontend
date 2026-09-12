@@ -3,7 +3,7 @@ import { Button, Center, Modal, SegmentedControl, Stack, TextInput } from '@mant
 import { DatePickerInput } from '@mantine/dates'
 import { useForm, schemaResolver } from '@mantine/form'
 import { notifications } from '@mantine/notifications'
-import { CreateInfraBillingNodeCommand } from '@remnawave/backend-contract'
+import { CreateInfraBillingNodeCommand } from '@xpanel/backend-contract'
 import dayjs from 'dayjs'
 import { useState } from 'react'
 import { useTranslation } from 'react-i18next'

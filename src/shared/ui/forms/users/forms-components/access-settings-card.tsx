@@ -7,7 +7,7 @@ import {
     GetExternalSquadsCommand,
     GetInternalSquadsCommand,
     UpdateUserCommand
-} from '@remnawave/backend-contract'
+} from '@xpanel/backend-contract'
 import { InternalSquadsListWidget } from '@widgets/dashboard/users/internal-squads-list'
 import dayjs from 'dayjs'
 import { ForwardRefComponent, HTMLMotionProps, Variants } from 'motion/react'

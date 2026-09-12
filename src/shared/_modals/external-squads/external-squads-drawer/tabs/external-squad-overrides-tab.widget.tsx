@@ -13,7 +13,7 @@ import {
     Textarea,
     TextInput
 } from '@mantine/core'
-import { GetExternalSquadByUuidCommand } from '@remnawave/backend-contract'
+import { GetExternalSquadByUuidCommand } from '@xpanel/backend-contract'
 import { TFunction } from 'i18next'
 import { useEffect, useMemo, useState } from 'react'
 import { useTranslation } from 'react-i18next'

@@ -1,7 +1,7 @@
 import { Badge, Button, Card, Group } from '@mantine/core'
 import { UseFormReturnType } from '@mantine/form'
 import { useDisclosure } from '@mantine/hooks'
-import { TSubscriptionPageRawConfig } from '@remnawave/subscription-page-types'
+import { TSubscriptionPageRawConfig } from '@xpanel/subscription-page-types'
 import { IconPhoto } from '@tabler/icons-react'
 import { useTranslation } from 'react-i18next'
 

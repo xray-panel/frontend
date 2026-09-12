@@ -5,7 +5,7 @@ import {
     OAuth2CallbackCommand,
     RegisterCommand,
     VerifyPasskeyAuthenticationCommand
-} from '@remnawave/backend-contract'
+} from '@xpanel/backend-contract'
 
 import { setToken } from '@entities/auth/session-store'
 

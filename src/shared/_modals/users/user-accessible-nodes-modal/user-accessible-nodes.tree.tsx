@@ -1,5 +1,5 @@
 import { Badge, Group, RenderTreeNodePayload, Text, Tree, TreeNodeData } from '@mantine/core'
-import { GetUserAccessibleNodesCommand } from '@remnawave/backend-contract'
+import { GetUserAccessibleNodesCommand } from '@xpanel/backend-contract'
 import { useMemo } from 'react'
 import { PiTag } from 'react-icons/pi'
 import { TbChevronRight, TbCirclesRelation } from 'react-icons/tb'

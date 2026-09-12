@@ -1,6 +1,6 @@
 import { Anchor, Checkbox, Code, Input, NumberInput, Stack, Text, Textarea } from '@mantine/core'
 import { UseFormReturnType } from '@mantine/form'
-import { BulkAllUpdateUsersCommand, GetUsersTagsCommand } from '@remnawave/backend-contract'
+import { BulkAllUpdateUsersCommand, GetUsersTagsCommand } from '@xpanel/backend-contract'
 import { ForwardRefComponent, HTMLMotionProps, Variants } from 'motion/react'
 import { Trans, useTranslation } from 'react-i18next'
 import { TbDevices2, TbSettings } from 'react-icons/tb'

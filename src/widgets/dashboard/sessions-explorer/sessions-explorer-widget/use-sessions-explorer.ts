@@ -1,4 +1,4 @@
-import { ConnectionsByNodeResultCommand, GetNodesCommand } from '@remnawave/backend-contract'
+import { ConnectionsByNodeResultCommand, GetNodesCommand } from '@xpanel/backend-contract'
 import { useEffect, useRef, useState } from 'react'
 
 import { useConnectionsByNodeResultMutation, useConnectionsByNode } from '@shared/api/hooks'

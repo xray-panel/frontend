@@ -11,7 +11,7 @@ import {
     Textarea,
     ThemeIcon
 } from '@mantine/core'
-import { GetNodesCommand } from '@remnawave/backend-contract'
+import { GetNodesCommand } from '@xpanel/backend-contract'
 import { useCallback, useState } from 'react'
 import ReactCountryFlag from 'react-country-flag'
 import { useTranslation } from 'react-i18next'

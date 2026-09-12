@@ -1,6 +1,6 @@
 import { Select, Stack } from '@mantine/core'
 import { UseFormReturnType } from '@mantine/form'
-import { BulkAllUpdateUsersCommand } from '@remnawave/backend-contract'
+import { BulkAllUpdateUsersCommand } from '@xpanel/backend-contract'
 import { ForwardRefComponent, HTMLMotionProps, Variants } from 'motion/react'
 import { useTranslation } from 'react-i18next'
 import { PiClockDuotone } from 'react-icons/pi'

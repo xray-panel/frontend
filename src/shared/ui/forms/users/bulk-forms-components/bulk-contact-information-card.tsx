@@ -1,6 +1,6 @@
 import { NumberInput, Stack, TextInput } from '@mantine/core'
 import { UseFormReturnType } from '@mantine/form'
-import { BulkAllUpdateUsersCommand } from '@remnawave/backend-contract'
+import { BulkAllUpdateUsersCommand } from '@xpanel/backend-contract'
 import { ForwardRefComponent, HTMLMotionProps, Variants } from 'motion/react'
 import { useTranslation } from 'react-i18next'
 import { PiEnvelopeDuotone, PiTelegramLogoDuotone } from 'react-icons/pi'

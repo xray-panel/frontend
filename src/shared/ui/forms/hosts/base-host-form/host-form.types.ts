@@ -3,7 +3,7 @@ import {
     CreateHostCommand,
     UpdateHostCommand,
     UpdateManyHostsCommand
-} from '@remnawave/backend-contract'
+} from '@xpanel/backend-contract'
 
 export type THostFormValues = Partial<
     CreateHostCommand.RequestBody &

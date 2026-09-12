@@ -3,7 +3,7 @@ import {
     GetSubpageConfigCommand,
     GetSubpageConfigsCommand,
     GetSubpageConfigsTagsCommand
-} from '@remnawave/backend-contract'
+} from '@xpanel/backend-contract'
 
 import { sToMs } from '@shared/utils/time-utils'
 

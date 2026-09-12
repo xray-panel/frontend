@@ -1,4 +1,4 @@
-import { GetSubpageConfigsCommand } from '@remnawave/backend-contract'
+import { GetSubpageConfigsCommand } from '@xpanel/backend-contract'
 
 export interface IProps {
     configs: GetSubpageConfigsCommand.Response['response']['configs']

@@ -1,6 +1,6 @@
 import { Badge, Center, Group, Stack, Text, ThemeIcon } from '@mantine/core'
 import { modals } from '@mantine/modals'
-import { GetNodesCommand, GetNodePluginsCommand } from '@remnawave/backend-contract'
+import { GetNodesCommand, GetNodePluginsCommand } from '@xpanel/backend-contract'
 import { useMemo } from 'react'
 import { useTranslation } from 'react-i18next'
 import {

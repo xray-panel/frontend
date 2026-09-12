@@ -1,5 +1,5 @@
 import { createQueryKeys } from '@lukemorales/query-key-factory'
-import { GetApiTokensCommand, GetApiTokenScopesCommand } from '@remnawave/backend-contract'
+import { GetApiTokensCommand, GetApiTokenScopesCommand } from '@xpanel/backend-contract'
 import { keepPreviousData } from '@tanstack/react-query'
 
 import { createGetQueryHook, errorHandler } from '../../tsq-helpers'

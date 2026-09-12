@@ -1,4 +1,4 @@
-import { GetStatusCommand } from '@remnawave/backend-contract'
+import { GetStatusCommand } from '@xpanel/backend-contract'
 
 export interface IProps {
     authentication: NonNullable<GetStatusCommand.Response['response']['authentication']>

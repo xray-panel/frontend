@@ -4,7 +4,7 @@ import {
     CreateUserCommand,
     GetUsersTagsCommand,
     UpdateUserCommand
-} from '@remnawave/backend-contract'
+} from '@xpanel/backend-contract'
 import { ForwardRefComponent, HTMLMotionProps, Variants } from 'motion/react'
 import { Trans, useTranslation } from 'react-i18next'
 import { TbDevices2, TbSettings } from 'react-icons/tb'

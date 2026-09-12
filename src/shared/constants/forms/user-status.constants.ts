@@ -1,4 +1,4 @@
-import { USERS_STATUS } from '@remnawave/backend-contract'
+import { USERS_STATUS } from '@xpanel/backend-contract'
 
 export const userStatusValues = [
     { value: USERS_STATUS.ACTIVE, label: 'Active' },

@@ -4,7 +4,7 @@ import {
     GetInternalSquadsCommand,
     GetNodesCommand,
     GetSubscriptionTemplatesCommand
-} from '@remnawave/backend-contract'
+} from '@xpanel/backend-contract'
 import { createContext, ReactNode, useContext } from 'react'
 
 import { THostForm } from '../host-form.types'

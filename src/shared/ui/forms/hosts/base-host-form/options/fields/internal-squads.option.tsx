@@ -1,5 +1,5 @@
 import { Checkbox, MultiSelect, SegmentedControl } from '@mantine/core'
-import { INTERNAL_SQUADS_MODE } from '@remnawave/backend-contract'
+import { INTERNAL_SQUADS_MODE } from '@xpanel/backend-contract'
 import { useTranslation } from 'react-i18next'
 
 import { useSettingsRowControl } from '@shared/ui/settings-row'

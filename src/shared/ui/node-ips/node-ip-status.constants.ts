@@ -1,4 +1,4 @@
-import { TNodeIpStatus } from '@remnawave/backend-contract'
+import { TNodeIpStatus } from '@xpanel/backend-contract'
 import { IconType } from 'react-icons'
 import {
     TbActivityHeartbeat,

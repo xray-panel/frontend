@@ -15,7 +15,7 @@ import {
 import { useField } from '@mantine/form'
 import { modals } from '@mantine/modals'
 import { notifications } from '@mantine/notifications'
-import { CreateApiTokenCommand } from '@remnawave/backend-contract'
+import { CreateApiTokenCommand } from '@xpanel/backend-contract'
 import { useState } from 'react'
 import { Trans, useTranslation } from 'react-i18next'
 import {

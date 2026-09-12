@@ -1,4 +1,4 @@
-import { GetStatsCommand } from '@remnawave/backend-contract'
+import { GetStatsCommand } from '@xpanel/backend-contract'
 import { TFunction } from 'i18next'
 import {
     PiClockCountdownDuotone,

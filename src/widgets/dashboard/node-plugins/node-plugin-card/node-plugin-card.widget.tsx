@@ -1,5 +1,5 @@
 import { CopyButton, Menu } from '@mantine/core'
-import { GetNodePluginsCommand } from '@remnawave/backend-contract'
+import { GetNodePluginsCommand } from '@xpanel/backend-contract'
 import { useTranslation } from 'react-i18next'
 import { PiCheck, PiCopy, PiCpu, PiPencil, PiTrashDuotone } from 'react-icons/pi'
 import { TbCopyCheck, TbPackage, TbTags } from 'react-icons/tb'
