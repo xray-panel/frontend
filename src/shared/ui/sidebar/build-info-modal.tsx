@@ -59,7 +59,7 @@ export function BuildInfoModal({ remnawaveMetadata, isNewVersionAvailable }: Bui
                         <Button
                             color="teal"
                             component="a"
-                            href="https://github.com/CHANGE-ME/xpanel"
+                            href="https://github.com/kitten443/xpanel"
                             leftSection={<TbBrandTelegram size={14} />}
                             ml="auto"
                             radius="md"
@@ -215,7 +215,7 @@ export function BuildInfoModal({ remnawaveMetadata, isNewVersionAvailable }: Bui
                 <Button
                     color="cyan"
                     component="a"
-                    href="https://github.com/CHANGE-ME/xpanel"
+                    href="https://github.com/kitten443/xpanel"
                     leftSection={<TbBrandTelegram size={16} />}
                     radius="md"
                     size="sm"
@@ -226,7 +226,7 @@ export function BuildInfoModal({ remnawaveMetadata, isNewVersionAvailable }: Bui
                 </Button>
                 <Button
                     component="a"
-                    href="https://github.com/CHANGE-ME/xpanel"
+                    href="https://github.com/kitten443/xpanel"
                     leftSection={<TbBrandGithub size={16} />}
                     radius="md"
                     size="sm"

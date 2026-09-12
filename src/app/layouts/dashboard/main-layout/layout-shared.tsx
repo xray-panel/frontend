@@ -4,8 +4,8 @@ import { Outlet, ScrollRestoration } from 'react-router'
 import { SidebarLogoShared, SidebarTitleShared } from '@shared/ui/sidebar'
 
 export const DASHBOARD_LINKS = {
-    githubLink: 'https://github.com/CHANGE-ME/xpanel/panel',
-    telegramLink: 'https://github.com/CHANGE-ME/xpanel'
+    githubLink: 'https://github.com/kitten443/xpanel/panel',
+    telegramLink: 'https://github.com/kitten443/xpanel'
 } as const
 
 type LayoutMainProps = Omit<React.ComponentProps<typeof AppShell.Main>, 'children'>
