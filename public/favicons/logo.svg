@@ -1,6 +1,15 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
-  <rect width="32" height="32" rx="6" fill="#151A23"/>
-  <g transform="translate(4, 4) scale(1.5)">
-    <path fill="#3CC9DB" fill-rule="evenodd" d="M8 1a.75.75 0 0 1 .75.75v12.5a.75.75 0 0 1-1.5 0V1.75A.75.75 0 0 1 8 1Zm6 2a.75.75 0 0 1 .75.75v8.5a.75.75 0 0 1-1.5 0v-8.5A.75.75 0 0 1 14 3ZM5 4a.75.75 0 0 1 .75.75v6.5a.75.75 0 0 1-1.5 0v-6.5A.75.75 0 0 1 5 4Zm6 1a.75.75 0 0 1 .75.75v4.5a.75.75 0 0 1-1.5 0v-4.5A.75.75 0 0 1 11 5ZM2 6a.75.75 0 0 1 .75.75v2.5a.75.75 0 0 1-1.5 0v-2.5A.75.75 0 0 1 2 6Z" clip-rule="evenodd"/>
-  </g>
+<svg width="32" height="32" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="xlada-bg" x1="0" y1="0" x2="32" y2="32" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#1e2038"/>
+      <stop offset="1" stop-color="#0b0d1a"/>
+    </linearGradient>
+    <linearGradient id="xlada-mark" x1="9" y1="9" x2="23" y2="23" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#8b6bf7"/>
+      <stop offset="1" stop-color="#2dd4c8"/>
+    </linearGradient>
+  </defs>
+  <rect width="32" height="32" rx="7" fill="url(#xlada-bg)"/>
+  <path d="M9.5 9.5 L22.5 22.5" stroke="url(#xlada-mark)" stroke-width="3.6" stroke-linecap="round" fill="none"/>
+  <path d="M22.5 9.5 L9.5 22.5" stroke="url(#xlada-mark)" stroke-width="3.6" stroke-linecap="round" fill="none"/>
 </svg>
