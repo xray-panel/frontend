@@ -68,5 +68,8 @@ export * from './subscription-template/subscription-template.query.hooks'
 
 export * from './system/system.query.hooks'
 
+export * from './two-factor/two-factor.mutation.hooks'
+export * from './two-factor/two-factor.query.hooks'
+
 export * from './users/users.mutation.hooks'
 export * from './users/users.query.hooks'

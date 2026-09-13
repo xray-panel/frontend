@@ -25,6 +25,7 @@ import {
     TbDatabase,
     TbWebhook,
     TbHistory,
+    TbShieldLock,
     TbUserShield
 } from 'react-icons/tb'
 
@@ -135,6 +136,12 @@ export const useMobileMenuSections = (): MenuItem[] => {
                     href: ROUTES.DASHBOARD.MANAGEMENT.ADMINS,
                     icon: TbUserShield,
                     id: 'admins'
+                },
+                {
+                    name: 'Security',
+                    href: ROUTES.DASHBOARD.MANAGEMENT.SECURITY,
+                    icon: TbShieldLock,
+                    id: 'security'
                 }
             ]
         },

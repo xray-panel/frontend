@@ -1,5 +1,6 @@
 import { Badge, Card, Group, Select, Stack, Table, Text, TextInput } from '@mantine/core'
 import { useState } from 'react'
+import { useTranslation } from 'react-i18next'
 import { TbHistory } from 'react-icons/tb'
 
 import { useGetAuditLog } from '@shared/api/hooks'
@@ -8,6 +9,7 @@ import { Page, PageHeaderShared } from '@shared/ui'
 const PAGE_SIZE = 25
 
 export const AuditLogPageComponent = () => {
+    const { t } = useTranslation()
     const [page, setPage] = useState(1)
     const [adminUsername, setAdminUsername] = useState('')
     const [status, setStatus] = useState<null | string>(null)
@@ -25,14 +27,14 @@ export const AuditLogPageComponent = () => {
     const pages = Math.max(1, Math.ceil(total / PAGE_SIZE))
 
     return (
-        <Page title="Audit Log">
-            <PageHeaderShared icon={<TbHistory size={24} />} title="Audit Log" />
+        <Page title={t('audit-log-page.title')}>
+            <PageHeaderShared icon={<TbHistory size={24} />} title={t('audit-log-page.title')} />
 
             <Stack gap="md">
                 <Card padding="md" radius="md" withBorder>
                     <Group gap="sm" wrap="wrap">
                         <TextInput
-                            label="Administrator"
+                            label={t('audit-log-page.filter-administrator')}
                             onChange={(event) => {
                                 setAdminUsername(event.currentTarget.value)
                                 setPage(1)
@@ -44,20 +46,20 @@ export const AuditLogPageComponent = () => {
                         <Select
                             clearable
                             data={[
-                                { label: 'Success', value: 'success' },
-                                { label: 'Failure', value: 'failure' }
+                                { label: t('audit-log-page.status-success'), value: 'success' },
+                                { label: t('audit-log-page.status-failure'), value: 'failure' }
                             ]}
-                            label="Result"
+                            label={t('audit-log-page.filter-result')}
                             onChange={(value) => {
                                 setStatus(value)
                                 setPage(1)
                             }}
-                            placeholder="any"
+                            placeholder={t('audit-log-page.filter-any')}
                             value={status}
                             w={180}
                         />
                         <Text c="dimmed" mt={24} size="sm">
-                            {total} records
+                            {t('audit-log-page.records', { count: total })}
                         </Text>
                         {pages > 1 && (
                             <Group gap="xs" mt={24}>
@@ -67,7 +69,7 @@ export const AuditLogPageComponent = () => {
                                     size="sm"
                                     style={{ cursor: page > 1 ? 'pointer' : 'default' }}
                                 >
-                                    ← prev
+                                    {t('audit-log-page.pagination-prev')}
                                 </Text>
                                 <Text size="sm">
                                     {page} / {pages}
@@ -78,7 +80,7 @@ export const AuditLogPageComponent = () => {
                                     size="sm"
                                     style={{ cursor: page < pages ? 'pointer' : 'default' }}
                                 >
-                                    next →
+                                    {t('audit-log-page.pagination-next')}
                                 </Text>
                             </Group>
                         )}
@@ -89,12 +91,12 @@ export const AuditLogPageComponent = () => {
                     <Table highlightOnHover verticalSpacing="sm">
                         <Table.Thead>
                             <Table.Tr>
-                                <Table.Th>Time</Table.Th>
-                                <Table.Th>Administrator</Table.Th>
-                                <Table.Th>Action</Table.Th>
-                                <Table.Th>Resource</Table.Th>
-                                <Table.Th>Result</Table.Th>
-                                <Table.Th>IP</Table.Th>
+                                <Table.Th>{t('audit-log-page.table-time')}</Table.Th>
+                                <Table.Th>{t('audit-log-page.table-administrator')}</Table.Th>
+                                <Table.Th>{t('audit-log-page.table-action')}</Table.Th>
+                                <Table.Th>{t('audit-log-page.table-resource')}</Table.Th>
+                                <Table.Th>{t('audit-log-page.table-result')}</Table.Th>
+                                <Table.Th>{t('audit-log-page.table-ip')}</Table.Th>
                             </Table.Tr>
                         </Table.Thead>
                         <Table.Tbody>
@@ -102,7 +104,7 @@ export const AuditLogPageComponent = () => {
                                 <Table.Tr>
                                     <Table.Td colSpan={6}>
                                         <Text c="dimmed" size="sm">
-                                            Loading…
+                                            {t('audit-log-page.loading')}
                                         </Text>
                                     </Table.Td>
                                 </Table.Tr>
@@ -111,7 +113,7 @@ export const AuditLogPageComponent = () => {
                                 <Table.Tr>
                                     <Table.Td colSpan={6}>
                                         <Text c="dimmed" size="sm">
-                                            Nothing recorded yet.
+                                            {t('audit-log-page.empty')}
                                         </Text>
                                     </Table.Td>
                                 </Table.Tr>

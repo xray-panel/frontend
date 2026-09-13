@@ -13,7 +13,8 @@ import {
 } from '@mantine/core'
 import { useDisclosure } from '@mantine/hooks'
 import { useState } from 'react'
-import { TbKey, TbPlus, TbTrash, TbUserShield } from 'react-icons/tb'
+import { useTranslation } from 'react-i18next'
+import { TbEye, TbEyeOff, TbKey, TbPlus, TbTrash, TbUserShield, TbWand } from 'react-icons/tb'
 
 import {
     useCreateAdmin,
@@ -22,13 +23,73 @@ import {
     useUpdateAdmin
 } from '@shared/api/hooks'
 import { Page, PageHeaderShared } from '@shared/ui'
+import { generatePassword } from '@shared/utils/misc'
 
-// Та же политика, что и на сервере: минимум 24 символа, заглавные, строчные
-// и цифры. Подсказка здесь только для удобства — источник истины в контракте,
-// который применяется на бэкенде.
-const PASSWORD_HINT = 'Минимум 24 символа, заглавные и строчные буквы, а также цифры.'
+interface IPasswordFieldProps {
+    description: string
+    generateLabel: string
+    hideLabel: string
+    label: string
+    onChange: (value: string) => void
+    onGenerate: () => void
+    showLabel: string
+    value: string
+    visible: boolean
+    onVisibleChange: (visible: boolean) => void
+}
+
+// Поле пароля с кнопками генерации и показа: сгенерированный пароль сразу
+// подставляется открытым текстом, чтобы администратор успел его сохранить.
+function PasswordField(props: IPasswordFieldProps) {
+    const {
+        description,
+        generateLabel,
+        hideLabel,
+        label,
+        onChange,
+        onGenerate,
+        showLabel,
+        value,
+        visible,
+        onVisibleChange
+    } = props
+
+    return (
+        <PasswordInput
+            description={description}
+            label={label}
+            onChange={(event) => onChange(event.currentTarget.value)}
+            rightSection={
+                <Group gap={4} wrap="nowrap">
+                    <ActionIcon
+                        aria-label={generateLabel}
+                        onClick={onGenerate}
+                        size="sm"
+                        title={generateLabel}
+                        variant="subtle"
+                    >
+                        <TbWand size={16} />
+                    </ActionIcon>
+                    <ActionIcon
+                        aria-label={visible ? hideLabel : showLabel}
+                        onClick={() => onVisibleChange(!visible)}
+                        size="sm"
+                        title={visible ? hideLabel : showLabel}
+                        variant="subtle"
+                    >
+                        {visible ? <TbEyeOff size={16} /> : <TbEye size={16} />}
+                    </ActionIcon>
+                </Group>
+            }
+            rightSectionWidth={68}
+            value={value}
+            visible={visible}
+        />
+    )
+}
 
 export const AdminsPageComponent = () => {
+    const { t } = useTranslation()
     const { data, isLoading, refetch } = useGetAdmins({})
 
     const [createOpened, createHandlers] = useDisclosure(false)
@@ -37,6 +98,7 @@ export const AdminsPageComponent = () => {
 
     const [username, setUsername] = useState('')
     const [password, setPassword] = useState('')
+    const [passwordVisible, setPasswordVisible] = useState(false)
     const [target, setTarget] = useState<null | { username: string; uuid: string }>(null)
 
     const createAdmin = useCreateAdmin({
@@ -45,6 +107,7 @@ export const AdminsPageComponent = () => {
                 createHandlers.close()
                 setUsername('')
                 setPassword('')
+                setPasswordVisible(false)
                 await refetch()
             }
         }
@@ -55,6 +118,7 @@ export const AdminsPageComponent = () => {
             onSuccess: async () => {
                 passwordHandlers.close()
                 setPassword('')
+                setPasswordVisible(false)
                 setTarget(null)
                 await refetch()
             }
@@ -73,9 +137,22 @@ export const AdminsPageComponent = () => {
 
     const admins = data?.admins ?? []
 
+    const generateAndShowPassword = () => {
+        setPassword(generatePassword())
+        setPasswordVisible(true)
+    }
+
+    const openCreateModal = () => {
+        setUsername('')
+        setPassword('')
+        setPasswordVisible(false)
+        createHandlers.open()
+    }
+
     const openPasswordModal = (uuid: string, name: string) => {
         setTarget({ uuid, username: name })
         setPassword('')
+        setPasswordVisible(false)
         passwordHandlers.open()
     }
 
@@ -85,22 +162,24 @@ export const AdminsPageComponent = () => {
     }
 
     return (
-        <Page title="Administrators">
-            <PageHeaderShared icon={<TbUserShield size={24} />} title="Administrators" />
+        <Page title={t('admins-page.title')}>
+            <PageHeaderShared
+                icon={<TbUserShield size={24} />}
+                title={t('admins-page.title')}
+            />
 
             <Stack gap="md">
                 <Card padding="md" radius="md" withBorder>
                     <Group justify="space-between" wrap="wrap">
                         <Text c="dimmed" maw={620} size="sm">
-                            Учётные записи с полным доступом к панели. Пароль можно сменить, но
-                            посмотреть нельзя: в базе хранится только его хеш.
+                            {t('admins-page.description')}
                         </Text>
                         <Button
                             leftSection={<TbPlus size={16} />}
-                            onClick={createHandlers.open}
+                            onClick={openCreateModal}
                             variant="light"
                         >
-                            Добавить администратора
+                            {t('admins-page.add-admin')}
                         </Button>
                     </Group>
                 </Card>
@@ -109,10 +188,10 @@ export const AdminsPageComponent = () => {
                     <Table highlightOnHover verticalSpacing="sm">
                         <Table.Thead>
                             <Table.Tr>
-                                <Table.Th>Логин</Table.Th>
-                                <Table.Th>Роль</Table.Th>
-                                <Table.Th>2FA</Table.Th>
-                                <Table.Th>Создан</Table.Th>
+                                <Table.Th>{t('admins-page.table-username')}</Table.Th>
+                                <Table.Th>{t('admins-page.table-role')}</Table.Th>
+                                <Table.Th>{t('admins-page.table-2fa')}</Table.Th>
+                                <Table.Th>{t('admins-page.table-created')}</Table.Th>
                                 <Table.Th />
                             </Table.Tr>
                         </Table.Thead>
@@ -121,7 +200,7 @@ export const AdminsPageComponent = () => {
                                 <Table.Tr>
                                     <Table.Td colSpan={5}>
                                         <Text c="dimmed" size="sm">
-                                            Загрузка…
+                                            {t('admins-page.loading')}
                                         </Text>
                                     </Table.Td>
                                 </Table.Tr>
@@ -130,7 +209,7 @@ export const AdminsPageComponent = () => {
                                 <Table.Tr>
                                     <Table.Td colSpan={5}>
                                         <Text c="dimmed" size="sm">
-                                            Администраторов не найдено.
+                                            {t('admins-page.empty')}
                                         </Text>
                                     </Table.Td>
                                 </Table.Tr>
@@ -150,7 +229,9 @@ export const AdminsPageComponent = () => {
                                             color={admin.totpEnabled ? 'teal' : 'gray'}
                                             variant="light"
                                         >
-                                            {admin.totpEnabled ? 'включена' : 'выключена'}
+                                            {admin.totpEnabled
+                                                ? t('admins-page.totp-enabled')
+                                                : t('admins-page.totp-disabled')}
                                         </Badge>
                                     </Table.Td>
                                     <Table.Td>
@@ -161,7 +242,7 @@ export const AdminsPageComponent = () => {
                                     <Table.Td>
                                         <Group gap="xs" justify="flex-end">
                                             <ActionIcon
-                                                aria-label="Сменить пароль"
+                                                aria-label={t('admins-page.change-password')}
                                                 onClick={() =>
                                                     openPasswordModal(admin.uuid, admin.username)
                                                 }
@@ -170,7 +251,7 @@ export const AdminsPageComponent = () => {
                                                 <TbKey size={18} />
                                             </ActionIcon>
                                             <ActionIcon
-                                                aria-label="Удалить"
+                                                aria-label={t('admins-page.delete')}
                                                 color="red"
                                                 onClick={() =>
                                                     openDeleteModal(admin.uuid, admin.username)
@@ -191,25 +272,31 @@ export const AdminsPageComponent = () => {
             <Modal
                 onClose={createHandlers.close}
                 opened={createOpened}
-                title="Новый администратор"
+                title={t('admins-page.create-title')}
             >
                 <Stack gap="sm">
                     <TextInput
-                        label="Логин"
+                        label={t('admins-page.username-label')}
                         onChange={(event) => setUsername(event.currentTarget.value)}
                         value={username}
                     />
-                    <PasswordInput
-                        description={PASSWORD_HINT}
-                        label="Пароль"
-                        onChange={(event) => setPassword(event.currentTarget.value)}
+                    <PasswordField
+                        description={t('admins-page.password-hint')}
+                        generateLabel={t('admins-page.generate-password')}
+                        hideLabel={t('admins-page.hide-password')}
+                        label={t('admins-page.password-label')}
+                        onChange={setPassword}
+                        onGenerate={generateAndShowPassword}
+                        onVisibleChange={setPasswordVisible}
+                        showLabel={t('admins-page.show-password')}
                         value={password}
+                        visible={passwordVisible}
                     />
                     <Button
                         loading={createAdmin.isPending}
                         onClick={() => createAdmin.mutate({ variables: { username, password } })}
                     >
-                        Создать
+                        {t('admins-page.create')}
                     </Button>
                 </Stack>
             </Modal>
@@ -217,14 +304,20 @@ export const AdminsPageComponent = () => {
             <Modal
                 onClose={passwordHandlers.close}
                 opened={passwordOpened}
-                title={`Смена пароля — ${target?.username ?? ''}`}
+                title={t('admins-page.change-title', { username: target?.username ?? '' })}
             >
                 <Stack gap="sm">
-                    <PasswordInput
-                        description={PASSWORD_HINT}
-                        label="Новый пароль"
-                        onChange={(event) => setPassword(event.currentTarget.value)}
+                    <PasswordField
+                        description={t('admins-page.password-hint')}
+                        generateLabel={t('admins-page.generate-password')}
+                        hideLabel={t('admins-page.hide-password')}
+                        label={t('admins-page.new-password-label')}
+                        onChange={setPassword}
+                        onGenerate={generateAndShowPassword}
+                        onVisibleChange={setPasswordVisible}
+                        showLabel={t('admins-page.show-password')}
                         value={password}
+                        visible={passwordVisible}
                     />
                     <Button
                         loading={updateAdmin.isPending}
@@ -236,7 +329,7 @@ export const AdminsPageComponent = () => {
                             })
                         }
                     >
-                        Сохранить
+                        {t('admins-page.save')}
                     </Button>
                 </Stack>
             </Modal>
@@ -244,16 +337,15 @@ export const AdminsPageComponent = () => {
             <Modal
                 onClose={deleteHandlers.close}
                 opened={deleteOpened}
-                title="Удаление администратора"
+                title={t('admins-page.delete-title')}
             >
                 <Stack gap="sm">
                     <Text size="sm">
-                        Учётная запись <b>{target?.username ?? ''}</b> будет удалена вместе с её
-                        ключами доступа. Действие необратимо.
+                        {t('admins-page.delete-body', { username: target?.username ?? '' })}
                     </Text>
                     <Group justify="flex-end">
                         <Button onClick={deleteHandlers.close} variant="default">
-                            Отмена
+                            {t('admins-page.cancel')}
                         </Button>
                         <Button
                             color="red"
@@ -262,7 +354,7 @@ export const AdminsPageComponent = () => {
                                 target && deleteAdmin.mutate({ route: { uuid: target.uuid } })
                             }
                         >
-                            Удалить
+                            {t('admins-page.delete')}
                         </Button>
                     </Group>
                 </Stack>

@@ -20,7 +20,11 @@ export const useLogin = createMutationHook({
     requestMethod: LoginCommand.endpointDetails.REQUEST_METHOD,
     rMutationParams: {
         onSuccess: (data) => {
-            setToken({ token: data.accessToken })
+            // При включённом втором факторе токена ещё нет: вход завершается
+            // через 2fa/login, и токен сохраняет useTwoFactorLogin.
+            if (data.accessToken) {
+                setToken({ token: data.accessToken })
+            }
         },
         onError: (error) => {
             notifications.show({

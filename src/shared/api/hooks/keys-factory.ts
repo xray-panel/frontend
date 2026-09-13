@@ -24,6 +24,7 @@ import { subscriptionRequestHistoryQueryKeys } from './subscription-request-hist
 import { subscriptionSettingsQueryKeys } from './subscription-settings/subscription-settings.query.hooks'
 import { subscriptionTemplateQueryKeys } from './subscription-template/subscription-template.query.hooks'
 import { systemQueryKeys } from './system/system.query.hooks'
+import { twoFactorQueryKeys } from './two-factor/two-factor.query.hooks'
 import { usersQueryKeys } from './users/users.query.hooks'
 
 export const QueryKeys = mergeQueryKeys(
@@ -51,7 +52,8 @@ export const QueryKeys = mergeQueryKeys(
     nodeIntegrationsQueryKeys,
     logsQueryKeys,
     auditLogQueryKeys,
-    adminsQueryKeys
+    adminsQueryKeys,
+    twoFactorQueryKeys
 )
 
 export type TQueryKeys = inferQueryKeyStore<typeof QueryKeys>
