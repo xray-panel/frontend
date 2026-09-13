@@ -1,4 +1,4 @@
-import { GetNodePluginsCommand } from '@xpanel/backend-contract'
+import { GetNodePluginsCommand } from '@xlada/backend-contract'
 import { TbPackage } from 'react-icons/tb'
 import { generatePath, useNavigate } from 'react-router'
 

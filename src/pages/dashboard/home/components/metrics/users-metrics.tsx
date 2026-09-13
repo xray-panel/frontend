@@ -1,4 +1,4 @@
-import { GetStatsCommand } from '@xpanel/backend-contract'
+import { GetStatsCommand } from '@xlada/backend-contract'
 import { TFunction } from 'i18next'
 import {
     PiClockCountdownDuotone,

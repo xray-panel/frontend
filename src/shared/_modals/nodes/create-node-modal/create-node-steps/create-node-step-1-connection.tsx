@@ -14,7 +14,7 @@ import {
     UnstyledButton
 } from '@mantine/core'
 import { UseFormReturnType } from '@mantine/form'
-import { CreateNodeCommand } from '@xpanel/backend-contract'
+import { CreateNodeCommand } from '@xlada/backend-contract'
 import { useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import { PiArrowRight, PiTagDuotone } from 'react-icons/pi'
@@ -86,7 +86,7 @@ export const CreateNodeStep1Connection = ({ form, onNext, secretKey, port }: IPr
                     {t('create-node-step-1-connection.content-for-the-remnawave-node-below')}{' '}
                     <Anchor
                         fw="700"
-                        href="https://docs.xraypanel.dev/docs/install/remnawave-node"
+                        href="https://xlada.app/docs/install/remnawave-node"
                         inherit
                         rel="noopener noreferrer"
                         target="_blank"

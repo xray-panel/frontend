@@ -8,7 +8,7 @@ import {
     TextInput,
     ThemeIcon
 } from '@mantine/core'
-import { GeocheckByNodeCommand, GetNodeCommand } from '@xpanel/backend-contract'
+import { GeocheckByNodeCommand, GetNodeCommand } from '@xlada/backend-contract'
 import { useMemo, useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import { TbAffiliate, TbPlayerPlay, TbRoute, TbWorldSearch } from 'react-icons/tb'

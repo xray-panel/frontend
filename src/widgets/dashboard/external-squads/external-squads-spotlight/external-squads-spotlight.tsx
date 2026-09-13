@@ -1,5 +1,5 @@
 import { Badge, Group } from '@mantine/core'
-import { GetExternalSquadsCommand } from '@xpanel/backend-contract'
+import { GetExternalSquadsCommand } from '@xlada/backend-contract'
 import { PiUsers } from 'react-icons/pi'
 import { TbWebhook } from 'react-icons/tb'
 

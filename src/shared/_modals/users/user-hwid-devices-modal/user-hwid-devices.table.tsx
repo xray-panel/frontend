@@ -1,7 +1,7 @@
 import { DataTable, type DataTableSortStatus, useDataTableColumns } from '@kastov/mantine-datatable'
 import { ActionIcon, Anchor, Group, Text, ThemeIcon } from '@mantine/core'
 import { useDebouncedValue } from '@mantine/hooks'
-import { GetUserHwidDevicesCommand } from '@xpanel/backend-contract'
+import { GetUserHwidDevicesCommand } from '@xlada/backend-contract'
 import get from 'lodash/get'
 import { ReactNode, useCallback, useMemo, useState } from 'react'
 import { useTranslation } from 'react-i18next'

@@ -1,5 +1,5 @@
 import { Loader, Menu } from '@mantine/core'
-import { GetUserByIdCommand, USERS_STATUS } from '@xpanel/backend-contract'
+import { GetUserByIdCommand, USERS_STATUS } from '@xlada/backend-contract'
 import { useTranslation } from 'react-i18next'
 import { PiCellSignalFullDuotone, PiCellSignalSlashDuotone, PiTrashDuotone } from 'react-icons/pi'
 

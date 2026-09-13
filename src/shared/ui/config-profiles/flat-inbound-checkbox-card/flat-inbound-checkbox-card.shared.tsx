@@ -2,7 +2,7 @@ import type { IProps } from './interfaces/props.interface'
 
 import { ActionIcon, Badge, Checkbox, Group, Stack, Text } from '@mantine/core'
 import { modals } from '@mantine/modals'
-import { GetConfigProfilesCommand } from '@xpanel/backend-contract'
+import { GetConfigProfilesCommand } from '@xlada/backend-contract'
 import { githubDarkTheme, JsonEditor } from 'json-edit-react'
 import { useTranslation } from 'react-i18next'
 import { TbCode } from 'react-icons/tb'

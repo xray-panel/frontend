@@ -1,4 +1,4 @@
-import { GetRemnawaveHealthCommand, GetStatusCommand } from '@xpanel/backend-contract'
+import { GetRemnawaveHealthCommand, GetStatusCommand } from '@xlada/backend-contract'
 import { onlineManager, useQuery } from '@tanstack/react-query'
 import { isAxiosError } from 'axios'
 import { useSyncExternalStore } from 'react'

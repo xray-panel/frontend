@@ -1,5 +1,5 @@
 import { ActionIcon, ActionIconGroup, Tooltip } from '@mantine/core'
-import { GetHttpStatsCommand } from '@xpanel/backend-contract'
+import { GetHttpStatsCommand } from '@xlada/backend-contract'
 import { HttpStatsTableWidget } from '@widgets/dashboard/http-stats/http-stats-table/http-stats-table.widget'
 import { useTranslation } from 'react-i18next'
 import { TbApi, TbRefresh } from 'react-icons/tb'

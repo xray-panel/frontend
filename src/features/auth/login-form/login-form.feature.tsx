@@ -1,6 +1,6 @@
 import { Button, Container, Paper, PasswordInput, PinInput, Text, TextInput } from '@mantine/core'
 import { useForm, schemaResolver } from '@mantine/form'
-import { LoginCommand } from '@xpanel/backend-contract'
+import { LoginCommand } from '@xlada/backend-contract'
 import { useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import { PiSignInDuotone } from 'react-icons/pi'

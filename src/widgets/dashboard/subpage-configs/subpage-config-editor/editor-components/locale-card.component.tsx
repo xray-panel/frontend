@@ -1,5 +1,5 @@
 import { Badge, Group, Text, UnstyledButton } from '@mantine/core'
-import { getLanguageInfo, TSubscriptionPageLanguageCode } from '@xpanel/subscription-page-types'
+import { getLanguageInfo, TSubscriptionPageLanguageCode } from '@xlada/subscription-page-types'
 
 import styles from '../subpage-config-visual-editor.module.css'
 

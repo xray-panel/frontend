@@ -1,4 +1,4 @@
-import { GetApiTokenScopesCommand } from '@xpanel/backend-contract'
+import { GetApiTokenScopesCommand } from '@xlada/backend-contract'
 import { createElement, ReactNode } from 'react'
 import { HiServer } from 'react-icons/hi'
 import { PiArrowsInCardinalFill, PiListChecks, PiUsers } from 'react-icons/pi'

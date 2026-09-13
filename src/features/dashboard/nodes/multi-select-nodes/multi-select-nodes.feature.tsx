@@ -11,7 +11,7 @@ import {
     Transition
 } from '@mantine/core'
 import { modals } from '@mantine/modals'
-import { GetNodesCommand } from '@xpanel/backend-contract'
+import { GetNodesCommand } from '@xlada/backend-contract'
 import { useTranslation } from 'react-i18next'
 import {
     TbArrowBarToDown,

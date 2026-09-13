@@ -19,7 +19,7 @@ import {
     GetConfigProfilesCommand,
     INTERNAL_SQUADS_MODE,
     SUBSCRIPTION_TEMPLATE_TYPE
-} from '@xpanel/backend-contract'
+} from '@xlada/backend-contract'
 import cx from 'clsx'
 import ColorHash from 'color-hash'
 import { githubDarkTheme, JsonEditor } from 'json-edit-react'

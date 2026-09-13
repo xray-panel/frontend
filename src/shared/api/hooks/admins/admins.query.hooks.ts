@@ -1,5 +1,5 @@
 import { createQueryKeys } from '@lukemorales/query-key-factory'
-import { GetAdminsCommand } from '@xpanel/backend-contract'
+import { GetAdminsCommand } from '@xlada/backend-contract'
 
 import { sToMs } from '@shared/utils/time-utils'
 

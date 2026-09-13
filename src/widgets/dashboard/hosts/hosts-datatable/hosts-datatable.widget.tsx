@@ -4,7 +4,7 @@ import {
     GetHostsCommand,
     GetHostsTagsCommand,
     GetConfigProfilesCommand
-} from '@xpanel/backend-contract'
+} from '@xlada/backend-contract'
 import { memo, useCallback, useMemo, useState } from 'react'
 import { useTranslation } from 'react-i18next'
 

@@ -1,5 +1,5 @@
 import { px, Tabs } from '@mantine/core'
-import { UpdateSubscriptionSettingsCommand } from '@xpanel/backend-contract'
+import { UpdateSubscriptionSettingsCommand } from '@xlada/backend-contract'
 import { useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import { PiInfo } from 'react-icons/pi'

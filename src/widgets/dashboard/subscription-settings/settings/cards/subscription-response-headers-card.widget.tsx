@@ -1,6 +1,6 @@
 import { ActionIcon, Alert, Button, Card, Group, Stack, Textarea, TextInput } from '@mantine/core'
 import { useForm, schemaResolver } from '@mantine/form'
-import { UpdateSubscriptionSettingsCommand } from '@xpanel/backend-contract'
+import { UpdateSubscriptionSettingsCommand } from '@xlada/backend-contract'
 import { useCallback, useEffect, useRef, useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import { PiChatsCircle, PiInfo, PiPlus, PiTrash } from 'react-icons/pi'

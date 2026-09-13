@@ -1,5 +1,5 @@
 import { Badge, CopyButton, Group, Menu, Tooltip } from '@mantine/core'
-import { GetExternalSquadsCommand } from '@xpanel/backend-contract'
+import { GetExternalSquadsCommand } from '@xlada/backend-contract'
 import { useTranslation } from 'react-i18next'
 import { PiCheck, PiCopy, PiPencil, PiTrashDuotone, PiUsers } from 'react-icons/pi'
 import { TbCopy, TbTags, TbUsersMinus, TbUsersPlus, TbWebhook } from 'react-icons/tb'

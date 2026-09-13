@@ -1,4 +1,4 @@
-import { RESET_PERIODS } from '@xpanel/backend-contract'
+import { RESET_PERIODS } from '@xlada/backend-contract'
 import { TFunction } from 'i18next'
 
 export const resetDataStrategy = (t: TFunction) => [

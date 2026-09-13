@@ -1,6 +1,6 @@
 import type { InputBaseProps } from '@mantine/core'
 
-import { GetConfigProfilesCommand } from '@xpanel/backend-contract'
+import { GetConfigProfilesCommand } from '@xlada/backend-contract'
 
 export interface IProps extends InputBaseProps {
     inbound: GetConfigProfilesCommand.Response['response']['configProfiles'][number]['inbounds'][number]

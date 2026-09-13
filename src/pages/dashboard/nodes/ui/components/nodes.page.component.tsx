@@ -2,7 +2,7 @@ import { MultiSelectNodesFeature } from '@features/dashboard/nodes/multi-select-
 import { NodesHeaderActionButtonsFeature } from '@features/ui/dashboard/nodes/nodes-header-action-buttons'
 import { Grid, Stack } from '@mantine/core'
 /* eslint-disable no-nested-ternary */
-import { GetNodesCommand } from '@xpanel/backend-contract'
+import { GetNodesCommand } from '@xlada/backend-contract'
 import { NodesDataTableWidget } from '@widgets/dashboard/nodes/nodes-datatable/nodes-datatable.widget'
 import { NodesRealtimeUsageMetrics } from '@widgets/dashboard/nodes/nodes-realtime-metrics'
 import { NodesTableWidget } from '@widgets/dashboard/nodes/nodes-table'

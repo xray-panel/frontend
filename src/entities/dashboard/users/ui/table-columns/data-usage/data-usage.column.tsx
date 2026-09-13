@@ -1,5 +1,5 @@
 import { Box, Group, Progress, Text } from '@mantine/core'
-import { RESET_PERIODS } from '@xpanel/backend-contract'
+import { RESET_PERIODS } from '@xlada/backend-contract'
 import { useTranslation } from 'react-i18next'
 
 import { prettifyBytesUtil } from '@shared/utils/bytes'

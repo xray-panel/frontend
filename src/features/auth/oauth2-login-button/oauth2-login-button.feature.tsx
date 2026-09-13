@@ -1,5 +1,5 @@
 import { Button, Stack } from '@mantine/core'
-import { TOAuth2ProvidersKeys } from '@xpanel/backend-contract'
+import { TOAuth2ProvidersKeys } from '@xlada/backend-contract'
 import { useState } from 'react'
 import { BiLogoGithub, BiLogoTelegram } from 'react-icons/bi'
 import { SiKeycloak } from 'react-icons/si'

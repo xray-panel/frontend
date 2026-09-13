@@ -9,7 +9,7 @@ import {
     UpdatePasskeyCommand,
     UpdateSubpageConfigCommand,
     UpdateSubscriptionTemplateCommand
-} from '@xpanel/backend-contract'
+} from '@xlada/backend-contract'
 import { ReactNode, useId } from 'react'
 import { useTranslation } from 'react-i18next'
 import { TbDeviceFloppy, TbPencil } from 'react-icons/tb'

@@ -1,7 +1,7 @@
 import {
     ExternalSquadHostOverridesSchema,
     GetExternalSquadByUuidCommand
-} from '@xpanel/backend-contract'
+} from '@xlada/backend-contract'
 import { useTranslation } from 'react-i18next'
 import z from 'zod'
 

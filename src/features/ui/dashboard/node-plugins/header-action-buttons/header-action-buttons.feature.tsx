@@ -25,7 +25,7 @@ export const NodePluginsHeaderActionButtonsFeature = () => {
             <ActionIcon
                 color="lime"
                 component="a"
-                href="https://docs.xraypanel.dev/docs/learn/node-plugins"
+                href="https://xlada.app/docs/learn/node-plugins"
                 size="input-md"
                 target="_blank"
                 variant="soft"

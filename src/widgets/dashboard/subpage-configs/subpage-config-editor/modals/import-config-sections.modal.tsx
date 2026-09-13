@@ -1,6 +1,6 @@
 import { Divider, Stack, Text } from '@mantine/core'
 import { modals } from '@mantine/modals'
-import { TSubscriptionPageRawConfig } from '@xpanel/subscription-page-types'
+import { TSubscriptionPageRawConfig } from '@xlada/subscription-page-types'
 import { useTranslation } from 'react-i18next'
 import { TbDevices, TbIcons, TbLanguage, TbReplace } from 'react-icons/tb'
 

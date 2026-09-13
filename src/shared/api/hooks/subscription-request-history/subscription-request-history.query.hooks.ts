@@ -2,7 +2,7 @@ import { createQueryKeys } from '@lukemorales/query-key-factory'
 import {
     GetSubscriptionRequestHistoryCommand,
     GetSubscriptionRequestHistoryStatsCommand
-} from '@xpanel/backend-contract'
+} from '@xlada/backend-contract'
 import { keepPreviousData } from '@tanstack/react-query'
 
 import { sToMs } from '@shared/utils/time-utils'

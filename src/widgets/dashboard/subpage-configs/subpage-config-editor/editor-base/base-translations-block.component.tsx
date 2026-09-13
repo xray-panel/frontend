@@ -6,7 +6,7 @@ import {
     TSubscriptionPageBaseTranslationKeys,
     TSubscriptionPageLanguageCode,
     TSubscriptionPageRawConfig
-} from '@xpanel/subscription-page-types'
+} from '@xlada/subscription-page-types'
 import { IconLanguage } from '@tabler/icons-react'
 
 import { BaseOverlayHeader } from '@shared/ui/overlays/base-overlay-header'

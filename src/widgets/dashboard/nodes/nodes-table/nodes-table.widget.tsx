@@ -9,7 +9,7 @@ import {
 } from '@dnd-kit/react'
 import { Box, Container, Stack } from '@mantine/core'
 import { useListState } from '@mantine/hooks'
-import { GetNodesCommand } from '@xpanel/backend-contract'
+import { GetNodesCommand } from '@xlada/backend-contract'
 import { useWindowVirtualizer } from '@tanstack/react-virtual'
 import { memo, useCallback, useEffect, useLayoutEffect, useMemo, useRef, useState } from 'react'
 import { TbCpu } from 'react-icons/tb'

@@ -1,5 +1,5 @@
 import { createQueryKeys } from '@lukemorales/query-key-factory'
-import { GetSubscriptionSettingsCommand } from '@xpanel/backend-contract'
+import { GetSubscriptionSettingsCommand } from '@xlada/backend-contract'
 
 import { sToMs } from '@shared/utils/time-utils'
 

@@ -1,5 +1,5 @@
 import { ActionIcon, ActionIconGroup, Group, Tooltip } from '@mantine/core'
-import { GetConfigProfileByUuidCommand, GetSnippetsCommand } from '@xpanel/backend-contract'
+import { GetConfigProfileByUuidCommand, GetSnippetsCommand } from '@xlada/backend-contract'
 import { ConfigEditorWidget } from '@widgets/dashboard/config-profiles/config-editor/config-editor.widget'
 import { useTranslation } from 'react-i18next'
 import { TbArrowBackUp, TbCode, TbFile } from 'react-icons/tb'

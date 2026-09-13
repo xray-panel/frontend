@@ -1,4 +1,4 @@
-import { ConnectionsByNodeResultCommand } from '@xpanel/backend-contract'
+import { ConnectionsByNodeResultCommand } from '@xlada/backend-contract'
 import { useCallback, useEffect, useState } from 'react'
 
 import { useConnectionsByNode, useConnectionsByNodeResult } from '@shared/api/hooks'

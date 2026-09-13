@@ -1,5 +1,5 @@
 export const app = {
-    name: 'XPANEL',
+    name: 'XLADA',
     githubRepo: 'https://github.com/xray-panel/backend',
     githubStars: 'https://github.com/xray-panel/backend/stargazers',
     githubIssues: 'https://github.com/xray-panel/backend/issues',

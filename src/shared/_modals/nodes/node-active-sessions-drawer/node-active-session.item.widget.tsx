@@ -1,5 +1,5 @@
 import { ActionIcon, Badge, Box, Group, Stack, Text, Tooltip } from '@mantine/core'
-import { ConnectionsByNodeResultCommand } from '@xpanel/backend-contract'
+import { ConnectionsByNodeResultCommand } from '@xlada/backend-contract'
 import { useTranslation } from 'react-i18next'
 import { PiEmptyDuotone, PiUserCircle } from 'react-icons/pi'
 import {

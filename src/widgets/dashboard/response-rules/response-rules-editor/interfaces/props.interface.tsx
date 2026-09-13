@@ -1,7 +1,7 @@
 import {
     GetSubscriptionSettingsCommand,
     TSubscriptionTemplateType
-} from '@xpanel/backend-contract'
+} from '@xlada/backend-contract'
 
 export interface IProps {
     groupedTemplates: Record<TSubscriptionTemplateType, string[]>

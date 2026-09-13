@@ -2,7 +2,7 @@ import {
     GetNodeIntegrationsCommand,
     GetNodePluginsCommand,
     GetNodesCommand
-} from '@xpanel/backend-contract'
+} from '@xlada/backend-contract'
 
 export interface IProps {
     isLoading: boolean

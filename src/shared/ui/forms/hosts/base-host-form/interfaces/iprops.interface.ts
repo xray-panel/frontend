@@ -8,7 +8,7 @@ import {
     GetSubscriptionTemplatesCommand,
     UpdateHostCommand,
     UpdateManyHostsCommand
-} from '@xpanel/backend-contract'
+} from '@xlada/backend-contract'
 
 export interface IProps<
     T extends

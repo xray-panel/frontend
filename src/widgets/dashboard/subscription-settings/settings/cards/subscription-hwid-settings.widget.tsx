@@ -1,6 +1,6 @@
 import { Button, Group, NumberInput, px, Stack, Switch, Text, Textarea } from '@mantine/core'
 import { useForm, schemaResolver } from '@mantine/form'
-import { UpdateSubscriptionSettingsCommand } from '@xpanel/backend-contract'
+import { UpdateSubscriptionSettingsCommand } from '@xlada/backend-contract'
 import { useTranslation } from 'react-i18next'
 import { PiGear, PiIdentificationBadge } from 'react-icons/pi'
 import { TbDevices2 } from 'react-icons/tb'
@@ -124,7 +124,7 @@ export const SubscriptionHwidSettingsWidget = (props: IProps) => {
                             rel="noopener noreferrer"
                             size="md"
                             target="_blank"
-                            to="https://docs.xraypanel.dev/docs/features/hwid-device-limit"
+                            to="https://xlada.app/docs/features/hwid-device-limit"
                             variant="light"
                             w="fit-content"
                         >

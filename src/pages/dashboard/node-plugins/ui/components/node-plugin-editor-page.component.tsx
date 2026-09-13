@@ -1,5 +1,5 @@
 import { ActionIcon, ActionIconGroup, Box, Flex, Group, Tooltip } from '@mantine/core'
-import { GetNodePluginCommand } from '@xpanel/backend-contract'
+import { GetNodePluginCommand } from '@xlada/backend-contract'
 import { NodePluginEditorWidget } from '@widgets/dashboard/node-plugins/node-plugin-editor'
 import { useTranslation } from 'react-i18next'
 import { TbArrowBackUp, TbBook, TbList, TbPackage } from 'react-icons/tb'
@@ -40,7 +40,7 @@ export const NodePluginEditorPageComponent = (props: Props) => {
                         <ActionIcon
                             color="lime"
                             component="a"
-                            href="https://docs.xraypanel.dev/docs/learn/node-plugins"
+                            href="https://xlada.app/docs/learn/node-plugins"
                             size="input-md"
                             target="_blank"
                             variant="soft"

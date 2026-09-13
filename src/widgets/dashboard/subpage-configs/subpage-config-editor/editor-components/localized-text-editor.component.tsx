@@ -14,7 +14,7 @@ import {
     getLanguageName,
     TSubscriptionPageLanguageCode,
     TSubscriptionPageLocalizedText
-} from '@xpanel/subscription-page-types'
+} from '@xlada/subscription-page-types'
 import { IconLanguage } from '@tabler/icons-react'
 import { useTranslation } from 'react-i18next'
 

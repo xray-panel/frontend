@@ -1,5 +1,5 @@
 import { CopyButton, Menu } from '@mantine/core'
-import { GetSubscriptionTemplatesCommand } from '@xpanel/backend-contract'
+import { GetSubscriptionTemplatesCommand } from '@xlada/backend-contract'
 import { ReactNode } from 'react'
 import { useTranslation } from 'react-i18next'
 import { PiCheck, PiCopy, PiPencil, PiTrashDuotone } from 'react-icons/pi'

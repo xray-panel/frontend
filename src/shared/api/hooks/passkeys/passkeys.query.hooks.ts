@@ -2,7 +2,7 @@ import { createQueryKeys } from '@lukemorales/query-key-factory'
 import {
     GetPasskeysCommand,
     GetPasskeyRegistrationOptionsCommand
-} from '@xpanel/backend-contract'
+} from '@xlada/backend-contract'
 
 import { createGetQueryHook, errorHandler } from '../../tsq-helpers'
 

@@ -1,6 +1,6 @@
 import { MRT_ColumnDef } from '@kastov/mantine-react-table-open'
 /* eslint-disable camelcase */
-import { GetHwidDevicesCommand } from '@xpanel/backend-contract'
+import { GetHwidDevicesCommand } from '@xlada/backend-contract'
 import { useMemo } from 'react'
 import { useTranslation } from 'react-i18next'
 

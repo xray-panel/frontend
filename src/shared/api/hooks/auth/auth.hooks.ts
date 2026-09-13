@@ -5,7 +5,7 @@ import {
     OAuth2CallbackCommand,
     RegisterCommand,
     VerifyPasskeyAuthenticationCommand
-} from '@xpanel/backend-contract'
+} from '@xlada/backend-contract'
 
 import { setToken } from '@entities/auth/session-store'
 

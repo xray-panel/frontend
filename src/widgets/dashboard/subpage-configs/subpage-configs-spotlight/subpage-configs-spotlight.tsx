@@ -1,4 +1,4 @@
-import { GetSubpageConfigsCommand } from '@xpanel/backend-contract'
+import { GetSubpageConfigsCommand } from '@xlada/backend-contract'
 import { TbFile } from 'react-icons/tb'
 import { generatePath, useNavigate } from 'react-router'
 

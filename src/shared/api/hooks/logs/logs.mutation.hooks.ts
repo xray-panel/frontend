@@ -1,5 +1,5 @@
 import { notifications } from '@mantine/notifications'
-import { CleanLogsCommand, ClearNodeLogsCommand } from '@xpanel/backend-contract'
+import { CleanLogsCommand, ClearNodeLogsCommand } from '@xlada/backend-contract'
 
 import { createMutationHook } from '../../tsq-helpers'
 

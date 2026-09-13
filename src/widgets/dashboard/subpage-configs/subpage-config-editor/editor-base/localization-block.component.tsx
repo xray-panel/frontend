@@ -4,7 +4,7 @@ import {
     getLanguagesArray,
     TSubscriptionPageLanguageCode,
     TSubscriptionPageRawConfig
-} from '@xpanel/subscription-page-types'
+} from '@xlada/subscription-page-types'
 import { IconGlobe } from '@tabler/icons-react'
 import { useTranslation } from 'react-i18next'
 

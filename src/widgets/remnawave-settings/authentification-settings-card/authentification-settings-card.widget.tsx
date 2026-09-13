@@ -16,7 +16,7 @@ import { modals } from '@mantine/modals'
 import {
     GetRemnawaveSettingsCommand,
     UpdateRemnawaveSettingsCommand
-} from '@xpanel/backend-contract'
+} from '@xlada/backend-contract'
 import { TFunction } from 'i18next'
 import { useTranslation } from 'react-i18next'
 import { BiLogoGithub, BiLogoTelegram } from 'react-icons/bi'

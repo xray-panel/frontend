@@ -12,7 +12,7 @@ import {
     RestartAllNodesCommand,
     RestartNodeCommand,
     UpdateNodeCommand
-} from '@xpanel/backend-contract'
+} from '@xlada/backend-contract'
 
 import { createMutationHook } from '../../tsq-helpers'
 

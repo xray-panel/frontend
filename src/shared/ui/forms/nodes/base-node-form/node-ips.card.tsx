@@ -1,5 +1,5 @@
 import { UseFormReturnType } from '@mantine/form'
-import { CreateNodeCommand, UpdateNodeCommand } from '@xpanel/backend-contract'
+import { CreateNodeCommand, UpdateNodeCommand } from '@xlada/backend-contract'
 import { ForwardRefComponent, HTMLMotionProps, Variants } from 'motion/react'
 
 import { NodeIpsEditor } from '@shared/ui/node-ips'

@@ -1,5 +1,5 @@
 import { createQueryKeys } from '@lukemorales/query-key-factory'
-import { GetHostCommand, GetHostsCommand, GetHostsTagsCommand } from '@xpanel/backend-contract'
+import { GetHostCommand, GetHostsCommand, GetHostsTagsCommand } from '@xlada/backend-contract'
 
 import { sToMs } from '@shared/utils/time-utils'
 

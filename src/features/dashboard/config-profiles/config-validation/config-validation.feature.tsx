@@ -1,6 +1,6 @@
 import type { editor } from 'monaco-editor'
 
-import { GetSnippetsCommand } from '@xpanel/backend-contract'
+import { GetSnippetsCommand } from '@xlada/backend-contract'
 import consola from 'consola/browser'
 import dayjs from 'dayjs'
 import { RefObject } from 'react'

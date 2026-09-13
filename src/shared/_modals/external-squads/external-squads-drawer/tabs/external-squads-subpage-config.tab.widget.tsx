@@ -1,5 +1,5 @@
 import { Button, Card, Select, Stack, Text } from '@mantine/core'
-import { GetExternalSquadByUuidCommand } from '@xpanel/backend-contract'
+import { GetExternalSquadByUuidCommand } from '@xlada/backend-contract'
 import { IconPalette } from '@tabler/icons-react'
 import { useState } from 'react'
 import { useTranslation } from 'react-i18next'

@@ -1,6 +1,6 @@
 import type { ISshSessionHandle, ISshSessionStatus, ISshTab } from '../ssh-terminal.types'
 
-import { GetNodeCommand } from '@xpanel/backend-contract'
+import { GetNodeCommand } from '@xlada/backend-contract'
 import { createContext, use } from 'react'
 import { createStore, useStore } from 'zustand'
 

@@ -1,4 +1,4 @@
-import { SUBSCRIPTION_TEMPLATE_TYPE } from '@xpanel/backend-contract'
+import { SUBSCRIPTION_TEMPLATE_TYPE } from '@xlada/backend-contract'
 import { useMemo } from 'react'
 import { useTranslation } from 'react-i18next'
 import { HiChartPie, HiServer } from 'react-icons/hi'

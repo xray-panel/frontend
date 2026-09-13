@@ -1,6 +1,6 @@
-# XPANEL Frontend
+# XLADA Frontend
 
-**XPANEL** — самостоятельная панель управления Xray. Проект основан на
+**XLADA** — самостоятельная панель управления Xray. Проект основан на
 [Remnawave](https://github.com/remnawave) и является форком
 [remnawave/frontend](https://github.com/remnawave/frontend).
 
@@ -13,17 +13,17 @@
 
 ## Атрибуция
 
-XPANEL — производная работа от Remnawave. Исходный код Remnawave
-распространяется под лицензией AGPL-3.0-only, и XPANEL сохраняет ту же
+XLADA — производная работа от Remnawave. Исходный код Remnawave
+распространяется под лицензией AGPL-3.0-only, и XLADA сохраняет ту же
 лицензию. Все права на оригинальный код принадлежат авторам Remnawave.
 Подробности — в файле `NOTICE`.
 
 Названия «Remnawave», её логотипы и домены принадлежат авторам Remnawave и в
-XPANEL не используются.
+XLADA не используются.
 
 ## Что это
 
-Веб-интерфейс панели XPANEL — одностраничное приложение, которое собирается в
+Веб-интерфейс панели XLADA — одностраничное приложение, которое собирается в
 статику. Отдельный веб-сервер для интерфейса не нужен: собранную статику
 отдаёт backend ([xray-panel/backend](https://github.com/xray-panel/backend)),
 она кладётся прямо в его образ.
@@ -42,7 +42,7 @@ XPANEL не используются.
 ## Чем отличается от апстрима
 
 - **Ребрендинг.** Название, логотипы, локали, манифест и конфигурация
-  переведены на XPANEL; идентификаторы, имена таблиц и заголовки API при этом
+  переведены на XLADA; идентификаторы, имена таблиц и заголовки API при этом
   не тронуты ради совместимости.
 - **Журнал действий.** Страница `/dashboard/management/audit-log` с фильтрами
   по действиям администраторов.
@@ -57,21 +57,21 @@ XPANEL не используются.
   `ipinfo.io`: адреса пользователей больше не уходят на сторонние сервисы,
   остаётся только переход по ссылке, который инициирует сам администратор.
 - **Контракты перенесены внутрь репозитория** — папка `vendor/`; пакеты
-  `@xpanel/*` больше не берутся из npm.
+  `@xlada/*` больше не берутся из npm.
 
 ## Контракты
 
 Интерфейс использует общие контракты — zod-схемы запросов и ответов из пакета
-`@xpanel/backend-contract`. Из npm этот пакет **не устанавливается**: в
+`@xlada/backend-contract`. Из npm этот пакет **не устанавливается**: в
 `package.json` зависимость объявлена как `file:./vendor/backend-contract`.
 
 Исходники контрактов живут в репозитории backend, в `apps/backend/libs/contract`.
-В рабочую копию XPANEL они копируются скриптом `scripts/sync-contracts.sh`
+В рабочую копию XLADA они копируются скриптом `scripts/sync-contracts.sh`
 (запускается из корня рабочей копии) в `vendor/backend-contract`, после чего
 собираются скриптом `vendor/build-contracts.sh`. Кроме `backend-contract` в
 `vendor/` лежат ещё два пакета контрактов: `node-plugins`
-(`@xpanel/node-plugins`) и `subscription-page-types`
-(`@xpanel/subscription-page-types`).
+(`@xlada/node-plugins`) и `subscription-page-types`
+(`@xlada/subscription-page-types`).
 
 Каждый контракт собирается в два таргета — `build/backend` (CommonJS) и
 `build/frontend` (для браузера).
@@ -122,7 +122,7 @@ devDependencies).
 публикации изменений нужен репозиторий
 [xray-panel/backend](https://github.com/xray-panel/backend).
 
-В корне рабочей копии XPANEL есть скрипт `scripts/deploy-frontend.sh`. Он
+В корне рабочей копии XLADA есть скрипт `scripts/deploy-frontend.sh`. Он
 собирает интерфейс (`npm run cb`), копирует `dist/` в контекст сборки backend
 (`apps/backend/frontend-dist/`), пересобирает образ backend с корректными
 метаданными сборки и перезапускает контейнер панели.
@@ -138,7 +138,7 @@ devDependencies).
 
 ## Лицензия
 
-XPANEL Frontend распространяется под **AGPL-3.0-only**. Полный текст лицензии —
+XLADA Frontend распространяется под **AGPL-3.0-only**. Полный текст лицензии —
 в файле `LICENCE` в корне репозитория (имя файла сохранено от апстрима); в
 `package.json` указано то же значение — `AGPL-3.0-only`. Сведения об атрибуции
 Remnawave и о границах использования бренда — в `NOTICE`.

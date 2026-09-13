@@ -2,7 +2,7 @@ import {
     GetHostsCommand,
     GetHostsTagsCommand,
     GetConfigProfilesCommand
-} from '@xpanel/backend-contract'
+} from '@xlada/backend-contract'
 
 export interface IProps {
     configProfiles: GetConfigProfilesCommand.Response['response']['configProfiles'] | undefined

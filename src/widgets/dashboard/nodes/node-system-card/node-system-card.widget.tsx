@@ -1,6 +1,6 @@
 import { ActionIcon, Badge, Group, Progress, Stack, Text, Tooltip } from '@mantine/core'
 import { notifications } from '@mantine/notifications'
-import { GetNodeCommand } from '@xpanel/backend-contract'
+import { GetNodeCommand } from '@xlada/backend-contract'
 import { memo, useMemo, useRef, useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import {

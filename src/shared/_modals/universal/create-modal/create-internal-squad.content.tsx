@@ -1,6 +1,6 @@
 import { Stack, TextInput, Group, Button } from '@mantine/core'
 import { useField } from '@mantine/form'
-import { CreateInternalSquadCommand } from '@xpanel/backend-contract'
+import { CreateInternalSquadCommand } from '@xlada/backend-contract'
 import { t } from 'i18next'
 
 import { showModal } from '@shared/_modals/show-modal'

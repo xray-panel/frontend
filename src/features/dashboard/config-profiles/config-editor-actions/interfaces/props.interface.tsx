@@ -1,6 +1,6 @@
 import type { editor } from 'monaco-editor'
 
-import { GetConfigProfilesCommand } from '@xpanel/backend-contract'
+import { GetConfigProfilesCommand } from '@xlada/backend-contract'
 import { RefObject } from 'react'
 
 export interface Props {

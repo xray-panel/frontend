@@ -1,5 +1,5 @@
 import { ActionIcon, Box, Divider, Group, Stack, Text, ThemeIcon } from '@mantine/core'
-import { GetUserHwidDevicesCommand } from '@xpanel/backend-contract'
+import { GetUserHwidDevicesCommand } from '@xlada/backend-contract'
 import { useTranslation } from 'react-i18next'
 import {
     PiAndroidLogo,

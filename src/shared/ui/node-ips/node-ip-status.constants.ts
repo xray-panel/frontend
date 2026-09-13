@@ -1,4 +1,4 @@
-import { TNodeIpStatus } from '@xpanel/backend-contract'
+import { TNodeIpStatus } from '@xlada/backend-contract'
 import { IconType } from 'react-icons'
 import {
     TbActivityHeartbeat,

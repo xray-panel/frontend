@@ -1,5 +1,5 @@
 import { ActionIcon, Text, Tooltip } from '@mantine/core'
-import { GetNodeIntegrationsCommand } from '@xpanel/backend-contract'
+import { GetNodeIntegrationsCommand } from '@xlada/backend-contract'
 import { t } from 'i18next'
 import { TbTrash } from 'react-icons/tb'
 

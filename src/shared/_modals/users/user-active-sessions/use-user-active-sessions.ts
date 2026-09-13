@@ -1,5 +1,5 @@
 import { notifications } from '@mantine/notifications'
-import { ConnectionsByUserResultCommand } from '@xpanel/backend-contract'
+import { ConnectionsByUserResultCommand } from '@xlada/backend-contract'
 import { useCallback, useEffect, useState } from 'react'
 import { useTranslation } from 'react-i18next'
 

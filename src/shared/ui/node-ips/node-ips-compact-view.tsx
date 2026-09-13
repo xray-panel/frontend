@@ -1,5 +1,5 @@
 import { Badge, Group, HoverCard, ScrollArea, Stack, Text } from '@mantine/core'
-import { TNodeIps } from '@xpanel/backend-contract'
+import { TNodeIps } from '@xlada/backend-contract'
 import { useTranslation } from 'react-i18next'
 
 import { NodeIpStatusIcon } from './node-ip-status-icon'

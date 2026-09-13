@@ -2,7 +2,7 @@ import { notifications } from '@mantine/notifications'
 import {
     DeleteAllUserHwidDevicesCommand,
     DeleteUserHwidDeviceCommand
-} from '@xpanel/backend-contract'
+} from '@xlada/backend-contract'
 
 import { createMutationHook } from '../../tsq-helpers'
 

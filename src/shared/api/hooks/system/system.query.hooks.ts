@@ -8,7 +8,7 @@ import {
     GetRecapCommand,
     GetRemnawaveHealthCommand,
     GetStatsCommand
-} from '@xpanel/backend-contract'
+} from '@xlada/backend-contract'
 import { keepPreviousData } from '@tanstack/react-query'
 
 import { getUserTimezoneUtil, sToMs } from '@shared/utils/time-utils'
@@ -102,7 +102,7 @@ export const useGetRemnawaveHealth = createGetQueryHook({
         staleTime: sToMs(10),
         refetchInterval: sToMs(10)
     },
-    errorHandler: (error) => errorHandler(error, 'Get XPANEL Health')
+    errorHandler: (error) => errorHandler(error, 'Get XLADA Health')
 })
 
 export const useGetNodesMetrics = createGetQueryHook({
@@ -126,7 +126,7 @@ export const useGetRemnawaveMetadata = createGetQueryHook({
         refetchOnMount: false,
         staleTime: sToMs(3_600)
     },
-    errorHandler: (error) => errorHandler(error, 'Get XPANEL Metadata')
+    errorHandler: (error) => errorHandler(error, 'Get XLADA Metadata')
 })
 
 export const useGetRecap = createGetQueryHook({

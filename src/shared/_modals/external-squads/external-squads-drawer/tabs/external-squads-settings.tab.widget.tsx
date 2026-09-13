@@ -1,7 +1,7 @@
 import {
     ExternalSquadSubscriptionSettingsSchema,
     GetExternalSquadByUuidCommand
-} from '@xpanel/backend-contract'
+} from '@xlada/backend-contract'
 import { resolveSubscriptionSetting } from '@widgets/dashboard/subscription-settings/settings/resolve-settings'
 import { useTranslation } from 'react-i18next'
 import z from 'zod'

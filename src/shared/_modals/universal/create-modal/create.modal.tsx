@@ -1,6 +1,6 @@
 import NiceModal, { useModal } from '@ebay/nice-modal-react'
 import { Modal } from '@mantine/core'
-import { TSubscriptionTemplateType } from '@xpanel/backend-contract'
+import { TSubscriptionTemplateType } from '@xlada/backend-contract'
 import { useTranslation } from 'react-i18next'
 import { TbNewSection } from 'react-icons/tb'
 import { NavigateFunction } from 'react-router'

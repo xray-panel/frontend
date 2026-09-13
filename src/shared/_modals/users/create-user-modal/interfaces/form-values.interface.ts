@@ -1,3 +1,3 @@
-import { CreateUserCommand } from '@xpanel/backend-contract'
+import { CreateUserCommand } from '@xlada/backend-contract'
 
 export interface IFormValues extends CreateUserCommand.RequestBody {}

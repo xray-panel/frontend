@@ -4,8 +4,8 @@ import {
     HostMapperSchema,
     ResponseRulesConfigSchema,
     TSubscriptionTemplateType
-} from '@xpanel/backend-contract'
-import { NodePluginEditorSchema, SharedListConfigSchema } from '@xpanel/node-plugins'
+} from '@xlada/backend-contract'
+import { NodePluginEditorSchema, SharedListConfigSchema } from '@xlada/node-plugins'
 import axios from 'axios'
 import consola from 'consola'
 import { app } from 'src/config'
@@ -28,9 +28,9 @@ const DEFINITIONS_REF_PREFIX = '#/definitions/'
 const PROTECTED_ROOT_KEYS = new Set(['api', 'inbounds', 'metrics', 'snippets', 'stats'])
 
 const CUSTOM_CORE_SCHEMA = {
-    title: 'XPANEL Custom Core',
+    title: 'XLADA Custom Core',
     markdownDescription: [
-        '**XPANEL custom field.** Not part of Xray-Core – it is handled by the XPANEL Node.',
+        '**XLADA custom field.** Not part of Xray-Core – it is handled by the XLADA Node.',
         '',
         '> ⚠️ **Beta feature. Use strictly at your own risk.**',
         '>',
@@ -209,9 +209,9 @@ export const MonacoSetupFeature = {
 
             const snippetSchema = {
                 name: 'snippet',
-                title: 'XPANEL Snippets',
+                title: 'XLADA Snippets',
                 markdownDescription:
-                    'Create your own snippets to quickly configure your **Outbounds** or **Rules**. \n\n\nReference them here, XPANEL will handle the rest.',
+                    'Create your own snippets to quickly configure your **Outbounds** or **Rules**. \n\n\nReference them here, XLADA will handle the rest.',
                 type: 'string',
                 enum: snippetNames,
                 markdownEnumDescriptions: snippetDescriptions,
@@ -224,7 +224,7 @@ export const MonacoSetupFeature = {
 
             const rootSnippetsSchema = {
                 name: 'snippets',
-                title: 'XPANEL Snippets',
+                title: 'XLADA Snippets',
                 markdownDescription: [
                     'Snippets merged into the **root** of this config.',
                     '',

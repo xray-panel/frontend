@@ -5,7 +5,7 @@ import {
     GetConfigProfilesCommand,
     GetNodeIntegrationsCommand,
     GetNodePluginsCommand
-} from '@xpanel/backend-contract'
+} from '@xlada/backend-contract'
 import { TFunction } from 'i18next'
 import sortBy from 'lodash/sortBy'
 import ReactCountryFlag from 'react-country-flag'

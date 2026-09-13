@@ -9,7 +9,7 @@ import {
     TextInput,
     Tooltip
 } from '@mantine/core'
-import { TNodeIpStatus } from '@xpanel/backend-contract'
+import { TNodeIpStatus } from '@xlada/backend-contract'
 import { ReactNode } from 'react'
 import { useTranslation } from 'react-i18next'
 import { PiCheck, PiCopy } from 'react-icons/pi'

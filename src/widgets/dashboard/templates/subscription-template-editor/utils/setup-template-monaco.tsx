@@ -3,7 +3,7 @@ import {
     GetHostsCommand,
     SUBSCRIPTION_TEMPLATE_TYPE,
     TSubscriptionTemplateType
-} from '@xpanel/backend-contract'
+} from '@xlada/backend-contract'
 import axios from 'axios'
 import consola from 'consola'
 import { configureMonacoYaml, MonacoYaml, MonacoYamlOptions, SchemasSettings } from 'monaco-yaml'
@@ -45,7 +45,7 @@ const configureYaml = (monaco: Monaco, schemas?: SchemasSettings[]) => {
     monacoYaml = configureMonacoYaml(monaco, options)
 }
 
-const DOCS_URL = 'https://docs.xraypanel.dev/docs/learn/xray-json-advanced'
+const DOCS_URL = 'https://xlada.app/docs/learn/xray-json-advanced'
 const DOCS_LINK = `\n\n[📖 Documentation](${DOCS_URL})`
 
 function getHostStatus(host: Host): { icon: string; label: string } {

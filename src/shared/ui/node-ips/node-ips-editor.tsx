@@ -19,7 +19,7 @@ import {
     TNodeIps,
     TNodeIpStatus,
     UpdateNodeCommand
-} from '@xpanel/backend-contract'
+} from '@xlada/backend-contract'
 import { ReactNode, useCallback, useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import { TbNetwork, TbPlus } from 'react-icons/tb'

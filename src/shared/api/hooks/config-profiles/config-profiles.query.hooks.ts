@@ -5,7 +5,7 @@ import {
     GetConfigProfilesCommand,
     GetConfigProfilesTagsCommand,
     GetInboundsByProfileUuidCommand
-} from '@xpanel/backend-contract'
+} from '@xlada/backend-contract'
 
 import { sToMs } from '@shared/utils/time-utils'
 

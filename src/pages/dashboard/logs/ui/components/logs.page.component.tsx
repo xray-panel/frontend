@@ -1,6 +1,6 @@
 import { Badge, Button, Card, Checkbox, Group, Stack, Table, Text } from '@mantine/core'
 import { modals } from '@mantine/modals'
-import { GetLogsStatsCommand } from '@xpanel/backend-contract'
+import { GetLogsStatsCommand } from '@xlada/backend-contract'
 import { useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import { TbDatabase, TbTrash } from 'react-icons/tb'

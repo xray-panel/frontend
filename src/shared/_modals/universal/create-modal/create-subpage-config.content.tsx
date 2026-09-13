@@ -1,6 +1,6 @@
 import { Stack, TextInput, Group, Button } from '@mantine/core'
 import { useField } from '@mantine/form'
-import { CreateSubpageConfigCommand } from '@xpanel/backend-contract'
+import { CreateSubpageConfigCommand } from '@xlada/backend-contract'
 import { t } from 'i18next'
 import { generatePath, NavigateFunction } from 'react-router'
 

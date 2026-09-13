@@ -5,7 +5,7 @@ import {
     ReorderSubscriptionTemplateCommand,
     SetSubscriptionTemplateTagsCommand,
     UpdateSubscriptionTemplateCommand
-} from '@xpanel/backend-contract'
+} from '@xlada/backend-contract'
 
 import { createMutationHook } from '../../tsq-helpers'
 

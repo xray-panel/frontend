@@ -2,7 +2,7 @@ import {
     SSH_TERMINAL_WS_PROTOCOL,
     SshServerMessageSchema,
     TSshClientMessage
-} from '@xpanel/backend-contract'
+} from '@xlada/backend-contract'
 
 import {
     fromBase64,

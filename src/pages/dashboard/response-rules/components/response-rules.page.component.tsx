@@ -2,7 +2,7 @@ import { Box, Flex } from '@mantine/core'
 import {
     GetSubscriptionSettingsCommand,
     TSubscriptionTemplateType
-} from '@xpanel/backend-contract'
+} from '@xlada/backend-contract'
 import { ResponseRulesEditorWidget } from '@widgets/dashboard/response-rules/response-rules-editor'
 import { useTranslation } from 'react-i18next'
 import { TbRoute } from 'react-icons/tb'

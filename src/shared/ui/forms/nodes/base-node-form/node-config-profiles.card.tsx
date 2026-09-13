@@ -1,7 +1,7 @@
 import { ShowConfigProfilesWithInboundsFeature } from '@features/ui/dashboard/nodes/show-config-profiles-with-inbounds'
 import { Skeleton, Stack } from '@mantine/core'
 import { UseFormReturnType } from '@mantine/form'
-import { CreateNodeCommand, UpdateNodeCommand } from '@xpanel/backend-contract'
+import { CreateNodeCommand, UpdateNodeCommand } from '@xlada/backend-contract'
 import { ForwardRefComponent, HTMLMotionProps, motion, Variants } from 'motion/react'
 import { useTranslation } from 'react-i18next'
 import { SiSecurityscorecard } from 'react-icons/si'

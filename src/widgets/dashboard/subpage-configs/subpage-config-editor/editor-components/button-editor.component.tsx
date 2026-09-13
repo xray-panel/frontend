@@ -17,7 +17,7 @@ import {
     TSubscriptionPageButtonConfig,
     TSubscriptionPageLanguageCode,
     TSubscriptionPageSvgLibrary
-} from '@xpanel/subscription-page-types'
+} from '@xlada/subscription-page-types'
 import { IconArrowDown, IconArrowUp, IconChevronRight, IconTrash } from '@tabler/icons-react'
 import { useTranslation } from 'react-i18next'
 import { TbExternalLink } from 'react-icons/tb'

@@ -8,7 +8,7 @@ import {
     DragStartEvent
 } from '@dnd-kit/react'
 import { Box, Container, Stack } from '@mantine/core'
-import { GetHostsCommand } from '@xpanel/backend-contract'
+import { GetHostsCommand } from '@xlada/backend-contract'
 import { useWindowVirtualizer } from '@tanstack/react-virtual'
 import { HostCardWidget } from '@widgets/dashboard/hosts/host-card'
 import { memo, useCallback, useEffect, useMemo, useRef, useState } from 'react'

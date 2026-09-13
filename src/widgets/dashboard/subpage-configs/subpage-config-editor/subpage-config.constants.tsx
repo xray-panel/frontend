@@ -1,4 +1,4 @@
-import { TSubscriptionPagePlatformKey } from '@xpanel/subscription-page-types'
+import { TSubscriptionPagePlatformKey } from '@xlada/subscription-page-types'
 import {
     IconBrandAndroid,
     IconBrandApple,

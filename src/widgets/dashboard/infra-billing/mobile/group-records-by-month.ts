@@ -1,4 +1,4 @@
-import { GetInfraBillingRecordsCommand } from '@xpanel/backend-contract'
+import { GetInfraBillingRecordsCommand } from '@xlada/backend-contract'
 import dayjs from 'dayjs'
 import utc from 'dayjs/plugin/utc'
 

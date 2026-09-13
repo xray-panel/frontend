@@ -1,4 +1,4 @@
-import { TSubscriptionTemplateType } from '@xpanel/backend-contract'
+import { TSubscriptionTemplateType } from '@xlada/backend-contract'
 import { TbFile } from 'react-icons/tb'
 
 import { MihomoLogo, SingboxLogo, StashLogo, XrayLogo } from './logos'

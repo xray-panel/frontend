@@ -6,7 +6,7 @@ import {
     TSubscriptionPagePlatformKey,
     TSubscriptionPagePlatformSchema,
     TSubscriptionPageSvgLibrary
-} from '@xpanel/subscription-page-types'
+} from '@xlada/subscription-page-types'
 import { IconEdit, IconPlus, IconTrash } from '@tabler/icons-react'
 import { useState } from 'react'
 import { useTranslation } from 'react-i18next'

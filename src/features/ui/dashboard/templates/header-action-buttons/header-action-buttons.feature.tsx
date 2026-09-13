@@ -1,5 +1,5 @@
 import { ActionIcon, ActionIconGroup, Group, Tooltip } from '@mantine/core'
-import { TSubscriptionTemplateType } from '@xpanel/backend-contract'
+import { TSubscriptionTemplateType } from '@xlada/backend-contract'
 import { useTranslation } from 'react-i18next'
 import { TbPlus, TbRefresh } from 'react-icons/tb'
 import { useNavigate } from 'react-router'

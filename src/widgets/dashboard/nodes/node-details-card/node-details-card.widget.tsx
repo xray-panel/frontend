@@ -19,7 +19,7 @@ import {
     Tooltip
 } from '@mantine/core'
 import { modals } from '@mantine/modals'
-import { GetNodeCommand, UpdateNodeCommand } from '@xpanel/backend-contract'
+import { GetNodeCommand, UpdateNodeCommand } from '@xlada/backend-contract'
 import { githubDarkTheme, JsonEditor } from 'json-edit-react'
 import { memo, useCallback, useMemo } from 'react'
 import { useTranslation } from 'react-i18next'

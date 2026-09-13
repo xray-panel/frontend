@@ -1,5 +1,5 @@
 import { notifications } from '@mantine/notifications'
-import { UpdateRemnawaveSettingsCommand } from '@xpanel/backend-contract'
+import { UpdateRemnawaveSettingsCommand } from '@xlada/backend-contract'
 
 import { createMutationHook } from '../../tsq-helpers'
 
@@ -12,7 +12,7 @@ export const useUpdateRemnawaveSettings = createMutationHook({
         onSuccess: () => {
             notifications.show({
                 title: 'Success',
-                message: 'XPANEL settings updated successfully',
+                message: 'XLADA settings updated successfully',
                 color: 'teal'
             })
         }

@@ -7,7 +7,7 @@ import {
     ReorderInternalSquadCommand,
     SetInternalSquadTagsCommand,
     UpdateInternalSquadCommand
-} from '@xpanel/backend-contract'
+} from '@xlada/backend-contract'
 
 import { createMutationHook } from '../../tsq-helpers'
 

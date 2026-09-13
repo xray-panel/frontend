@@ -1,4 +1,4 @@
-import { GetBandwidthStatsCommand } from '@xpanel/backend-contract'
+import { GetBandwidthStatsCommand } from '@xlada/backend-contract'
 import { TFunction } from 'i18next'
 import {
     PiCalendarDotDuotone,

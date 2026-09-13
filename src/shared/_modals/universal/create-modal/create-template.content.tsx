@@ -3,7 +3,7 @@ import { useField } from '@mantine/form'
 import {
     CreateSubscriptionTemplateCommand,
     TSubscriptionTemplateType
-} from '@xpanel/backend-contract'
+} from '@xlada/backend-contract'
 import { t } from 'i18next'
 import { generatePath, NavigateFunction } from 'react-router'
 

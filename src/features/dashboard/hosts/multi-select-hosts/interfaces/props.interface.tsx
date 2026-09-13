@@ -1,4 +1,4 @@
-import { GetHostsCommand, GetConfigProfilesCommand } from '@xpanel/backend-contract'
+import { GetHostsCommand, GetConfigProfilesCommand } from '@xlada/backend-contract'
 import { Dispatch, SetStateAction } from 'react'
 
 export interface IProps {

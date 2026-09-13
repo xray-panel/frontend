@@ -1,5 +1,5 @@
 import { Badge, BadgeProps } from '@mantine/core'
-import { TUsersStatus, USERS_STATUS } from '@xpanel/backend-contract'
+import { TUsersStatus, USERS_STATUS } from '@xlada/backend-contract'
 import { PiClockCountdown, PiClockUser, PiProhibit, PiPulse } from 'react-icons/pi'
 
 interface IProps extends Omit<BadgeProps, 'children' | 'color'> {

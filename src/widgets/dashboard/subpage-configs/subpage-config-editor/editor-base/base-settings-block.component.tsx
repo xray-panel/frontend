@@ -11,7 +11,7 @@ import {
     ThemeIcon
 } from '@mantine/core'
 import { UseFormReturnType } from '@mantine/form'
-import { TSubscriptionPageRawConfig } from '@xpanel/subscription-page-types'
+import { TSubscriptionPageRawConfig } from '@xlada/subscription-page-types'
 import { useTranslation } from 'react-i18next'
 import { HiQuestionMarkCircle } from 'react-icons/hi'
 import { TbHealthRecognition, TbKey, TbLink } from 'react-icons/tb'
@@ -79,7 +79,7 @@ export function BaseSettingsBlockComponent({ form }: IProps) {
                                         <ActionIcon
                                             color="gray"
                                             component="a"
-                                            href="https://docs.xraypanel.dev/docs/install/subscription-page/display-raw-keys"
+                                            href="https://xlada.app/docs/install/subscription-page/display-raw-keys"
                                             onClick={(e) => e.stopPropagation()}
                                             rel="noopener noreferrer"
                                             size="xs"

@@ -1,4 +1,4 @@
-import { UpdateSubscriptionSettingsCommand } from '@xpanel/backend-contract'
+import { UpdateSubscriptionSettingsCommand } from '@xlada/backend-contract'
 
 export const processRemarks = (remarksData: string | string[] | undefined): string[] => {
     if (!remarksData) return ['']

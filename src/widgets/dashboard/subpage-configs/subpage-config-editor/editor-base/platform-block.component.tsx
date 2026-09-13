@@ -4,7 +4,7 @@ import {
     TSubscriptionPagePlatformKey,
     TSubscriptionPagePlatformSchema,
     TSubscriptionPageRawConfig
-} from '@xpanel/subscription-page-types'
+} from '@xlada/subscription-page-types'
 import { IconDeviceDesktop, IconPlus } from '@tabler/icons-react'
 import { useTranslation } from 'react-i18next'
 

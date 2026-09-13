@@ -10,7 +10,7 @@ import {
     TextInput,
     Tooltip
 } from '@mantine/core'
-import { GetConfigProfilesCommand } from '@xpanel/backend-contract'
+import { GetConfigProfilesCommand } from '@xlada/backend-contract'
 import { useCallback, useEffect, useMemo, useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import { TbDeviceFloppy, TbSearch, TbX } from 'react-icons/tb'

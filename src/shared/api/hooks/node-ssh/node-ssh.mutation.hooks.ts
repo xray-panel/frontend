@@ -1,4 +1,4 @@
-import { CreateSshTicketCommand } from '@xpanel/backend-contract'
+import { CreateSshTicketCommand } from '@xlada/backend-contract'
 
 import { createMutationHook } from '../../tsq-helpers'
 

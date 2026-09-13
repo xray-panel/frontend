@@ -11,7 +11,7 @@ import {
     Tooltip
 } from '@mantine/core'
 import { modals } from '@mantine/modals'
-import { GetInfraProvidersCommand } from '@xpanel/backend-contract'
+import { GetInfraProvidersCommand } from '@xlada/backend-contract'
 import { useTranslation } from 'react-i18next'
 import { TbCloud, TbEdit, TbLink, TbServer, TbTrash } from 'react-icons/tb'
 

@@ -1,6 +1,6 @@
 import { Menu } from '@mantine/core'
 import { modals } from '@mantine/modals'
-import { GetNodeCommand } from '@xpanel/backend-contract'
+import { GetNodeCommand } from '@xlada/backend-contract'
 import { useTranslation } from 'react-i18next'
 import { TbReload, TbRocket } from 'react-icons/tb'
 

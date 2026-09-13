@@ -22,7 +22,7 @@ export const CopyDockerComposeWidget = ({ port }: IProps) => {
   xpanelnode:
     container_name: xpanelnode
     hostname: xpanelnode
-    image: xpanel/node:latest
+    image: xlada/node:latest
     network_mode: host
     restart: always
     cap_add:

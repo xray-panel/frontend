@@ -1,4 +1,4 @@
-import type { GetNodeCommand } from '@xpanel/backend-contract'
+import type { GetNodeCommand } from '@xlada/backend-contract'
 
 export type TStage = 'connecting' | 'failed' | 'session' | 'setup'
 

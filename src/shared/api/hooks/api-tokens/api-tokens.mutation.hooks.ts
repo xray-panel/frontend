@@ -3,7 +3,7 @@ import {
     CreateApiTokenCommand,
     DeleteApiTokenCommand,
     GetOttCommand
-} from '@xpanel/backend-contract'
+} from '@xlada/backend-contract'
 
 import { createMutationHook } from '@shared/api/tsq-helpers/create-mutation-hook'
 

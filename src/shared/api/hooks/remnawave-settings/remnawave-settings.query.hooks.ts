@@ -1,5 +1,5 @@
 import { createQueryKeys } from '@lukemorales/query-key-factory'
-import { GetRemnawaveSettingsCommand } from '@xpanel/backend-contract'
+import { GetRemnawaveSettingsCommand } from '@xlada/backend-contract'
 
 import { sToMs } from '@shared/utils/time-utils'
 
@@ -19,5 +19,5 @@ export const useGetRemnawaveSettings = createGetQueryHook({
         refetchOnMount: false,
         staleTime: sToMs(30)
     },
-    errorHandler: (error) => errorHandler(error, 'Get XPANEL Settings')
+    errorHandler: (error) => errorHandler(error, 'Get XLADA Settings')
 })

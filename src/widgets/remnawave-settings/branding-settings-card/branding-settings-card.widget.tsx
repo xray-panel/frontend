@@ -15,7 +15,7 @@ import { modals } from '@mantine/modals'
 import {
     GetRemnawaveSettingsCommand,
     UpdateRemnawaveSettingsCommand
-} from '@xpanel/backend-contract'
+} from '@xlada/backend-contract'
 import { useTranslation } from 'react-i18next'
 import { HiQuestionMarkCircle } from 'react-icons/hi'
 import { TbAlertCircle, TbLink, TbStar } from 'react-icons/tb'
@@ -155,7 +155,7 @@ export const BrandingSettingsCardWidget = (props: IProps) => {
                                         {t('branding-settings-card.widget.example-mantine-colors')}:
                                     </Text>
                                     <Code block c="blue" fz="xs">
-                                        {'{cyan}XPANEL{white}'}
+                                        {'{cyan}XLADA{white}'}
                                     </Code>
                                 </Box>
 
@@ -206,7 +206,7 @@ export const BrandingSettingsCardWidget = (props: IProps) => {
                                 key={form.key('brandingSettings.title')}
                                 label={t('branding-settings-card.widget.brand-name')}
                                 leftSection={<TbStar size={16} />}
-                                placeholder="XPANEL"
+                                placeholder="XLADA"
                                 rightSection={brandingTitleHoverCard()}
                                 {...form.getInputProps('brandingSettings.title')}
                             />

@@ -5,7 +5,7 @@ import {
     GetUsersCommand,
     GetExternalSquadsCommand,
     GetInternalSquadsCommand
-} from '@xpanel/backend-contract'
+} from '@xlada/backend-contract'
 import { useMemo } from 'react'
 import { useTranslation } from 'react-i18next'
 

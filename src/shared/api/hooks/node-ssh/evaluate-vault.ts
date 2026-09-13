@@ -1,4 +1,4 @@
-import { EvaluateVaultCommand } from '@xpanel/backend-contract'
+import { EvaluateVaultCommand } from '@xlada/backend-contract'
 
 import { instance } from '../../axios'
 

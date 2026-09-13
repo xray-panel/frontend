@@ -2,7 +2,7 @@ import { MRT_Column } from '@kastov/mantine-react-table-open'
 /* eslint-disable camelcase */
 import { Group, NativeSelect, NumberInput } from '@mantine/core'
 import { useDebouncedValue } from '@mantine/hooks'
-import { GetUsersCommand } from '@xpanel/backend-contract'
+import { GetUsersCommand } from '@xlada/backend-contract'
 import { useEffect, useRef, useState } from 'react'
 
 import {

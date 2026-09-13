@@ -1,7 +1,7 @@
 import {
     REMNAWAVE_CLIENT_TYPE_BROWSER,
     REMNAWAVE_CLIENT_TYPE_HEADER
-} from '@xpanel/backend-contract'
+} from '@xlada/backend-contract'
 import axios from 'axios'
 import consola from 'consola/browser'
 

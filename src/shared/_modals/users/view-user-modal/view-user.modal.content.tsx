@@ -4,7 +4,7 @@ import { RevokeSubscriptionUserFeature } from '@features/ui/dashboard/users/revo
 import { ToggleUserStatusButtonFeature } from '@features/ui/dashboard/users/toggle-user-status-button'
 import { Button, Group, Menu, px, Stack } from '@mantine/core'
 import { useForm, schemaResolver } from '@mantine/form'
-import { UpdateUserCommand } from '@xpanel/backend-contract'
+import { UpdateUserCommand } from '@xlada/backend-contract'
 import dayjs from 'dayjs'
 import { motion } from 'motion/react'
 import { useEffect } from 'react'

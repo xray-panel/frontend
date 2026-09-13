@@ -3,7 +3,7 @@ import {
     ConnectionsByUserResultCommand,
     ConnectionsByNodeResultCommand,
     GeocheckByNodeResultCommand
-} from '@xpanel/backend-contract'
+} from '@xlada/backend-contract'
 
 import { sToMs } from '@shared/utils/time-utils'
 

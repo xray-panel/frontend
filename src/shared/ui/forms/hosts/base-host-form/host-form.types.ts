@@ -3,7 +3,7 @@ import {
     CreateHostCommand,
     UpdateHostCommand,
     UpdateManyHostsCommand
-} from '@xpanel/backend-contract'
+} from '@xlada/backend-contract'
 
 export type THostFormValues = Partial<
     CreateHostCommand.RequestBody &

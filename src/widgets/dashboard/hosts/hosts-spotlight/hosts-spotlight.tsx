@@ -1,5 +1,5 @@
 import { Group, Stack, Text, ThemeIcon } from '@mantine/core'
-import { GetHostsCommand, GetConfigProfilesCommand } from '@xpanel/backend-contract'
+import { GetHostsCommand, GetConfigProfilesCommand } from '@xlada/backend-contract'
 import { PiProhibit, PiPulse } from 'react-icons/pi'
 import { TbEyeOff } from 'react-icons/tb'
 

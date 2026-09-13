@@ -1,4 +1,4 @@
-import { GeocheckByNodeCommand, GeocheckByNodeResultCommand } from '@xpanel/backend-contract'
+import { GeocheckByNodeCommand, GeocheckByNodeResultCommand } from '@xlada/backend-contract'
 import { useCallback, useState } from 'react'
 
 import { useGeocheckByNode, useGeocheckByNodeResult } from '@shared/api/hooks'

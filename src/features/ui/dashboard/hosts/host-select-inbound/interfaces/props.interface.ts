@@ -1,4 +1,4 @@
-import { GetConfigProfilesCommand } from '@xpanel/backend-contract'
+import { GetConfigProfilesCommand } from '@xlada/backend-contract'
 import { ReactNode } from 'react'
 
 export interface IProps {

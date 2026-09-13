@@ -1,5 +1,5 @@
 import { notifications } from '@mantine/notifications'
-import { UpdateSubscriptionSettingsCommand } from '@xpanel/backend-contract'
+import { UpdateSubscriptionSettingsCommand } from '@xlada/backend-contract'
 
 import { createMutationHook } from '../../tsq-helpers'
 

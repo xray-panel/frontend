@@ -9,7 +9,7 @@ import {
     Tooltip
 } from '@mantine/core'
 import { modals } from '@mantine/modals'
-import { CreateApiTokenCommand, GetApiTokensCommand } from '@xpanel/backend-contract'
+import { CreateApiTokenCommand, GetApiTokensCommand } from '@xlada/backend-contract'
 import dayjs from 'dayjs'
 import { useMemo, useState } from 'react'
 import { useTranslation } from 'react-i18next'

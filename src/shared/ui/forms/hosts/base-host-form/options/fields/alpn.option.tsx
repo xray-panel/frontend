@@ -1,5 +1,5 @@
 import { Select } from '@mantine/core'
-import { ALPN } from '@xpanel/backend-contract'
+import { ALPN } from '@xlada/backend-contract'
 
 import { useSettingsRowControl } from '@shared/ui/settings-row'
 

@@ -1,5 +1,5 @@
 import { createQueryKeys } from '@lukemorales/query-key-factory'
-import { GetTwoFactorStatusCommand } from '@xpanel/backend-contract'
+import { GetTwoFactorStatusCommand } from '@xlada/backend-contract'
 
 import { sToMs } from '@shared/utils/time-utils'
 

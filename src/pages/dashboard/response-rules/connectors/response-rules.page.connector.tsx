@@ -1,4 +1,4 @@
-import { TSubscriptionTemplateType } from '@xpanel/backend-contract'
+import { TSubscriptionTemplateType } from '@xlada/backend-contract'
 
 import { useGetSubscriptionSettings, useGetSubscriptionTemplates } from '@shared/api/hooks'
 import { LoadingScreen } from '@shared/ui'

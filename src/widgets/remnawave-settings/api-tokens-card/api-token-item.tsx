@@ -1,6 +1,6 @@
 import { ActionIcon, Box, Group, Menu, Text } from '@mantine/core'
 import { modals } from '@mantine/modals'
-import { GetApiTokensCommand } from '@xpanel/backend-contract'
+import { GetApiTokensCommand } from '@xlada/backend-contract'
 import dayjs from 'dayjs'
 import { useTranslation } from 'react-i18next'
 import { TbCookie, TbDots, TbEye, TbTrash } from 'react-icons/tb'

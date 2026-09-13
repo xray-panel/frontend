@@ -1,6 +1,6 @@
 import { Center, Loader, Stack, Text, Title, Transition } from '@mantine/core'
 import { notifications } from '@mantine/notifications'
-import { TOAuth2ProvidersKeys } from '@xpanel/backend-contract'
+import { TOAuth2ProvidersKeys } from '@xlada/backend-contract'
 import { IconCheck } from '@tabler/icons-react'
 import { CSSProperties, useEffect } from 'react'
 import { useNavigate, useParams, useSearchParams } from 'react-router'

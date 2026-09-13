@@ -4,7 +4,7 @@ import {
     INSTALLATION_GUIDE_BLOCKS_VARIANTS_VALUES,
     SUBSCRIPTION_INFO_BLOCK_VARIANTS_VALUES,
     TSubscriptionPageRawConfig
-} from '@xpanel/subscription-page-types'
+} from '@xlada/subscription-page-types'
 import { IconPalette } from '@tabler/icons-react'
 import { useTranslation } from 'react-i18next'
 

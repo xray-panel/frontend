@@ -1,6 +1,6 @@
 import { Card, Divider, Stack, TextInput } from '@mantine/core'
 import { UseFormReturnType } from '@mantine/form'
-import { TSubscriptionPageRawConfig } from '@xpanel/subscription-page-types'
+import { TSubscriptionPageRawConfig } from '@xlada/subscription-page-types'
 import { IconPalette } from '@tabler/icons-react'
 import { useTranslation } from 'react-i18next'
 

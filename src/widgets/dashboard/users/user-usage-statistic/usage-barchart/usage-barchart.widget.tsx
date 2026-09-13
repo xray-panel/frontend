@@ -12,7 +12,7 @@ import {
     Text
 } from '@mantine/core'
 import { modals } from '@mantine/modals'
-import { GetStatsUserUsageCommand } from '@xpanel/backend-contract'
+import { GetStatsUserUsageCommand } from '@xlada/backend-contract'
 import { useTranslation } from 'react-i18next'
 import { PiEmpty } from 'react-icons/pi'
 import { TbChartBar } from 'react-icons/tb'

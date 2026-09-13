@@ -1,5 +1,5 @@
 import { Badge, Group, RollingNumber, Text } from '@mantine/core'
-import { GetHttpStatsCommand } from '@xpanel/backend-contract'
+import { GetHttpStatsCommand } from '@xlada/backend-contract'
 import { memo } from 'react'
 
 import classes from './http-stats-table.module.css'

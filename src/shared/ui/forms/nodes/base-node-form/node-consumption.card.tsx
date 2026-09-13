@@ -9,7 +9,7 @@ import {
     Text
 } from '@mantine/core'
 import { UseFormReturnType } from '@mantine/form'
-import { CreateNodeCommand, UpdateNodeCommand } from '@xpanel/backend-contract'
+import { CreateNodeCommand, UpdateNodeCommand } from '@xlada/backend-contract'
 import { ForwardRefComponent, HTMLMotionProps, Variants } from 'motion/react'
 import { useRef } from 'react'
 import { useTranslation } from 'react-i18next'

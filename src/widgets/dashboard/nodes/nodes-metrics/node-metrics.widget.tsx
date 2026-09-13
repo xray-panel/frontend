@@ -13,7 +13,7 @@ import {
     Text,
     ThemeIcon
 } from '@mantine/core'
-import { GetNodesMetricsCommand } from '@xpanel/backend-contract'
+import { GetNodesMetricsCommand } from '@xlada/backend-contract'
 import { VirtuosoMasonry } from '@virtuoso.dev/masonry'
 import { useCallback, useMemo } from 'react'
 import {
