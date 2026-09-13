@@ -45,6 +45,7 @@ import { TagInputPill } from '@shared/ui/tag-input-pill'
 import { handleFormErrors } from '@shared/utils/misc'
 
 import { TwoFactorSection } from './two-factor-section'
+import { TwoFactorSwitch } from './two-factor-switch'
 
 interface IProps {
     oauth2Settings: NonNullable<GetRemnawaveSettingsCommand.Response['response']['oauth2Settings']>
@@ -521,6 +522,9 @@ export const AuthentificationSettingsCardWidget = (props: IProps) => {
                                         <Text fw={500}>{t('security-page.two-factor-title')}</Text>
                                     </Group>
                                 </Accordion.Control>
+                                <Group gap="xs" justify="flex-end" pr="xs" wrap="nowrap">
+                                    <TwoFactorSwitch />
+                                </Group>
                             </Center>
 
                             <Accordion.Panel>

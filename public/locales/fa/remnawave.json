@@ -59,7 +59,7 @@
       "more-actions": "عملیات بیشتر",
       "next": "بعدی",
       "open": "Open",
-      "paste": "Paste",
+      "paste": "جای‌گذاری",
       "paste-default": "Paste default",
       "refresh": "تازه‌سازی",
       "remove": "حذف کردن",
@@ -71,9 +71,9 @@
       "search": "جستجو",
       "select": "انتخاب",
       "select-all": "انتخاب همه",
-      "try-again": "Try again",
+      "try-again": "تلاش مجدد",
       "update": "به‌روزرسانی",
-      "view": "View"
+      "view": "مشاهده"
     },
     "field": {
       "active-sessions": "Active sessions",
@@ -1243,14 +1243,14 @@
       "api-tokens": "توکن‌های API",
       "no-api-tokens-found": "هیچ توکن API یافت نشد",
       "token-name": "نام توکن",
-      "create-api-token": "Create API token",
-      "full-access": "Full access",
-      "col-scopes": "Scopes",
-      "col-created": "Created",
-      "col-expires": "Expires",
-      "expired": "Expired",
-      "expires-in-days": "Expires in (days)",
-      "one-time-notice": "For security reasons, the token is shown <emphasis>only once</emphasis> right after creation. Make sure to copy and store it somewhere safe — you won't be able to see it again."
+      "create-api-token": "ایجاد توکن API",
+      "full-access": "دسترسی کامل",
+      "col-scopes": "دسترسی‌ها",
+      "col-created": "ایجاد شده",
+      "col-expires": "انقضا",
+      "expired": "منقضی شده",
+      "expires-in-days": "مدت اعتبار (روز)",
+      "one-time-notice": "به دلایل امنیتی، توکن <emphasis>فقط یک بار</emphasis> بلافاصله پس از ایجاد نمایش داده می‌شود. حتماً آن را کپی کرده و در جای امنی نگه دارید — دیگر نمی‌توانید آن را ببینید."
     }
   },
   "external-squads-hosts": {
