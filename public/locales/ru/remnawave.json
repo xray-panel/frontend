@@ -27,7 +27,8 @@
     "sessions-explorer": "Обозреватель сессий",
     "http-stats": "Статистика HTTP",
     "quick-launcher": "Лаунчер",
-    "logs": "Логи"
+    "logs": "Логи",
+    "administrators": "Администраторы"
   },
   "common": {
     "action": {
@@ -2014,7 +2015,8 @@
     "notification-title": "Двухфакторная аутентификация",
     "notification-enabled": "Двухфакторная аутентификация успешно включена",
     "notification-disabled": "Двухфакторная аутентификация выключена",
-    "notification-error-unknown": "Запрос завершился неизвестной ошибкой."
+    "notification-error-unknown": "Запрос завершился неизвестной ошибкой.",
+    "passkey-oauth-note": "Вход по passkey и через OAuth2 не запрашивает код: эти способы считаются полноценным вторым фактором."
   },
   "login-page": {
     "two-factor-title": "Для этого аккаунта включена двухфакторная аутентификация. Введите 6-значный код из приложения-аутентификатора.",
@@ -2023,5 +2025,54 @@
     "two-factor-back": "Вернуться ко входу по паролю",
     "two-factor-error": "Запрос завершился неизвестной ошибкой.",
     "notification-title": "Двухфакторная аутентификация"
+  },
+  "header": {
+    "recap": {
+      "title": "Итоги",
+      "sections": "Разделы",
+      "mask-fields": "Скрывать поля",
+      "early-adopter": "Ранний доступ",
+      "total-users": "всего пользователей",
+      "nodes": "ноды",
+      "traffic": "трафик",
+      "new-users": "новых пользователей",
+      "infrastructure": "Инфраструктура",
+      "countries": "страны",
+      "cpu-cores": "Ядра CPU",
+      "since": "С {{date}}",
+      "background": "Фон",
+      "custom-note": "Своя подпись",
+      "accent-color": "Акцентный цвет",
+      "error": "Ошибка",
+      "unknown-error": "Неизвестная ошибка",
+      "could-not-download": "Не удалось загрузить «Итоги»",
+      "section-nodes-traffic": "Ноды и трафик",
+      "section-this-month": "Этот месяц",
+      "bg-solid": "Сплошной",
+      "bg-gradient": "Градиент",
+      "bg-dots": "Точки",
+      "bg-grid": "Сетка",
+      "field-users": "Пользователи",
+      "field-nodes": "Ноды",
+      "field-traffic": "Трафик",
+      "field-new-users": "Новые пользователи",
+      "field-month-traffic": "Трафик за месяц",
+      "field-countries": "Страны",
+      "field-cpu-cores": "Ядра CPU"
+    },
+    "build-info": {
+      "title": "Информация о сборке",
+      "update-available": "Доступно обновление",
+      "new-version-available": "Доступна новая версия",
+      "check-out": "Посмотреть",
+      "copy": "Скопировать сведения о сборке",
+      "build-time": "Время сборки",
+      "build": "Сборка",
+      "backend": "Бэкенд",
+      "view-on-github": "Открыть на GitHub",
+      "frontend": "Фронтенд",
+      "community": "Сообщество",
+      "github": "GitHub"
+    }
   }
 }

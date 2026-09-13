@@ -22,7 +22,14 @@ import { useTranslation } from 'react-i18next'
 import { BiLogoGithub, BiLogoTelegram } from 'react-icons/bi'
 import { PiGlobe, PiKey } from 'react-icons/pi'
 import { SiKeycloak } from 'react-icons/si'
-import { TbAlertCircle, TbFingerprint, TbKey, TbPassword, TbServer } from 'react-icons/tb'
+import {
+    TbAlertCircle,
+    TbFingerprint,
+    TbKey,
+    TbPassword,
+    TbServer,
+    TbShieldLock
+} from 'react-icons/tb'
 
 import { showModal } from '@shared/_modals/show-modal'
 import { HelpActionIconShared } from '@shared/_modals/universal'
@@ -36,6 +43,8 @@ import { BaseOverlayHeader } from '@shared/ui/overlays/base-overlay-header'
 import { SettingsCardShared } from '@shared/ui/settings-card'
 import { TagInputPill } from '@shared/ui/tag-input-pill'
 import { handleFormErrors } from '@shared/utils/misc'
+
+import { TwoFactorSection } from './two-factor-section'
 
 interface IProps {
     oauth2Settings: NonNullable<GetRemnawaveSettingsCommand.Response['response']['oauth2Settings']>
@@ -495,6 +504,27 @@ export const AuthentificationSettingsCardWidget = (props: IProps) => {
                                         {...form.getInputProps('passkeySettings.origin')}
                                     />
                                 </Stack>
+                            </Accordion.Panel>
+                        </Accordion.Item>
+
+                        {/* Two-factor authentication (TOTP) */}
+                        <Accordion.Item key="two-factor" value="two-factor">
+                            <Center>
+                                <Accordion.Control
+                                    icon={
+                                        <ThemeIcon color="teal" size="lg" variant="light">
+                                            <TbShieldLock size={24} />
+                                        </ThemeIcon>
+                                    }
+                                >
+                                    <Group justify="space-between" pr="md">
+                                        <Text fw={500}>{t('security-page.two-factor-title')}</Text>
+                                    </Group>
+                                </Accordion.Control>
+                            </Center>
+
+                            <Accordion.Panel>
+                                <TwoFactorSection />
                             </Accordion.Panel>
                         </Accordion.Item>
 

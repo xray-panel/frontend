@@ -27,7 +27,8 @@
     "sessions-explorer": "会话管理器",
     "http-stats": "HTTP 状态",
     "quick-launcher": "开始菜单",
-    "logs": "日志"
+    "logs": "日志",
+    "administrators": "管理员"
   },
   "common": {
     "action": {
@@ -2014,7 +2015,8 @@
     "notification-title": "两步验证",
     "notification-enabled": "两步验证已成功启用",
     "notification-disabled": "两步验证已禁用",
-    "notification-error-unknown": "请求失败，出现未知错误。"
+    "notification-error-unknown": "请求失败，出现未知错误。",
+    "passkey-oauth-note": "使用通行密钥或通过 OAuth2 提供商登录时不会要求验证码：这些方式被视为完整的第二重验证。"
   },
   "login-page": {
     "two-factor-title": "此账户已启用两步验证。请输入身份验证器应用生成的 6 位验证码。",
@@ -2023,5 +2025,54 @@
     "two-factor-back": "返回密码登录",
     "two-factor-error": "请求失败，出现未知错误。",
     "notification-title": "两步验证"
+  },
+  "header": {
+    "recap": {
+      "title": "回顾",
+      "sections": "区块",
+      "mask-fields": "隐藏字段",
+      "early-adopter": "早期采用者",
+      "total-users": "用户总数",
+      "nodes": "节点",
+      "traffic": "流量",
+      "new-users": "新用户",
+      "infrastructure": "基础设施",
+      "countries": "国家",
+      "cpu-cores": "CPU 核心",
+      "since": "自 {{date}} 起",
+      "background": "背景",
+      "custom-note": "自定义备注",
+      "accent-color": "强调色",
+      "error": "错误",
+      "unknown-error": "未知错误",
+      "could-not-download": "无法下载回顾",
+      "section-nodes-traffic": "节点与流量",
+      "section-this-month": "本月",
+      "bg-solid": "纯色",
+      "bg-gradient": "渐变",
+      "bg-dots": "圆点",
+      "bg-grid": "网格",
+      "field-users": "用户",
+      "field-nodes": "节点",
+      "field-traffic": "流量",
+      "field-new-users": "新用户",
+      "field-month-traffic": "本月流量",
+      "field-countries": "国家",
+      "field-cpu-cores": "CPU 核心"
+    },
+    "build-info": {
+      "title": "构建信息",
+      "update-available": "有可用更新",
+      "new-version-available": "新版本可用",
+      "check-out": "查看",
+      "copy": "复制构建信息",
+      "build-time": "构建时间",
+      "build": "构建",
+      "backend": "后端",
+      "view-on-github": "在 GitHub 上查看",
+      "frontend": "前端",
+      "community": "社区",
+      "github": "GitHub"
+    }
   }
 }

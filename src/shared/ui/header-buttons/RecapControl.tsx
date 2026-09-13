@@ -1,12 +1,15 @@
 import { rem } from '@mantine/core'
 import { modals } from '@mantine/modals'
 import { RecapContent } from '@widgets/dashboard/recap/recap.content.widget'
+import { useTranslation } from 'react-i18next'
 import { TbSparkles } from 'react-icons/tb'
 
 import { BaseOverlayHeader } from '../overlays/base-overlay-header'
 import { HeaderControl } from './HeaderControl'
 
 export function RecapControl() {
+    const { t } = useTranslation()
+
     const handleClick = () => {
         modals.open({
             title: (
@@ -14,7 +17,7 @@ export function RecapControl() {
                     iconColor="indigo"
                     IconComponent={TbSparkles}
                     iconVariant="soft"
-                    title="Recap"
+                    title={t('header.recap.title')}
                 />
             ),
             centered: true,

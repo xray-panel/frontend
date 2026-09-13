@@ -27,7 +27,6 @@ export const ROUTES = {
             LOGS: '/dashboard/management/logs',
             ADMINS: '/dashboard/management/admins',
             AUDIT_LOG: '/dashboard/management/audit-log',
-            SECURITY: '/dashboard/management/security',
             NODE_PLUGINS: {
                 ROOT: '/dashboard/management/plugins',
                 NODE_PLUGIN_BY_UUID: '/dashboard/management/plugins/:uuid'

@@ -21,7 +21,6 @@ import {
     TbDatabase,
     TbWebhook,
     TbHistory,
-    TbShieldLock,
     TbUserShield
 } from 'react-icons/tb'
 
@@ -201,7 +200,7 @@ export const useDesktopMenuSections = (): MenuItem[] => {
                         id: 'response-rules'
                     },
                     {
-                        name: 'Subscription Page',
+                        name: t('constants.subscription-page'),
                         href: ROUTES.DASHBOARD.SUBPAGE_CONFIGS.ROOT,
                         icon: PiArrowsInCardinalFill,
                         id: 'subscription-page'
@@ -220,7 +219,7 @@ export const useDesktopMenuSections = (): MenuItem[] => {
                         id: 'hwid-inspector'
                     },
                     {
-                        name: 'Audit Log',
+                        name: t('audit-log-page.title'),
                         href: ROUTES.DASHBOARD.MANAGEMENT.AUDIT_LOG,
                         icon: TbHistory,
                         id: 'audit-log'
@@ -275,16 +274,10 @@ export const useDesktopMenuSections = (): MenuItem[] => {
                         id: 'remnawave-settings'
                     },
                     {
-                        name: 'Administrators',
+                        name: t('constants.administrators'),
                         href: ROUTES.DASHBOARD.MANAGEMENT.ADMINS,
                         icon: TbUserShield,
                         id: 'admins'
-                    },
-                    {
-                        name: 'Security',
-                        href: ROUTES.DASHBOARD.MANAGEMENT.SECURITY,
-                        icon: TbShieldLock,
-                        id: 'security'
                     }
                 ]
             }

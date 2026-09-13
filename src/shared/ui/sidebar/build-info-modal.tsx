@@ -13,6 +13,9 @@ import {
     Tooltip
 } from '@mantine/core'
 import { GetMetadataCommand } from '@xlada/backend-contract'
+import { useTranslation } from 'react-i18next'
+
+import { app } from 'src/config'
 import {
     TbBrandGithub,
     TbBrandTelegram,
@@ -37,6 +40,8 @@ interface BuildInfoModalProps {
 }
 
 export function BuildInfoModal({ remnawaveMetadata, isNewVersionAvailable }: BuildInfoModalProps) {
+    const { t } = useTranslation()
+
     return (
         <Stack gap="md">
             {isNewVersionAvailable && (
@@ -48,10 +53,10 @@ export function BuildInfoModal({ remnawaveMetadata, isNewVersionAvailable }: Bui
                             </Box>
                             <Stack className={classes.updateTextWrapper} gap={4}>
                                 <Text c="teal.4" fw={600} size="sm">
-                                    Update available
+                                    {t('header.build-info.update-available')}
                                 </Text>
                                 <Text c="dimmed" size="xs">
-                                    A new version is available
+                                    {t('header.build-info.new-version-available')}
                                 </Text>
                             </Stack>
                         </Group>
@@ -67,7 +72,7 @@ export function BuildInfoModal({ remnawaveMetadata, isNewVersionAvailable }: Bui
                             target="_blank"
                             variant="light"
                         >
-                            Check out
+                            {t('header.build-info.check-out')}
                         </Button>
                     </Group>
                 </Paper>
@@ -102,7 +107,7 @@ export function BuildInfoModal({ remnawaveMetadata, isNewVersionAvailable }: Bui
                             value={JSON.stringify(remnawaveMetadata, null, 2)}
                         >
                             {({ copied, copy }) => (
-                                <Tooltip label="Copy build info">
+                                <Tooltip label={t('header.build-info.copy')}>
                                     <ActionIcon
                                         color={copied ? 'teal' : 'gray'}
                                         onClick={copy}
@@ -123,7 +128,7 @@ export function BuildInfoModal({ remnawaveMetadata, isNewVersionAvailable }: Bui
                             <Group gap="xs" mb={6}>
                                 <TbCalendar color="var(--mantine-color-indigo-5)" size={14} />
                                 <Text c="indigo.5" fw={600} size="xs" tt="uppercase">
-                                    Build Time
+                                    {t('header.build-info.build-time')}
                                 </Text>
                             </Group>
                             <Text c="dimmed" ff="monospace" size="xs">
@@ -138,7 +143,7 @@ export function BuildInfoModal({ remnawaveMetadata, isNewVersionAvailable }: Bui
                             <Group gap="xs" mb={6}>
                                 <TbHash color="var(--mantine-color-violet-5)" size={14} />
                                 <Text c="violet.5" fw={600} size="xs" tt="uppercase">
-                                    Build
+                                    {t('header.build-info.build')}
                                 </Text>
                             </Group>
                             <Text c="dimmed" ff="monospace" size="xs">
@@ -156,10 +161,10 @@ export function BuildInfoModal({ remnawaveMetadata, isNewVersionAvailable }: Bui
                             <Group gap="xs">
                                 <TbServer color="var(--mantine-color-teal-5)" size={16} />
                                 <Text c="teal.5" fw={600} size="sm">
-                                    Backend
+                                    {t('header.build-info.backend')}
                                 </Text>
                             </Group>
-                            <Tooltip label="View on GitHub">
+                            <Tooltip label={t('header.build-info.view-on-github')}>
                                 <ActionIcon
                                     color="teal"
                                     component="a"
@@ -186,10 +191,10 @@ export function BuildInfoModal({ remnawaveMetadata, isNewVersionAvailable }: Bui
                             <Group gap="xs">
                                 <TbWorld color="var(--mantine-color-cyan-5)" size={16} />
                                 <Text c="cyan.5" fw={600} size="sm">
-                                    Frontend
+                                    {t('header.build-info.frontend')}
                                 </Text>
                             </Group>
-                            <Tooltip label="View on GitHub">
+                            <Tooltip label={t('header.build-info.view-on-github')}>
                                 <ActionIcon
                                     color="cyan"
                                     component="a"
@@ -215,25 +220,25 @@ export function BuildInfoModal({ remnawaveMetadata, isNewVersionAvailable }: Bui
                 <Button
                     color="cyan"
                     component="a"
-                    href="https://github.com/xray-panel"
+                    href={app.telegram}
                     leftSection={<TbBrandTelegram size={16} />}
                     radius="md"
                     size="sm"
                     target="_blank"
                     variant="light"
                 >
-                    Community
+                    {t('header.build-info.community')}
                 </Button>
                 <Button
                     component="a"
                     href="https://github.com/xray-panel"
                     leftSection={<TbBrandGithub size={16} />}
-                    radius="md"
-                    size="sm"
-                    target="_blank"
+                radius="md"
+                size="sm"
+                target="_blank"
                     variant="default"
                 >
-                    GitHub
+                    {t('header.build-info.github')}
                 </Button>
             </Group>
         </Stack>

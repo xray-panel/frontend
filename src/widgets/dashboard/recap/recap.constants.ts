@@ -1,3 +1,5 @@
+import { TFunction } from 'i18next'
+
 export const SWATCHES = [
     'rgb(21, 170, 191)',
     'rgb(167, 139, 250)',
@@ -19,21 +21,21 @@ export const SWATCHES = [
 
 export type CardSection = 'infra' | 'month' | 'stats'
 
-export const CARD_SECTIONS: { label: string; value: CardSection }[] = [
-    { label: 'Nodes & Traffic', value: 'stats' },
-    { label: 'This Month', value: 'month' },
-    { label: 'Infrastructure', value: 'infra' }
+export const getCardSections = (t: TFunction): { label: string; value: CardSection }[] => [
+    { label: t('header.recap.section-nodes-traffic'), value: 'stats' },
+    { label: t('header.recap.section-this-month'), value: 'month' },
+    { label: t('header.recap.infrastructure'), value: 'infra' }
 ]
 
 export const DEFAULT_SECTIONS: CardSection[] = ['stats', 'month', 'infra']
 
 export type BgStyle = 'dots' | 'gradient' | 'grid' | 'solid'
 
-export const BG_STYLES: { label: string; value: BgStyle }[] = [
-    { label: 'Solid', value: 'solid' },
-    { label: 'Gradient', value: 'gradient' },
-    { label: 'Dots', value: 'dots' },
-    { label: 'Grid', value: 'grid' }
+export const getBgStyles = (t: TFunction): { label: string; value: BgStyle }[] => [
+    { label: t('header.recap.bg-solid'), value: 'solid' },
+    { label: t('header.recap.bg-gradient'), value: 'gradient' },
+    { label: t('header.recap.bg-dots'), value: 'dots' },
+    { label: t('header.recap.bg-grid'), value: 'grid' }
 ]
 
 export type MaskableField =
@@ -46,13 +48,14 @@ export type MaskableField =
     | 'totalTraffic'
     | 'totalUsers'
 
-export const MASKABLE_FIELDS: { label: string; value: MaskableField }[] = [
-    { label: 'Users', value: 'totalUsers' },
-    { label: 'Nodes', value: 'nodes' },
-    { label: 'Traffic', value: 'totalTraffic' },
-    { label: 'New users', value: 'monthUsers' },
-    { label: 'Month traffic', value: 'monthTraffic' },
-    { label: 'Countries', value: 'countries' },
-    { label: 'CPU cores', value: 'cpuCores' },
+export const getMaskableFields = (t: TFunction): { label: string; value: MaskableField }[] => [
+    { label: t('header.recap.field-users'), value: 'totalUsers' },
+    { label: t('header.recap.field-nodes'), value: 'nodes' },
+    { label: t('header.recap.field-traffic'), value: 'totalTraffic' },
+    { label: t('header.recap.field-new-users'), value: 'monthUsers' },
+    { label: t('header.recap.field-month-traffic'), value: 'monthTraffic' },
+    { label: t('header.recap.field-countries'), value: 'countries' },
+    { label: t('header.recap.field-cpu-cores'), value: 'cpuCores' },
+    // Аббревиатура RAM — технический термин, не переводится.
     { label: 'RAM', value: 'ram' }
 ]

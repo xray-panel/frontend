@@ -5,7 +5,7 @@ import { SidebarLogoShared, SidebarTitleShared } from '@shared/ui/sidebar'
 
 export const DASHBOARD_LINKS = {
     githubLink: 'https://github.com/xray-panel',
-    telegramLink: 'https://github.com/xray-panel'
+    telegramLink: 'https://t.me/x_lada'
 } as const
 
 type LayoutMainProps = Omit<React.ComponentProps<typeof AppShell.Main>, 'children'>

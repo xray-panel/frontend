@@ -27,7 +27,8 @@
     "sessions-explorer": "Sessions Explorer",
     "http-stats": "HTTP Stats",
     "quick-launcher": "Launcher",
-    "logs": "Logs"
+    "logs": "Logs",
+    "administrators": "Administrators"
   },
   "common": {
     "action": {
@@ -2014,7 +2015,8 @@
     "notification-title": "Two-Factor Authentication",
     "notification-enabled": "Two-factor authentication enabled successfully",
     "notification-disabled": "Two-factor authentication disabled",
-    "notification-error-unknown": "Request failed with unknown error."
+    "notification-error-unknown": "Request failed with unknown error.",
+    "passkey-oauth-note": "Signing in with a passkey or through an OAuth2 provider does not ask for a code: those methods are treated as a complete second factor."
   },
   "login-page": {
     "two-factor-title": "Two-factor authentication is enabled for this account. Enter the 6-digit code from your authenticator app.",
@@ -2023,5 +2025,54 @@
     "two-factor-back": "Back to password sign in",
     "two-factor-error": "Request failed with unknown error.",
     "notification-title": "Two-Factor Authentication"
+  },
+  "header": {
+    "recap": {
+      "title": "Recap",
+      "sections": "Sections",
+      "mask-fields": "Mask fields",
+      "early-adopter": "Early Adopter",
+      "total-users": "total users",
+      "nodes": "nodes",
+      "traffic": "traffic",
+      "new-users": "new users",
+      "infrastructure": "Infrastructure",
+      "countries": "countries",
+      "cpu-cores": "CPU cores",
+      "since": "Since {{date}}",
+      "background": "Background",
+      "custom-note": "Custom note",
+      "accent-color": "Accent color",
+      "error": "Error",
+      "unknown-error": "Unknown error",
+      "could-not-download": "Could not download Recap",
+      "section-nodes-traffic": "Nodes & Traffic",
+      "section-this-month": "This Month",
+      "bg-solid": "Solid",
+      "bg-gradient": "Gradient",
+      "bg-dots": "Dots",
+      "bg-grid": "Grid",
+      "field-users": "Users",
+      "field-nodes": "Nodes",
+      "field-traffic": "Traffic",
+      "field-new-users": "New users",
+      "field-month-traffic": "Month traffic",
+      "field-countries": "Countries",
+      "field-cpu-cores": "CPU cores"
+    },
+    "build-info": {
+      "title": "Build Info",
+      "update-available": "Update available",
+      "new-version-available": "A new version is available",
+      "check-out": "Check out",
+      "copy": "Copy build info",
+      "build-time": "Build Time",
+      "build": "Build",
+      "backend": "Backend",
+      "view-on-github": "View on GitHub",
+      "frontend": "Frontend",
+      "community": "Community",
+      "github": "GitHub"
+    }
   }
 }

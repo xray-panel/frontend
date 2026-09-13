@@ -16,6 +16,8 @@ import dayjs from 'dayjs'
 import { motion } from 'motion/react'
 import { useRef, useState } from 'react'
 import { useTranslation } from 'react-i18next'
+
+import { app } from 'src/config'
 import { TbCheck, TbCopy, TbDownload, TbX } from 'react-icons/tb'
 
 import { useGetRecap } from '@shared/api/hooks/system/system.query.hooks'
@@ -24,10 +26,10 @@ import { prettifyBytesUtil } from '@shared/utils/bytes'
 import { copyScreenshotToClipboard, downloadScreenshot } from '@shared/utils/copy-screenshot.util'
 
 import {
-    BG_STYLES,
-    CARD_SECTIONS,
     DEFAULT_SECTIONS,
-    MASKABLE_FIELDS,
+    getBgStyles,
+    getCardSections,
+    getMaskableFields,
     SWATCHES
 } from './recap.constants'
 import classes from './recap.content.module.css'
@@ -65,8 +67,8 @@ export function RecapContent() {
         } catch (error) {
             notifications.show({
                 color: 'red',
-                message: `${error instanceof Error ? error.message : 'Unknown error'}`,
-                title: 'Error'
+                message: `${error instanceof Error ? error.message : t('header.recap.unknown-error')}`,
+                title: t('header.recap.error')
             })
         } finally {
             setCopying(false)
@@ -89,8 +91,8 @@ export function RecapContent() {
         } catch {
             notifications.show({
                 color: 'red',
-                message: 'Could not download Recap',
-                title: 'Error'
+                message: t('header.recap.could-not-download'),
+                title: t('header.recap.error')
             })
         } finally {
             setDownloading(false)
@@ -151,9 +153,9 @@ export function RecapContent() {
             >
                 <Stack gap="sm" style={{ flexShrink: 0, width: 270 }}>
                     <div className={classes.controlPanel}>
-                        <div className={classes.controlLabel}>Sections</div>
+                        <div className={classes.controlLabel}>{t('header.recap.sections')}</div>
                         <Stack gap="xs">
-                            {CARD_SECTIONS.map((s) => (
+                            {getCardSections(t).map((s) => (
                                 <Switch
                                     checked={sections.includes(s.value)}
                                     key={s.value}
@@ -173,9 +175,9 @@ export function RecapContent() {
                     </div>
 
                     <div className={classes.controlPanel}>
-                        <div className={classes.controlLabel}>Mask fields</div>
+                        <div className={classes.controlLabel}>{t('header.recap.mask-fields')}</div>
                         <Group gap={4}>
-                            {MASKABLE_FIELDS.map((f) => {
+                            {getMaskableFields(t).map((f) => {
                                 const active = maskedFields.includes(f.value)
                                 return (
                                     <Button
@@ -217,7 +219,7 @@ export function RecapContent() {
                 >
                     {dayjs(recap.initDate).isBefore('2025-04-01') && (
                         <div className={classes.ribbon} style={{ background: accent }}>
-                            Early Adopter
+                            {t('header.recap.early-adopter')}
                         </div>
                     )}
 
@@ -235,7 +237,7 @@ export function RecapContent() {
                     <div className={classes.brand}>
                         <Logo size={24} style={{ color: accent }} />
                         <span className={classes.brandName}>
-                            <span style={{ color: accent }}>REMNA</span>WAVE
+                            {app.name}
                         </span>
                     </div>
 
@@ -243,7 +245,7 @@ export function RecapContent() {
                         <div className={classes.heroValue} style={{ color: accent }}>
                             {m('totalUsers', formatInt(recap.total.users))}
                         </div>
-                        <div className={classes.heroLabel}>total users</div>
+                        <div className={classes.heroLabel}>{t('header.recap.total-users')}</div>
                     </div>
 
                     {sections.includes('stats') && (
@@ -252,7 +254,7 @@ export function RecapContent() {
                                 <div className={classes.statValue}>
                                     {m('nodes', formatInt(recap.total.nodes))}
                                 </div>
-                                <div className={classes.statLabel}>nodes</div>
+                                <div className={classes.statLabel}>{t('header.recap.nodes')}</div>
                             </div>
                             <div className={classes.stat}>
                                 <div className={classes.statValue}>
@@ -261,7 +263,7 @@ export function RecapContent() {
                                         prettifyBytesUtil(recap.total.traffic, true)
                                     )}
                                 </div>
-                                <div className={classes.statLabel}>traffic</div>
+                                <div className={classes.statLabel}>{t('header.recap.traffic')}</div>
                             </div>
                         </div>
                     )}
@@ -278,7 +280,7 @@ export function RecapContent() {
                                         <div className={classes.monthValue}>
                                             {m('monthUsers', formatInt(recap.thisMonth.users))}
                                         </div>
-                                        <div className={classes.monthLabel}>new users</div>
+                                        <div className={classes.monthLabel}>{t('header.recap.new-users')}</div>
                                     </div>
                                     <div className={classes.monthItem}>
                                         <div className={classes.monthValue}>
@@ -287,7 +289,7 @@ export function RecapContent() {
                                                 prettifyBytesUtil(recap.thisMonth.traffic)
                                             )}
                                         </div>
-                                        <div className={classes.monthLabel}>traffic</div>
+                                        <div className={classes.monthLabel}>{t('header.recap.traffic')}</div>
                                     </div>
                                 </div>
                             </div>
@@ -298,7 +300,9 @@ export function RecapContent() {
                         <>
                             <div className={classes.divider} style={gradientLine} />
                             <div className={classes.section}>
-                                <div className={classes.sectionTitle}>Infrastructure</div>
+                                <div className={classes.sectionTitle}>
+                                    {t('header.recap.infrastructure')}
+                                </div>
                                 <div className={classes.infraGrid}>
                                     <div>
                                         <div className={classes.infraValue}>
@@ -307,13 +311,13 @@ export function RecapContent() {
                                                 formatInt(recap.total.distinctCountries)
                                             )}
                                         </div>
-                                        <div className={classes.infraLabel}>countries</div>
+                                        <div className={classes.infraLabel}>{t('header.recap.countries')}</div>
                                     </div>
                                     <div>
                                         <div className={classes.infraValue}>
                                             {m('cpuCores', formatInt(recap.total.nodesCpuCores))}
                                         </div>
-                                        <div className={classes.infraLabel}>CPU cores</div>
+                                        <div className={classes.infraLabel}>{t('header.recap.cpu-cores')}</div>
                                     </div>
                                     <div>
                                         <div className={classes.infraValue}>
@@ -341,7 +345,9 @@ export function RecapContent() {
 
                     <div className={classes.footer}>
                         <span className={classes.since} style={{ color: accent }}>
-                            Since {dayjs(recap.initDate).format('MMM D, YYYY')}
+                            {t('header.recap.since', {
+                                date: dayjs(recap.initDate).format('MMM D, YYYY')
+                            })}
                         </span>
                         <span
                             className={classes.version}
@@ -363,9 +369,9 @@ export function RecapContent() {
             >
                 <Stack gap="sm" style={{ flexShrink: 0, width: 270 }}>
                     <div className={classes.controlPanel}>
-                        <div className={classes.controlLabel}>Background</div>
+                        <div className={classes.controlLabel}>{t('header.recap.background')}</div>
                         <Group gap={4}>
-                            {BG_STYLES.map((s) => (
+                            {getBgStyles(t).map((s) => (
                                 <Button
                                     color={bgStyle === s.value ? 'teal' : 'gray'}
                                     key={s.value}
@@ -381,10 +387,12 @@ export function RecapContent() {
                     </div>
 
                     <div className={classes.controlPanel}>
-                        <div className={classes.controlLabel}>Custom note</div>
+                        <div className={classes.controlLabel}>{t('header.recap.custom-note')}</div>
                         <TextInput
                             maxLength={40}
                             onChange={(e) => setCustomNote(e.currentTarget.value)}
+                            // «RW <3» — декоративная подпись-пример, а не текст интерфейса.
+                            // Не переводится: остаётся нейтральным плейсхолдером для всех локалей.
                             placeholder="RW <3"
                             size="xs"
                             value={customNote}
@@ -392,7 +400,7 @@ export function RecapContent() {
                     </div>
 
                     <div className={classes.controlPanel}>
-                        <div className={classes.controlLabel}>Accent color</div>
+                        <div className={classes.controlLabel}>{t('header.recap.accent-color')}</div>
                         <ColorPicker
                             format="rgb"
                             onChange={setAccent}

@@ -27,7 +27,8 @@
     "sessions-explorer": "Sessions Explorer",
     "http-stats": "HTTP Stats",
     "quick-launcher": "Launcher",
-    "logs": "لاگ‌ها"
+    "logs": "لاگ‌ها",
+    "administrators": "مدیران"
   },
   "common": {
     "action": {
@@ -2014,7 +2015,8 @@
     "notification-title": "احراز هویت دو مرحله‌ای",
     "notification-enabled": "احراز هویت دو مرحله‌ای با موفقیت فعال شد",
     "notification-disabled": "احراز هویت دو مرحله‌ای غیرفعال شد",
-    "notification-error-unknown": "درخواست با خطای ناشناخته ناموفق بود."
+    "notification-error-unknown": "درخواست با خطای ناشناخته ناموفق بود.",
+    "passkey-oauth-note": "ورود با passkey یا از طریق OAuth2 کد نمی‌خواهد: این روش‌ها به‌عنوان عامل دوم کامل در نظر گرفته می‌شوند."
   },
   "login-page": {
     "two-factor-title": "احراز هویت دو مرحله‌ای برای این حساب فعال است. کد 6 رقمی را از برنامه احراز هویت خود وارد کنید.",
@@ -2023,5 +2025,54 @@
     "two-factor-back": "بازگشت به ورود با گذرواژه",
     "two-factor-error": "درخواست با خطای ناشناخته ناموفق بود.",
     "notification-title": "احراز هویت دو مرحله‌ای"
+  },
+  "header": {
+    "recap": {
+      "title": "خلاصه",
+      "sections": "بخش‌ها",
+      "mask-fields": "مخفی کردن فیلدها",
+      "early-adopter": "پیشگام",
+      "total-users": "کل کاربران",
+      "nodes": "نودها",
+      "traffic": "ترافیک",
+      "new-users": "کاربران جدید",
+      "infrastructure": "زیرساخت",
+      "countries": "کشورها",
+      "cpu-cores": "هسته‌های CPU",
+      "since": "از {{date}}",
+      "background": "پس‌زمینه",
+      "custom-note": "یادداشت سفارشی",
+      "accent-color": "رنگ تأکیدی",
+      "error": "خطا",
+      "unknown-error": "خطای ناشناخته",
+      "could-not-download": "دانلود «خلاصه» ناموفق بود",
+      "section-nodes-traffic": "نودها و ترافیک",
+      "section-this-month": "این ماه",
+      "bg-solid": "یکدست",
+      "bg-gradient": "گرادیان",
+      "bg-dots": "نقطه‌ای",
+      "bg-grid": "شبکه‌ای",
+      "field-users": "کاربران",
+      "field-nodes": "نودها",
+      "field-traffic": "ترافیک",
+      "field-new-users": "کاربران جدید",
+      "field-month-traffic": "ترافیک ماه",
+      "field-countries": "کشورها",
+      "field-cpu-cores": "هسته‌های CPU"
+    },
+    "build-info": {
+      "title": "اطلاعات ساخت",
+      "update-available": "به‌روزرسانی موجود است",
+      "new-version-available": "نسخه جدید در دسترس است",
+      "check-out": "مشاهده کنید",
+      "copy": "کپی اطلاعات ساخت",
+      "build-time": "زمان ساخت",
+      "build": "ساخت",
+      "backend": "بک‌اند",
+      "view-on-github": "مشاهده در گیت‌هاب",
+      "frontend": "فرانت‌اند",
+      "community": "انجمن",
+      "github": "گیت‌هاب"
+    }
   }
 }

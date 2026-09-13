@@ -4,7 +4,8 @@ export const app = {
     githubStars: 'https://github.com/xray-panel/backend/stargazers',
     githubIssues: 'https://github.com/xray-panel/backend/issues',
     githubOrg: 'https://github.com/xray-panel',
-    githubDonation: 'https://github.com/xray-panel/backend#donation',
+    telegram: 'https://t.me/x_lada',
+    donation: 'https://xlada.app/donate',
     configEditor: {
         wasmUrl: '/assets/main.wasm',
         wasmJsUrl: '/assets/wasm_exec.js',

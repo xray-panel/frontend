@@ -2,6 +2,7 @@ import { Group, Text } from '@mantine/core'
 import { modals } from '@mantine/modals'
 import clsx from 'clsx'
 import { useMemo } from 'react'
+import { useTranslation } from 'react-i18next'
 import semver from 'semver'
 
 import { useGetRemnawaveMetadata } from '@shared/api/hooks'
@@ -18,6 +19,7 @@ import classes from './VersionControl.module.css'
 export function VersionControl() {
     const remnawaveInfo = useRemnawaveInfo()
     const { data: remnawaveMetadata, isLoading } = useGetRemnawaveMetadata()
+    const { t } = useTranslation()
 
     const [isNewVersionAvailable, isDev] = useMemo(() => {
         if (!remnawaveMetadata) return [false, false]
@@ -38,7 +40,7 @@ export function VersionControl() {
                     iconColor="teal"
                     IconComponent={Logo}
                     iconVariant="soft"
-                    title="Build Info"
+                    title={t('header.build-info.title')}
                 />
             ),
             centered: true,

@@ -130,6 +130,7 @@ devDependencies).
 ## Связанные репозитории
 
 - [xray-panel/backend](https://github.com/xray-panel/backend) — REST API, база
+- Telegram-канал проекта — https://t.me/x_lada
   данных и отдача собранного интерфейса.
 - [xray-panel/node](https://github.com/xray-panel/node) — агент на
   прокси-сервере, запускает Xray-core.

@@ -8,7 +8,7 @@ export function SupportControl() {
         <HeaderControl
             className={classes.support}
             component="a"
-            href="https://xlada.app/docs/donate"
+            href="https://xlada.app/donate"
             rel="noopener noreferrer"
             target="_blank"
         >
