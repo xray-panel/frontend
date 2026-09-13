@@ -4,7 +4,7 @@ import { Outlet, ScrollRestoration } from 'react-router'
 import { SidebarLogoShared, SidebarTitleShared } from '@shared/ui/sidebar'
 
 export const DASHBOARD_LINKS = {
-    githubLink: 'https://github.com/xray-panel/panel',
+    githubLink: 'https://github.com/xray-panel',
     telegramLink: 'https://github.com/xray-panel'
 } as const
 

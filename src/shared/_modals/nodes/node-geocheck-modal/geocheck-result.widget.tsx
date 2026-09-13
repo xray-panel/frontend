@@ -40,7 +40,7 @@ import {
 import classes from './GeocheckResult.module.css'
 import { GeocheckTraceWidget, resolveConnectivity } from './trace'
 
-const GEOCHECK_REPO_URL = 'https://github.com/xray-panel/geocheck'
+const GEOCHECK_REPO_URL = 'https://github.com/remnawave/geocheck'
 
 interface IProps {
     onRestart: () => void

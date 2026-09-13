@@ -57,7 +57,7 @@ export const TemplateSelector = (props: TemplateSelectorProps) => {
             <Group grow justify="space-between">
                 <Button
                     component="a"
-                    href="https://github.com/xray-panel/templates"
+                    href="https://github.com/remnawave/templates"
                     target="_blank"
                     variant="light"
                 >
