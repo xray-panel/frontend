@@ -19,9 +19,9 @@ export const CopyDockerComposeWidget = ({ port }: IProps) => {
 
     const generateDockerCompose = (port?: number) => {
         return `services:
-  xpanelnode:
-    container_name: xpanelnode
-    hostname: xpanelnode
+  xlada-node:
+    container_name: xlada-node
+    hostname: xlada-node
     image: ghcr.io/xray-panel/node:latest
     network_mode: host
     restart: always
