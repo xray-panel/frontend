@@ -1,5 +1,6 @@
 import { CodeHighlight } from '@mantine/code-highlight'
 import { Group, Stack, Text, ThemeIcon } from '@mantine/core'
+import { XLADA_NODE_MIN_VERSION } from '@xlada/backend-contract'
 import { Trans, useTranslation } from 'react-i18next'
 import { TbBrandDocker, TbClock, TbHourglass, TbTag } from 'react-icons/tb'
 
@@ -23,7 +24,7 @@ export const RequirementsWidget = () => {
                     <Trans
                         components={{ highlight: HIGHLIGHT_SPAN }}
                         i18nKey="active-sessions-drawer.widget.warning-version"
-                        values={{ version: '2.7.0' }}
+                        values={{ version: XLADA_NODE_MIN_VERSION }}
                     />
                 </Text>
             </Group>

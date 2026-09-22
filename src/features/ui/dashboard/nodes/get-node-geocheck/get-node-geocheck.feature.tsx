@@ -1,13 +1,10 @@
 import { ActionIcon, Tooltip } from '@mantine/core'
-import { GetNodeCommand } from '@xlada/backend-contract'
+import { getRequiredNodeVersion, GetNodeCommand, isGeocheckSupported } from '@xlada/backend-contract'
 import { memo, useMemo } from 'react'
 import { useTranslation } from 'react-i18next'
 import { TbMapSearch } from 'react-icons/tb'
-import semver from 'semver'
 
 import { showModal } from '@shared/_modals/show-modal'
-
-const MIN_NODE_VERSION = '3.3.0'
 
 interface IProps {
     node: GetNodeCommand.Response['response']
@@ -19,18 +16,16 @@ const GetNodeGeocheckFeatureComponent = (props: IProps) => {
 
     const nodeVersion = node.versions?.node
 
-    const isSupported = useMemo(() => {
-        const version = semver.coerce(nodeVersion)
-
-        return version !== null && semver.gte(version, MIN_NODE_VERSION)
-    }, [nodeVersion])
+    const isSupported = useMemo(() => isGeocheckSupported(nodeVersion), [nodeVersion])
 
     return (
         <Tooltip
             label={
                 isSupported
                     ? t('node-geocheck.title')
-                    : t('node-geocheck.requires-node-version', { version: MIN_NODE_VERSION })
+                    : t('node-geocheck.requires-node-version', {
+                          version: getRequiredNodeVersion(nodeVersion, true)
+                      })
             }
         >
             <ActionIcon
