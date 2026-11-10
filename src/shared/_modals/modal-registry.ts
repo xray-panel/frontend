@@ -2,7 +2,11 @@ import type { ComponentProps } from 'react'
 
 import NiceModal from '@ebay/nice-modal-react'
 
-import { ConfigProfileInboundsDrawer, ActiveNodesModal } from './config-profiles'
+import {
+    ActiveNodesModal,
+    ConfigProfileInboundsDrawer,
+    InboundGeneratorModal
+} from './config-profiles'
 import { ExternalSquadsDrawer } from './external-squads'
 import {
     CreateHostDrawer,
@@ -111,6 +115,7 @@ export const MODAL_REGISTRY = {
 
     configProfiles_activeNodesModal: ActiveNodesModal,
     configProfiles_configProfileInboundsDrawer: ConfigProfileInboundsDrawer,
+    configProfiles_inboundGeneratorModal: InboundGeneratorModal,
 
     nodePlugins_nodePluginExecutorDrawer: NodePluginExecutorDrawer,
 
