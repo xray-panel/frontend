@@ -2,6 +2,12 @@
 
 Формат основан на релизных заметках Remnawave.
 
+## [1.2.2] - 2026-11-14
+
+### What's Changed
+
+* chore(release): synchronize with Remnawave Panel 3.4.11
+
 ## [1.2.1] - 2026-11-10
 
 ### What's Changed
