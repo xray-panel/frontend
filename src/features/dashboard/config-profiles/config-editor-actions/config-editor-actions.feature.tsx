@@ -2,8 +2,8 @@ import { ActionIcon, Button, CopyButton, Group, Menu, Text } from '@mantine/core
 import { useClipboard, useDisclosure } from '@mantine/hooks'
 import { modals } from '@mantine/modals'
 import { notifications } from '@mantine/notifications'
-import { UpdateConfigProfileCommand } from '@xlada/backend-contract'
 import { KeypairGeneratorWidget } from '@widgets/dashboard/config-profiles/keypair-generator/keypair-generator.widget'
+import { UpdateConfigProfileCommand } from '@xlada/backend-contract'
 import consola from 'consola/browser'
 import { useTranslation } from 'react-i18next'
 import { PiCheck, PiCheckSquareOffset, PiCopy, PiFloppyDisk } from 'react-icons/pi'
@@ -14,16 +14,17 @@ import {
     TbDownload,
     TbMenuDeep,
     TbSelectAll,
-    TbTools
+    TbTools,
+    TbWand
 } from 'react-icons/tb'
 
+import { showModal } from '@shared/_modals/show-modal'
 import { queryClient } from '@shared/api'
 import { QueryKeys, useUpdateConfigProfile } from '@shared/api/hooks'
 import { useIsMobile } from '@shared/hooks'
 import { useDownloadTemplate } from '@shared/ui/load-templates/use-download-template'
 import { BaseOverlayHeader } from '@shared/ui/overlays/base-overlay-header'
 
-import classes from './config-editor-actions.module.css'
 import { Props } from './interfaces'
 
 export function ConfigEditorActionsFeature(props: Props) {
@@ -181,8 +182,12 @@ export function ConfigEditorActionsFeature(props: Props) {
         editorRef.current.getAction('editor.action.formatDocument')?.run()
     }
 
+    const openInboundGenerator = () => {
+        showModal('configProfiles_inboundGeneratorModal', { editorRef })
+    }
+
     return (
-        <Group grow={isMobile} preventGrowOverflow={false} wrap="wrap">
+        <Group gap="sm" grow={isMobile} preventGrowOverflow={false} wrap="wrap">
             <Button
                 color={!hasUnsavedChanges ? 'gray' : 'teal'}
                 disabled={!isConfigValid && !hasUnsavedChanges}
@@ -224,7 +229,11 @@ export function ConfigEditorActionsFeature(props: Props) {
                 </Button>
             )}
 
-            <Group gap={0} wrap="nowrap">
+            <Group
+                gap={isMobile ? 'xs' : 'sm'}
+                style={isMobile ? { width: '100%' } : undefined}
+                wrap="nowrap"
+            >
                 <Menu
                     onClose={() => handlers.close()}
                     onOpen={() => handlers.open()}
@@ -235,8 +244,7 @@ export function ConfigEditorActionsFeature(props: Props) {
                 >
                     <Menu.Target>
                         <ActionIcon
-                            className={classes.actionIconLeft}
-                            size={36}
+                            size={isMobile ? 32 : 36}
                             variant={opened ? 'outline' : 'default'}
                         >
                             <TbMenuDeep size={20} />
@@ -316,9 +324,20 @@ export function ConfigEditorActionsFeature(props: Props) {
                 </Menu>
 
                 <Button
-                    className={classes.centeredButton}
-                    leftSection={<PiCheckSquareOffset size={16} />}
+                    leftSection={isMobile ? undefined : <TbWand size={16} />}
+                    onClick={openInboundGenerator}
+                    size={isMobile ? 'sm' : undefined}
+                    style={isMobile ? { flex: 1 } : undefined}
+                    variant="default"
+                >
+                    {t('config-generator.button')}
+                </Button>
+
+                <Button
+                    leftSection={isMobile ? undefined : <PiCheckSquareOffset size={16} />}
                     onClick={formatDocument}
+                    size={isMobile ? 'sm' : undefined}
+                    style={isMobile ? { flex: 1 } : undefined}
                     variant="default"
                 >
                     {t('config-editor-actions.feature.format')}
